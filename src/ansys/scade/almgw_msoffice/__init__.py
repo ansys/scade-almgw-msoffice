@@ -24,6 +24,8 @@
 
 """Ansys SCADE LifeCycle ALM Gateway connector for MS-Office."""
 
+from pathlib import Path
+
 try:
     import importlib.metadata as importlib_metadata
 except ModuleNotFoundError:
@@ -34,3 +36,18 @@ try:
 except importlib_metadata.PackageNotFoundError:
     # happens with pre-commit, the package is not installed in the virtual environment
     __version__ = '<unknown>'
+
+
+_MS_OFFICE = 'ALMGW Connector for MS-Office'
+
+
+def srg() -> str:
+    """
+    Return the path of the SCADE Studio registry file.
+
+    This function implements the entry point "ansys.scade.registry/srg"
+    introduced in SCADE 2025 R1. It avoids creating an explicit srg file
+    in ``%APPDATA%/Scade/Customize`` when the package is installed.
+    """
+    # the package's srg file is located in the same directory
+    return str(Path(__file__).parent / 'almgw_msoffice.srg')

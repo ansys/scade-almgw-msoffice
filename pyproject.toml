@@ -60,6 +60,12 @@ doc = [
 [tool.flit.module]
 name = "ansys.scade.almgw_msoffice"
 
+[project.scripts]
+register_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.register:main"
+
+[project.entry-points."ansys.scade.registry"]
+srg = "ansys.scade.almgw_msoffice:srg"
+
 [project.urls]
 Source = "https://github.com/ansys/scade-almgw-msoffice"
 Issues = "https://github.com/ansys/scade-almgw-msoffice/issues"

@@ -44,6 +44,10 @@ class TraceDocument:
 
     * Updated on export
     * Read on import
+
+    .. Note::
+
+       The cache document is also updated.
     """
 
     def __init__(self, project: ReqProject, path: Path, requirements=None):
@@ -107,4 +111,5 @@ class TraceDocument:
             return -1
 
         del self.links[req + oid]
+        self.project.traceability_links.remove(link)
         return 0

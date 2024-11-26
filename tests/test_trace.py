@@ -20,42 +20,18 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import difflib
 from pathlib import Path
 
 import pytest
 
 import ansys.scade.almgw_msoffice.trace as trace
 from ansys.scade.pyalmgw.documents import ReqProject
+from tests.conftest import diff_files
 
 _root_dir = Path(__file__).parent.parent
 _test_dir = _root_dir / 'tests'
 _ref_dir = _test_dir / 'ref'
 _res_dir = _test_dir / 'res'
-
-
-def cmp_file(reference: Path, result: Path, n=3, linejunk=None):
-    """Return the differences between the reference and the result file."""
-    with reference.open() as f1, result.open() as f2:
-        if linejunk:
-            ref_lines = [_ for _ in f1 if not linejunk(_)]
-            res_lines = [_ for _ in f2 if not linejunk(_)]
-        else:
-            ref_lines = f1.read().split('\n')
-            res_lines = f2.read().split('\n')
-
-    diff = difflib.context_diff(ref_lines, res_lines, str(reference), str(result), n=n)
-    return diff
-
-
-def diff_files(ref: Path, dst: Path) -> bool:
-    print('compare', str(ref), str(dst))
-    diffs = cmp_file(ref, dst)
-    failure = False
-    for d in diffs:
-        print(d.rstrip('\r\n'))
-        failure = True
-    return failure
 
 
 @pytest.mark.parametrize(
@@ -68,7 +44,7 @@ def diff_files(ref: Path, dst: Path) -> bool:
     ],
 )
 def test_merge_links(local_tmpdir, name: str, deltas: str):
-    project = ReqProject(Path('<any>'))
+    project = ReqProject()
     map_requirements = {'REQ_1': None, 'REQ_2.1': None, 'REQ_2': None}
     doc = trace.TraceDocument(project, _res_dir / name, map_requirements)
     doc.read()

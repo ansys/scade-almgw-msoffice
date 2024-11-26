@@ -1,0 +1,46 @@
+{
+    "elements": [
+        {
+            "almtype": "section",
+            "elements": [
+                {
+                    "almtype": "section",
+                    "elements": [
+                        {
+                            "almtype": "req",
+                            "icon": "$(SCADE)/SCADE LifeCycle/ALM Gateway/reqtifygw/icons/suite/equationSet.png",
+                            "name": "Usefulness?",
+                            "oid": "!ed/91/7A8D/4DD0/6745dacb615b",
+                            "pathname": "P::Delay/Delay/Usefulness?/",
+                            "scadetype": "equationSet",
+                            "url": "http://localhost:8080/scade_provider/services/_Cyhw0Kv9Ee-jdONyVHqozA/requirements/IWVkLzkxLzdBOEQvNEREMC82NzQ1ZGFjYjYxNWI="
+                        }
+                    ],
+                    "name": "Operator Delay",
+                    "oid": "!ed/4c/7A8D/4DD0/6745da6950fe:_"
+                },
+                {
+                    "almtype": "section",
+                    "elements": [
+                        {
+                            "almtype": "req",
+                            "icon": "$(SCADE)/SCADE LifeCycle/ALM Gateway/reqtifygw/icons/suite/equationSet.png",
+                            "name": "Rather simple",
+                            "oid": "!ed/4b/7A8D/4DD0/6745d1e16091",
+                            "pathname": "P::Root/Root/Rather simple/",
+                            "scadetype": "equationSet",
+                            "url": "http://localhost:8080/scade_provider/services/_Cyhw0Kv9Ee-jdONyVHqozA/requirements/IWVkLzRiLzdBOEQvNEREMC82NzQ1ZDFlMTYwOTE="
+                        }
+                    ],
+                    "name": "Operator Root",
+                    "oid": "!ed/2c/7A8D/4DD0/6745d1b171b0:_"
+                }
+            ],
+            "name": "Nominal",
+            "oid": "Nominal:_"
+        }
+    ],
+    "name": "Nominal",
+    "path": "$(DIR)/Nominal.etp",
+    "type": "suite"
+}

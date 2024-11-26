@@ -1,7 +1,7 @@
 <ReqProject xmlns="http://www.esterel-technologies.com/scade/lifecycle/almgateway/scade_req/1" identifier="" text="">
   <traceabilityLinks/>
   <documents>
-    <Document identifier="D:\AnsysDev\Nobackup\PyAnsys\ms-office\tests\Hierarchy\Hierarchy.docx" text="Hierarchy.docx">
+    <Document identifier="$(ROOT)/tests/Hierarchy/Hierarchy.docx" text="Hierarchy.docx">
       <children>
         <Section identifier="1." text="Level 1" description="">
           <children>

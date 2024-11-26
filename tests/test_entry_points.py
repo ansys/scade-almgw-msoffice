@@ -22,28 +22,17 @@
 
 from pathlib import Path
 
-import ansys.scade.almgw_msoffice.msword as msword
-from tests.conftest import diff_files
-
-_test_dir = Path(__file__).parent.parent / 'tests'
-_ref_dir = _test_dir / 'ref'
+import ansys.scade.almgw_msoffice as ms
 
 
-def test_parser(local_tmpdir):
-    """Make sure the result is identical to the reference."""
-    ref = _ref_dir / 'hierarchy.xml'
-    dst = local_tmpdir / 'hierarchy.xml'
-    project = msword.ReqProject(dst)
-    path = Path(__file__).parent / 'Hierarchy' / 'Hierarchy.docx'
-    reqs = msword.add_document(project, path, 'Requirement_ID', 'Requirement_Text')
-    assert len(reqs) > 1
-    print(str(reqs))
-    project.write()
-
-    assert not diff_files(ref, dst)
+def test_srg():
+    path = ms.srg()
+    assert path
+    assert Path(path).exists()
 
 
-if __name__ == '__main__':
-    tmp = Path(__file__).parent / 'tmp'
-    tmp.mkdir(exist_ok=True)
-    test_parser(tmp)
+def test_exe():
+    name, path = ms.exe()
+    assert name
+    assert path
+    assert Path(path).exists()

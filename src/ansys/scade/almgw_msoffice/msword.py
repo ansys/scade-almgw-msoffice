@@ -122,7 +122,7 @@ def add_document(
     project: ReqProject, path: Path, req_style: str, text_style: str
 ) -> Dict[str, Requirement]:
     """Parse the input MS Word document and return the contained requirements hierarchy."""
-    req_doc = ReqDocument(project, str(path), path.name)
+    req_doc = ReqDocument(project, path.as_posix(), path.name)
     parser = Parser()
     parser.parse(req_doc, req_style, text_style)
     return parser.requirements

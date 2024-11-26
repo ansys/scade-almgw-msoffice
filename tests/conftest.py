@@ -22,6 +22,7 @@
 
 """Unit tests utils."""
 
+import difflib
 from pathlib import Path
 from shutil import rmtree
 from typing import Tuple
@@ -37,6 +38,8 @@ import scade
 import scade.model.project.stdproject as std
 import scade.model.suite as suite
 import scade.model.testenv as qte
+
+from ansys.scade.apitools.info import get_scade_home
 
 
 @pytest.fixture(scope='session')
@@ -90,3 +93,35 @@ def load_project_test(path: Path) -> Tuple[std.Project, qte.TestApplication]:
         if Path(file_ref.pathname).suffix.lower() == '.stp':
             application.load_procedure_tcl(file_ref.pathname)
     return project, application
+
+
+def cmp_file(reference: Path, result: Path, n=3, linejunk=None):
+    """Return the differences between the reference and the result file."""
+    # reference: replace $(ROOT) and $(SCADE) with runtime data
+    ref_lines = reference.open().read().split('\n')
+    root = Path(__file__).parent.parent.as_posix()
+    scade_home = get_scade_home().as_posix()
+    ref_lines = [
+        _.replace('$(ROOT)', root)
+        .replace('$(SCADE)', scade_home)
+        .replace('$(DIR)', result.parent.as_posix())
+        for _ in ref_lines
+    ]
+    with result.open() as f:
+        if linejunk:
+            res_lines = [_ for _ in f if not linejunk(_)]
+        else:
+            res_lines = f.read().split('\n')
+
+    diff = difflib.context_diff(ref_lines, res_lines, str(reference), str(result), n=n)
+    return diff
+
+
+def diff_files(ref: Path, dst: Path) -> bool:
+    print('compare', str(ref), str(dst))
+    diffs = cmp_file(ref, dst)
+    failure = False
+    for d in diffs:
+        print(d.rstrip('\r\n'))
+        failure = True
+    return failure

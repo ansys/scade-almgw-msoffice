@@ -61,10 +61,14 @@ doc = [
 name = "ansys.scade.almgw_msoffice"
 
 [project.scripts]
+ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.msoffice:main"
 register_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.register:main"
 
 [project.entry-points."ansys.scade.registry"]
 srg = "ansys.scade.almgw_msoffice:srg"
+
+[project.entry-points."ansys.almgw.connector"]
+exe = "ansys.scade.almgw_msoffice:exe"
 
 [project.urls]
 Source = "https://github.com/ansys/scade-almgw-msoffice"

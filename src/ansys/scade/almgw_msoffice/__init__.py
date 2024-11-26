@@ -51,3 +51,26 @@ def srg() -> str:
     """
     # the package's srg file is located in the same directory
     return str(Path(__file__).parent / 'almgw_msoffice.srg')
+
+
+def exe() -> tuple[str, str]:
+    """
+    Return the path of the connector's executable.
+
+    This function implements the entry point "ansys.almgw.connector/exe"
+    introduced in SCADE 2025 R1. It avoids creating an explicit properties file
+    in ``$(SCADE)/SCADE LifeCycle/ALM Gateway/external`` when the package is installed.
+    """
+    # the connector is either in Lib/site-packages/ansys/scade/almgw_msoffice
+    #                      or in site-packages/ansys/scade/almgw_msoffice (pip install --user)
+    #                      or in src/ansys/scade/almgw_msoffice (pip install --editable)
+    site_packages = Path(__file__).parent.parent.parent.parent
+    if site_packages.name == 'src':
+        # install in user mode, consider the default namings
+        python_dir = site_packages.parent / '.venv'
+    else:
+        python_dir = site_packages.parent
+        if python_dir.name.lower() == 'lib':
+            python_dir = python_dir.parent
+    # the exe is in Scripts
+    return _MS_OFFICE, str(python_dir / 'Scripts' / 'ansys_scade_almgw_msoffice.exe')

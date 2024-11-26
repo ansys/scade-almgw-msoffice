@@ -1,0 +1,12 @@
+[
+    {
+        "source": { "oid": "!ed/91/7A8D/4DD0/6745dacb615b" },
+        "target": { "req_id": "REQ_011" },
+        "action": "ADD"
+    },
+    {
+        "source": { "oid": "!ed/91/7A8D/4DD0/6745dacb615b" },
+        "target": { "req_id": "REQ_021" },
+        "action": "REMOVE"
+    }
+]

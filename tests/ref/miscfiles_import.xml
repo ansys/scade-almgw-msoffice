@@ -1,0 +1,10 @@
+<ReqProject xmlns="http://www.esterel-technologies.com/scade/lifecycle/almgateway/scade_req/1" identifier="" text="">
+  <traceabilityLinks/>
+  <documents>
+    <Document identifier="D:/AnsysDev/Nobackup/PyAnsys/ms-office/tests/tmp/ImportMiscFiles/MiscFiles.docx" text="MiscFiles.docx">
+      <children>
+        <Requirement identifier="REQ" text="" description="Requirement."/>
+      </children>
+    </Document>
+  </documents>
+</ReqProject>

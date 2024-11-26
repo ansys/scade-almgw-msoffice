@@ -1,5 +1,5 @@
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office
-=========================================================
+Ansys SCADE ALM Gateway connector for MS-Office
+===============================================
 |pyansys| |python| |pypi| |GH-CI| |codecov| |MIT| |ruff| |doc|
 
 ..
@@ -40,7 +40,7 @@ Ansys SCADE LifeCycle ALM Gateway connector for MS-Office
 
 Overview
 --------
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office is <TODO>.
+Ansys SCADE ALM Gateway connector for MS-Office is <TODO>.
 
 Requirements
 ------------
@@ -50,26 +50,26 @@ Ansys SCADE, starting from 2021 R2:
 * 2021 R2 through 2023 R1: Python 3.7
 * 2023 R2 and later: Python 3.10
 
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office has two installation modes: user and developer. To install for use,
+Ansys SCADE ALM Gateway connector for MS-Office has two installation modes: user and developer. To install for use,
 see `Getting started <https://almgw-msoffice.scade.docs.pyansys.com/version/stable/getting_started/index.html>`_.
 To install for development, see `Contribute <https://almgw-msoffice.scade.docs.pyansys.com/version/stable/contributing.html>`_.
 
 Documentation and issues
 ------------------------
-Documentation for the latest stable release of Ansys SCADE LifeCycle ALM Gateway connector for MS-Office is hosted at
-`Ansys SCADE LifeCycle ALM Gateway connector for MS-Office documentation <https://almgw-msoffice.scade.docs.pyansys.com/>`_.
+Documentation for the latest stable release of Ansys SCADE ALM Gateway connector for MS-Office is hosted at
+`Ansys SCADE ALM Gateway connector for MS-Office documentation <https://almgw-msoffice.scade.docs.pyansys.com/>`_.
 
 In the upper right corner of the documentation's title bar, there is an option for
 switching from viewing the documentation for the latest stable release to viewing the
 documentation for the development version or previously released versions.
 
-On the `Ansys SCADE LifeCycle ALM Gateway connector for MS-Office Issues <https://github.com/ansys/scade-almgw-msoffice/issues>`_
+On the `Ansys SCADE ALM Gateway connector for MS-Office Issues <https://github.com/ansys/scade-almgw-msoffice/issues>`_
 page, you can create issues to report bugs and request new features. On the `Discussions <https://discuss.ansys.com/>`_
 page on the Ansys Developer portal, you can post questions, share ideas, and get community feedback.
 
 License
 ~~~~~~~
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office is licensed under the MIT license.
+Ansys SCADE ALM Gateway connector for MS-Office is licensed under the MIT license.
 
 This toolkit makes no commercial claim over Ansys whatsoever. The use of this toolkit
 requires a legally licensed copy of the Ansys SCADE Suite. For more information,

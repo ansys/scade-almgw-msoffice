@@ -6,13 +6,13 @@ Contribute
 Overall guidance on contributing to a PyAnsys library appears in
 `Contributing <https://dev.docs.pyansys.com/how-to/contributing.html>`_
 in the *PyAnsys developer's guide*. Ensure that you are thoroughly familiar
-with this guide before attempting to contribute to Ansys SCADE LifeCycle ALM Gateway connector for MS-Office.
+with this guide before attempting to contribute to Ansys SCADE ALM Gateway connector for MS-Office.
 
-The following contribution information is specific to Ansys SCADE LifeCycle ALM Gateway connector for MS-Office.
+The following contribution information is specific to Ansys SCADE ALM Gateway connector for MS-Office.
 
 Install in developer mode
 -------------------------
-Installing Ansys SCADE LifeCycle ALM Gateway connector for MS-Office in developer mode allows you to modify the
+Installing Ansys SCADE ALM Gateway connector for MS-Office in developer mode allows you to modify the
 source and enhance it.
 
 #. Clone the ``ansys-scade-almgw-msoffice`` repository:
@@ -72,7 +72,7 @@ source and enhance it.
 
 Test
 ----
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office uses `tox`_ for testing. This tool allows you to
+Ansys SCADE ALM Gateway connector for MS-Office uses `tox`_ for testing. This tool allows you to
 automate common development tasks (similar to ``Makefile``), but it is oriented
 towards Python development.
 
@@ -101,7 +101,7 @@ isolated environment, which is the reason why tools like ``tox`` exist.
 
 Use ``pre-commit``
 ^^^^^^^^^^^^^^^^^^
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office follows the PEP8 standard as outlined in
+Ansys SCADE ALM Gateway connector for MS-Office follows the PEP8 standard as outlined in
 `PEP 8 <https://dev.docs.pyansys.com/coding-style/pep8.html>`_ in
 the *PyAnsys developer's guide* and implements style checking using
 `pre-commit <https://pre-commit.com/>`_.
@@ -164,7 +164,7 @@ the building requirements and then executing the build module:
 Post issues
 -----------
 
-Use the `Ansys SCADE LifeCycle ALM Gateway connector for MS-Office Issues <https://github.com/ansys/scade-almgw-msoffice/issues>`_
+Use the `Ansys SCADE ALM Gateway connector for MS-Office Issues <https://github.com/ansys/scade-almgw-msoffice/issues>`_
 page to submit questions, report bugs, and request new features. When possible, use
 these templates:
 

@@ -1,7 +1,7 @@
 ANSYS
 Ansys
 ansys
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office
+Ansys SCADE ALM Gateway connector for MS-Office
 scade
 Scade
 SCADE

@@ -2,9 +2,9 @@
 
 We absolutely welcome any code contributions and we hope that this
 guide will facilitate an understanding of the
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office code
+Ansys SCADE ALM Gateway connector for MS-Office code
 repository. It is important to note that while the
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office software
+Ansys SCADE ALM Gateway connector for MS-Office software
 package is maintained by ANSYS and any submissions will be reviewed
 thoroughly before merging, we still seek to foster a community that can
 support user questions and develop new features to make this software

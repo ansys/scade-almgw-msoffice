@@ -19,7 +19,7 @@ switcher_version = get_version_match(version)
 
 # Select desired logo, theme, and declare the html title
 html_theme = 'ansys_sphinx_theme'
-html_short_title = html_title = 'Ansys SCADE LifeCycle ALM Gateway connector for MS-Office'
+html_short_title = html_title = 'Ansys SCADE ALM Gateway connector for MS-Office'
 
 # multi-version documentation
 cname = os.getenv('DOCUMENTATION_CNAME', 'almgw-msoffice.scade.docs.pyansys.com')

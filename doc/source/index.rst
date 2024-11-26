@@ -1,5 +1,5 @@
-Ansys SCADE LifeCycle ALM Gateway connector for MS-Office
-=========================================================
+Ansys SCADE ALM Gateway connector for MS-Office
+===============================================
 
 .. grid:: 1 2 3 3
    :gutter: 1 2 3 3
@@ -9,26 +9,26 @@ Ansys SCADE LifeCycle ALM Gateway connector for MS-Office
       :link: getting-started/index
       :link-type: doc
 
-      Learn how to install and use Ansys SCADE LifeCycle ALM Gateway connector for MS-Office.
+      Learn how to install and use Ansys SCADE ALM Gateway connector for MS-Office.
 
    .. grid-item-card:: :material-regular:`description;1.25em` User guide
       :link: user-guide/index
       :link-type: doc
 
-      Learn how to use Ansys SCADE LifeCycle ALM Gateway connector for MS-Office.
+      Learn how to use Ansys SCADE ALM Gateway connector for MS-Office.
 
    .. grid-item-card:: :material-regular:`group;1.25em` Contributing
       :link: contributing
       :link-type: doc
 
-      Learn how to contribute to Ansys SCADE LifeCycle ALM Gateway connector for MS-Office.
+      Learn how to contribute to Ansys SCADE ALM Gateway connector for MS-Office.
 
 
    .. grid-item-card:: :material-regular:`update;1.25em` Changelog
       :link: changelog
       :link-type: doc
 
-      View the changelog for Ansys SCADE LifeCycle ALM Gateway connector for MS-Office.
+      View the changelog for Ansys SCADE ALM Gateway connector for MS-Office.
 
 .. toctree::
    :maxdepth: 1

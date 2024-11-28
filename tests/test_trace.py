@@ -26,7 +26,7 @@ import pytest
 
 import ansys.scade.almgw_msoffice.trace as trace
 from ansys.scade.pyalmgw.documents import ReqProject
-from tests.conftest import diff_files
+from conftest import diff_files
 
 _root_dir = Path(__file__).parent.parent
 _test_dir = _root_dir / 'tests'

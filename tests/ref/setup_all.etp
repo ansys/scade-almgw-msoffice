@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="6" defaultConfiguration="2">
+	<props>
+		<Prop id="3" name="@MSOFFICE:DOCUMENTS">
+			<value>a</value>
+			<value>B/c.docx</value>
+		</Prop>
+		<Prop id="4" name="@MSOFFICE:REQSTYLE">
+			<value>req</value>
+		</Prop>
+		<Prop id="5" name="@MSOFFICE:TEXTSTYLE">
+			<value>text</value>
+		</Prop>
+		<Prop id="6" name="@ALMGW:LLRSCHEMA">
+			<value>c:/schema.json</value>
+		</Prop>
+	</props>
+	<configurations>
+		<Configuration id="2" name="Default"/>
+	</configurations>
+</Project>

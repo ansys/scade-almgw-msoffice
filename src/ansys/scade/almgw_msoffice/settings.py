@@ -31,7 +31,8 @@ from scade.tool.suite.gui.commands import Command, Menu
 from scade.tool.suite.gui.dialogs import Dialog, file_open, file_save
 from scade.tool.suite.gui.widgets import Button, EditBox, Label, ListBox, ObjectComboBox
 
-from ansys.scade.pyalmgw import LLRSCHEMA, LLRSCHEMA_DEFAULT, TOOL
+import ansys.scade.almgw_msoffice as ms
+import ansys.scade.pyalmgw as pyamlgw
 
 script_path = Path(__file__)
 script_dir = script_path.parent
@@ -303,23 +304,27 @@ class Settings(Dialog):
         assert self.project
 
         assert self.lb_documents
-        documents = self.project.get_tool_prop_def('MSOFFICE', 'DOCUMENTS', [], None)
+        documents = self.project.get_tool_prop_def(
+            ms.TOOL, ms.DOCUMENTS, ms.DOCUMENTS_DEFAULT, None
+        )
         self.lb_documents.set_items(documents)
 
         assert self.ed_req_style
         style = self.project.get_scalar_tool_prop_def(
-            'MSOFFICE', 'REQSTYLE', 'Requirement_ID', None
+            ms.TOOL, ms.REQSTYLE, ms.REQSTYLE_DEFAULT, None
         )
         self.ed_req_style.set_name(style)
 
         assert self.ed_text_style
         style = self.project.get_scalar_tool_prop_def(
-            'MSOFFICE', 'TEXTSTYLE', 'Requirement_Text', None
+            ms.TOOL, ms.TEXTSTYLE, style, ms.TEXTSTYLE_DEFAULT, None
         )
         self.ed_text_style.set_name(style)
 
         assert self.ed_schema
-        schema = self.project.get_scalar_tool_prop_def(TOOL, LLRSCHEMA, LLRSCHEMA_DEFAULT, None)
+        schema = self.project.get_scalar_tool_prop_def(
+            pyamlgw.TOOL, pyamlgw.LLRSCHEMA, pyamlgw.LLRSCHEMA_DEFAULT, None
+        )
         self.ed_schema.set_name(schema)
         self.ed_schema.reldir = str(Path(self.project.pathname).parent)
 
@@ -329,21 +334,25 @@ class Settings(Dialog):
 
         assert self.lb_documents
         documents = self.lb_documents.get_items()
-        self.project.set_tool_prop_def('MSOFFICE', 'DOCUMENTS', documents, [], None)
+        self.project.set_tool_prop_def(ms.TOOL, ms.DOCUMENTS, documents, ms.DOCUMENTS_DEFAULT, None)
 
         assert self.ed_req_style
         style = self.ed_req_style.get_name()
-        self.project.set_scalar_tool_prop_def('MSOFFICE', 'REQSTYLE', style, 'Requirement_ID', None)
+        self.project.set_scalar_tool_prop_def(
+            ms.TOOL, ms.REQSTYLE, style, ms.REQSTYLE_DEFAULT, None
+        )
 
         assert self.ed_text_style
         style = self.ed_text_style.get_name()
         self.project.set_scalar_tool_prop_def(
-            'MSOFFICE', 'TEXTSTYLE', style, 'Requirement_Text', None
+            ms.TOOL, ms.TEXTSTYLE, style, ms.TEXTSTYLE_DEFAULT, None
         )
 
         assert self.ed_schema
         schema = self.ed_schema.get_name()
-        self.project.set_scalar_tool_prop_def(TOOL, LLRSCHEMA, schema, LLRSCHEMA_DEFAULT, None)
+        self.project.set_scalar_tool_prop_def(
+            pyamlgw.TOOL, pyamlgw.LLRSCHEMA, schema, pyamlgw.LLRSCHEMA_DEFAULT, None
+        )
 
 
 # ---------------------------------------------------------------------------

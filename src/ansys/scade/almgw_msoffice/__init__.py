@@ -40,6 +40,15 @@ except importlib_metadata.PackageNotFoundError:
 
 _MS_OFFICE = 'ALMGW Connector for MS-Office'
 
+# settings
+TOOL = 'MSOFFICE'
+REQSTYLE = 'REQSTYLE'
+REQSTYLE_DEFAULT = 'Requirement_ID'
+TEXTSTYLE = 'TEXTSTYLE'
+TEXTSTYLE_DEFAULT = 'Requirement_Text'
+DOCUMENTS = 'DOCUMENTS'
+DOCUMENTS_DEFAULT = []
+
 
 def srg() -> str:
     """

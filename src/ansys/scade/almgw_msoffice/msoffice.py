@@ -27,10 +27,9 @@ import shutil
 import subprocess
 from typing import List
 
+import ansys.scade.almgw_msoffice.msexcel as msexcel
 import ansys.scade.almgw_msoffice.msword as msword
 from ansys.scade.almgw_msoffice.trace import TraceDocument
-
-# import ansys.scade.almgw_msoffice.msexcel as msexcel
 from ansys.scade.pyalmgw.connector import Connector
 from ansys.scade.pyalmgw.documents import ReqDocument, ReqProject
 import ansys.scade.pyalmgw.utils as utils
@@ -183,7 +182,7 @@ class MSOffice(Connector):
         # generation of matrix with the cached imported data
         llrs = utils.read_json(model)
         assert llrs
-        # msexcel.generate_matrix(hlrs, llrs, trace)
+        msexcel.generate_matrix(project, llrs)
         print('requirements exported.')
         return 1
 

@@ -20,6 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# can not compare slsx files
+# import filecmp
 from pathlib import Path
 import shutil
 import subprocess
@@ -117,6 +119,12 @@ def test_export(local_tmpdir, name: str, llrs: bool):
         dst = dst_dir / (name + '.msoffice' + suffix)
         ref = _ref_dir / (name.lower() + '_export' + suffix)
         assert not diff_files(ref, dst)
+    # binary files
+    # cannot compare xslx files
+    # ref = _ref_dir / (name.lower() + '_export.xlsx')
+    # if ref.exists():
+    #     dst = dst_dir / (name + '.xlsx')
+    #     assert filecmp.cmp(ref, dst, shallow=False)
 
 
 def test_settings():

@@ -167,3 +167,6 @@ cython_debug/
 TestResults/
 pytest.ini
 tests/tmp/
+
+# utility to open a command line window in the root directory
+Shell.bat

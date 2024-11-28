@@ -45,6 +45,18 @@
 								<ed:Variable oid="!ed/41/7A8D/4DD0/6745d1d51e87"/>
 							</pragmas>
 						</Variable>
+						<Variable name="_L2">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float32"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/86/BBF/3518/674831a83f13"/>
+							</pragmas>
+						</Variable>
 					</locals>
 					<data>
 						<!-- _L1 = i; -->
@@ -79,6 +91,34 @@
 								<ed:Equation oid="!ed/46/7A8D/4DD0/6745d1d63bc0"/>
 							</pragmas>
 						</Equation>
+						<!-- _L2 = 3.14_f32; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L2"/>
+							</lefts>
+							<right>
+								<ConstValue value="3.14_f32"/>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/85/BBF/3518/674831a823f1"/>
+							</pragmas>
+						</Equation>
+						<!-- _ = _L2; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_"/>
+							</lefts>
+							<right>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L2"/>
+									</path>
+								</IdExpression>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/ae/BBF/3518/674831b63e66"/>
+							</pragmas>
+						</Equation>
 					</data>
 					<pragmas>
 						<ed:Operator oid="!ed/2c/7A8D/4DD0/6745d1b171b0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
@@ -87,7 +127,7 @@
 									<presentationElements>
 										<EquationGE presentable="!ed/40/7A8D/4DD0/6745d1d5664c">
 											<position>
-												<Point x="1244" y="1164"/>
+												<Point x="2037" y="1164"/>
 											</position>
 											<size>
 												<Size width="264" height="503"/>
@@ -95,7 +135,7 @@
 										</EquationGE>
 										<EquationGE presentable="!ed/46/7A8D/4DD0/6745d1d63bc0">
 											<position>
-												<Point x="4815" y="1164"/>
+												<Point x="5609" y="1164"/>
 											</position>
 											<size>
 												<Size width="318" height="503"/>
@@ -103,10 +143,34 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/40/7A8D/4DD0/6745d1d5664c" dstEquation="!ed/46/7A8D/4DD0/6745d1d63bc0">
 											<positions>
-												<Point x="1508" y="1429"/>
-												<Point x="3175" y="1429"/>
-												<Point x="3175" y="1429"/>
-												<Point x="4868" y="1429"/>
+												<Point x="2302" y="1429"/>
+												<Point x="3969" y="1429"/>
+												<Point x="3969" y="1429"/>
+												<Point x="5662" y="1429"/>
+											</positions>
+										</Edge>
+										<EquationGE kind="OBJ_LIT" presentable="!ed/85/BBF/3518/674831a823f1">
+											<position>
+												<Point x="2090" y="2725"/>
+											</position>
+											<size>
+												<Size width="212" height="317"/>
+											</size>
+										</EquationGE>
+										<EquationGE presentable="!ed/ae/BBF/3518/674831b63e66">
+											<position>
+												<Point x="5609" y="2619"/>
+											</position>
+											<size>
+												<Size width="503" height="503"/>
+											</size>
+										</EquationGE>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/85/BBF/3518/674831a823f1" dstEquation="!ed/ae/BBF/3518/674831b63e66">
+											<positions>
+												<Point x="2302" y="2884"/>
+												<Point x="4075" y="2884"/>
+												<Point x="4075" y="2884"/>
+												<Point x="5874" y="2884"/>
 											</positions>
 										</Edge>
 									</presentationElements>
@@ -114,6 +178,10 @@
 										<EquationSet name="Rather simple" oid="!ed/4b/7A8D/4DD0/6745d1e16091">
 											<presentable>!ed/40/7A8D/4DD0/6745d1d5664c</presentable>
 											<presentable>!ed/46/7A8D/4DD0/6745d1d63bc0</presentable>
+										</EquationSet>
+										<EquationSet name="Unused neither traced" oid="!ed/b5/BBF/3518/674831dd44f3">
+											<presentable>!ed/85/BBF/3518/674831a823f1</presentable>
+											<presentable>!ed/ae/BBF/3518/674831b63e66</presentable>
 										</EquationSet>
 									</equationSets>
 								</NetDiagram>

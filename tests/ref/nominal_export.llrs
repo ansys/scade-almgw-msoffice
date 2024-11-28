@@ -24,12 +24,33 @@
                     "elements": [
                         {
                             "almtype": "req",
+                            "attributes": [
+                                {
+                                    "name": "Category",
+                                    "value": "Low Level Requirement"
+                                }
+                            ],
                             "icon": "$(SCADE)/SCADE LifeCycle/ALM Gateway/reqtifygw/icons/suite/equationSet.png",
                             "name": "Rather simple",
                             "oid": "!ed/4b/7A8D/4DD0/6745d1e16091",
                             "pathname": "P::Root/Root/Rather simple/",
                             "scadetype": "equationSet",
                             "url": "http://localhost:8080/scade_provider/services/_Cyhw0Kv9Ee-jdONyVHqozA/requirements/IWVkLzRiLzdBOEQvNEREMC82NzQ1ZDFlMTYwOTE="
+                        },
+                        {
+                            "almtype": "req",
+                            "attributes": [
+                                {
+                                    "name": "Category",
+                                    "value": "Derived Low Level Requirement"
+                                }
+                            ],
+                            "icon": "$(SCADE)/SCADE LifeCycle/ALM Gateway/reqtifygw/icons/suite/equationSet.png",
+                            "name": "Unused neither traced",
+                            "oid": "!ed/b5/BBF/3518/674831dd44f3",
+                            "pathname": "P::Root/Root/Unused neither traced/",
+                            "scadetype": "equationSet",
+                            "url": "http://localhost:8080/scade_provider/services/_Cyhw0Kv9Ee-jdONyVHqozA/requirements/IWVkL2I1L0JCRi8zNTE4LzY3NDgzMWRkNDRmMw=="
                         }
                     ],
                     "name": "Operator Root",

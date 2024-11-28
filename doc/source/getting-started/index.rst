@@ -11,14 +11,14 @@ Requirements
 The ``ansys-scade-almgw-msoffice`` package supports only the versions of Python delivered with
 Ansys SCADE, starting from 2021 R2:
 
-* 2021 R2 through 2023 R1: Python 3.7
+* 2021 R2 to 2023 R1: Python 3.7
 * 2023 R2 and later: Python 3.10
 
 Install in user mode
 --------------------
 The following steps are for installing Ansys SCADE ALM Gateway connector for MS-Office in user mode. If you want to
-contribute to Ansys SCADE ALM Gateway connector for MS-Office, see :ref:`contribute_scade_almgw_msoffice` for the steps
-for installing in developer mode.
+contribute to Ansys SCADE ALM Gateway connector for MS-Office,
+see :ref:`contribute_scade_almgw_msoffice` for installing in developer mode.
 
 #. Before installing Ansys SCADE ALM Gateway connector for MS-Office in user mode, run this command to ensure that
    you have the latest version of `pip`_:
@@ -33,7 +33,7 @@ for installing in developer mode.
 
        python -m pip install --user ansys-scade-almgw-msoffice
 
-#. For Ansys SCADE releases 2024 R2 and below, complete the installation with
+#. For Ansys SCADE releases 2024 R1 and below, complete the installation with
    this command:
 
    .. code:: bash
@@ -44,6 +44,18 @@ for installing in developer mode.
 
       This additional step is not required when installing the package with
       Ansys SCADE Extension Manager.
+
+
+#. For Ansys SCADE 2024 R2 and below, complete the installation as follows:
+
+   #. Copy ``ansys/scade/almgw_msoffice/almgw_msoffice.properties`` to the
+      ``SCADE LifeCycle/ALM Gateway/external`` directory of the SCADE 2024 R2
+
+      For example: ``C:\Program Files\ANSYS Inc\v242\SCADE\SCADE LifeCycle\ALM Gateway\external``.
+
+   #. Edit the copy of ``almgw_msoffice.properties`` to replace ``%PYTHON_DIR%`` by the Python's
+      directory selected for the package's installation, to access ``ansys_scade_almgw_msoffice.exe``.
+
 
 .. LINKS AND REFERENCES
 .. _pip: https://pypi.org/project/pip/

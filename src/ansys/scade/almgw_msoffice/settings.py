@@ -317,7 +317,7 @@ class Settings(Dialog):
 
         assert self.ed_text_style
         style = self.project.get_scalar_tool_prop_def(
-            ms.TOOL, ms.TEXTSTYLE, style, ms.TEXTSTYLE_DEFAULT, None
+            ms.TOOL, ms.TEXTSTYLE, ms.TEXTSTYLE_DEFAULT, None
         )
         self.ed_text_style.set_name(style)
 

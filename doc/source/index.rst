@@ -1,6 +1,14 @@
 Ansys SCADE ALM Gateway connector for MS-Office
 ===============================================
 
+This package demonstrates the usage of SCADE ALM Gateway based on
+MS Office documents, avoiding the availability of an external ALM tool:
+
+* It imports requirements from MS-Word documents
+* It produces traceability matrices as MS-Excel documents
+
+It is also a usage example of `Ansys SCADE ALM Gateway Python Toolbox`_.
+
 .. grid:: 1 2 3 3
    :gutter: 1 2 3 3
    :padding: 1 2 3 3
@@ -44,3 +52,5 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`search`
+
+.. _Ansys SCADE ALM Gateway Python Toolbox: https://pyalmgw.scade.docs.pyansys.com/

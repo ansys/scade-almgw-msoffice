@@ -12,3 +12,5 @@ fullname
 isort
 pytest
 ci
+ALMGP
+DOCX

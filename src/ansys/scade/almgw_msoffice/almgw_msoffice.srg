@@ -1,0 +1,10 @@
+[Studio/Work Interfaces/MS Office]
+"Expire"="24200"
+"<comment>"="The new graphical user interface is compatible with the former one."
+
+[Studio/Work Interfaces/MS_OFFICE]
+"Version"="24200"
+"Pathname"="ETCUST.DLL"
+
+[Custom/Studio/Extensions/MS_OFFICE]
+"Package"="ansys.scade.almgw_msoffice.settings"

@@ -1,0 +1,16 @@
+ANSYS
+Ansys
+ansys
+Ansys SCADE ALM Gateway connector for MS-Office
+scade
+Scade
+SCADE
+endblock
+endif
+endfor
+fullname
+isort
+pytest
+ci
+ALMGP
+DOCX

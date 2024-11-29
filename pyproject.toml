@@ -1,0 +1,175 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name="ansys-scade-almgw-msoffice"
+version="3.0.dev0"
+description ="Ansys SCADE ALM Gateway connector for MS-Office"
+readme="README.rst"
+
+# only 3.7. and 3.10
+requires-python = ">=3.7,!=3.8.*,!=3.9.*,<3.11"
+license = {file = "LICENSE"}
+authors = [
+    {name = "ANSYS, Inc.", email = "pyansys.core@ansys.com"},
+]
+maintainers = [
+    {name = "ANSYS, Inc.", email = "pyansys.core@ansys.com"},
+]
+dependencies=[
+    "importlib-metadata >= 1.0; python_version < '3.8'",
+    "importlib-metadata >= 4.0; python_version >= '3.8'",
+    "ansys-scade-pyalmgw",
+    "lxml",
+    "python-docx",
+    "xlsxwriter",
+]
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+keywords=["Scade", "LifeCycle", "ALM gateway"]
+
+[project.optional-dependencies]
+build = [
+    "build==1.2.2.post1",
+    "twine==5.1.1",
+]
+tests = [
+    # 8.0.2 at most: https://github.com/microsoft/PTVS/issues/7853
+    "pytest==8.0.2",
+    "pytest-cov==5.0.0",
+    "ansys-scade-apitools",
+    # required for SCADE Display API
+    "pyparsing",
+]
+doc = [
+    "ansys-sphinx-theme[autoapi]==1.0.9",
+    "jupyter_sphinx==0.5.3",
+    "nbsphinx==0.9.5",
+    "numpydoc==1.8.0",
+    "sphinx==8.0.2",
+    "sphinx-autodoc-typehints==2.3.0",
+    "sphinxcontrib-globalsubs==0.1.2",
+    "sphinxcontrib-httpdomain==1.8.1",
+    "sphinx-copybutton==0.5.2",
+]
+
+[tool.flit.module]
+name = "ansys.scade.almgw_msoffice"
+
+[project.scripts]
+ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.msoffice:main"
+register_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.register:main"
+setup_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.setup:main"
+
+[project.entry-points."ansys.scade.registry"]
+srg = "ansys.scade.almgw_msoffice:srg"
+
+[project.entry-points."ansys.almgw.connector"]
+exe = "ansys.scade.almgw_msoffice:exe"
+
+[project.urls]
+Source = "https://github.com/ansys/scade-almgw-msoffice"
+Issues = "https://github.com/ansys/scade-almgw-msoffice/issues"
+Discussions = "https://github.com/ansys/scade-almgw-msoffice/discussions"
+Documentation = "https://almgw-msoffice.scade.docs.pyansys.com"
+Releases = "https://github.com/ansys/scade-almgw-msoffice/releases"
+Homepage = "https://www.ansys.com/products/embedded-software/ansys-scade-suite"
+
+[tool.ruff]
+line-length = 100
+fix = true
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle, see https://docs.astral.sh/ruff/rules/#pycodestyle-e-w
+    "D",    # pydocstyle, see https://docs.astral.sh/ruff/rules/#pydocstyle-d
+    "F",    # pyflakes, see https://docs.astral.sh/ruff/rules/#pyflakes-f
+    "I",    # isort, see https://docs.astral.sh/ruff/rules/#isort-i
+    "N",    # pep8-naming, see https://docs.astral.sh/ruff/rules/#pep8-naming-n
+]
+ignore = [
+    "E501",  # Line too long. Ignoring this so "ruff.formatter" manages line length.
+    # TODO understand whether this should be ignored or not
+    # "D203",  # One blank line required before class docstring.
+    # "D204",  # One blank line required after class docstring.
+    # "D206",  # To ignore: conflict with the formatter
+]
+
+# TODO: "preserve" leads to an error, although it is documented
+# and used in other repositories
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+known-first-party = ["ansys", "conftest", "test_utils"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["D",]
+
+[tool.coverage.run]
+source = ["ansys.scade.almgw_msoffice"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+addopts = "-ra --cov=ansys.scade.almgw_msoffice --cov-report html:.cov/html --cov-branch --cov-report xml:.cov/xml --cov-report term -vv"
+
+[tool.towncrier]
+package = "ansys.scade.almgw_msoffice"
+directory = "doc/changelog.d"
+filename = "doc/source/changelog.rst"
+start_string = ".. towncrier release notes start\n"
+template = "doc/changelog.d/changelog_template.jinja"
+title_format = "`{version} <https://github.com/ansys/scade-almgw-msoffice/releases/tag/v{version}>`_ - {project_date}"
+issue_format = "`#{issue} <https://github.com/ansys/scade-almgw-msoffice/pull/{issue}>`_"
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "dependencies"
+name = "Dependencies"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "miscellaneous"
+name = "Miscellaneous"
+showcontent = true
+[[tool.towncrier.type]]
+directory = "documentation"
+name = "Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "maintenance"
+name = "Maintenance"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "test"
+name = "Test"
+showcontent = true

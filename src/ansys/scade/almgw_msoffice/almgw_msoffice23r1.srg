@@ -1,0 +1,11 @@
+[Studio/Work Interfaces/MS Office]
+"Expire"="21200"
+"<comment>"="The new graphical user interface is compatible with the former one."
+
+[Studio/Work Interfaces/MS_OFFICE23R1]
+"Version"="21200"
+"Expire"="23200"
+"Pathname"="ETCUST.DLL"
+
+[Custom/Studio/Extensions/MS_OFFICE23R1]
+"Pathname"="%TARGETDIR%/settings.py"

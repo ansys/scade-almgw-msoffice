@@ -1,0 +1,5 @@
+<Links>
+    <Link source="!ed/1" target="REQ_1"/>
+    <Link source="!ed/2" target="REQ_2"/>
+    <Link source="!ed/3" target="REQ_2.1"/>
+</Links>

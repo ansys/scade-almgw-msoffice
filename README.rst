@@ -33,7 +33,7 @@ Ansys SCADE ALM Gateway connector for MS-Office
    :target: https://github.com/astral-sh/ruff
    :alt: Ruff
 
-.. |doc| image:: https://img.shields.io/badge/docs-almgw-msoffice-green.svg?style=flat
+.. |doc| image:: https://img.shields.io/badge/docs-almgw--msoffice-green.svg?style=flat
    :target: https://almgw-msoffice.scade.docs.pyansys.com
    :alt: Doc
 

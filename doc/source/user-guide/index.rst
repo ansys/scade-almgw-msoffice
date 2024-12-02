@@ -85,7 +85,7 @@ The other files are present for logging or debug purpose only:
 Migration from 2.x versions
 ---------------------------
 
-This connector is compatible with the former releases 2.x.
+This connector is compatible with former releases 2.x.
 To migrate an existing SCADE ALM Gateway project using the 2.x version of the connector,
 edit the project file (ALMGP) and change its ``confFileName`` attribute from ``msoffice`` to ``almgw_msoffice``.
 

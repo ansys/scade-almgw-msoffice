@@ -49,7 +49,7 @@ see :ref:`contribute_scade_almgw_msoffice` for installing in developer mode.
 #. For Ansys SCADE 2024 R2 and below, complete the installation as follows:
 
    #. Copy ``ansys/scade/almgw_msoffice/almgw_msoffice.properties`` to the
-      ``SCADE LifeCycle/ALM Gateway/external`` directory of the SCADE 2024 R2
+      ``SCADE LifeCycle/ALM Gateway/external`` directory of the SCADE 2024 R2.
 
       For example: ``C:\Program Files\ANSYS Inc\v242\SCADE\SCADE LifeCycle\ALM Gateway\external``.
 

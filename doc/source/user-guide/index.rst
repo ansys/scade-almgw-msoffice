@@ -29,7 +29,7 @@ Use the new command ``Project/ALM Gateway/MS Office Settings...`` to:
 
 * Select the requirements documents for each loaded project.
 * Select the names of the styles to consider for the requirements and their text.
-* Specify the LLR export schema to produce a MS Excel traceability matrix.
+* Specify the LLR export schema to produce an MS Excel traceability matrix.
 
   .. Note::
 

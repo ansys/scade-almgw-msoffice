@@ -1,7 +1,7 @@
 Ansys SCADE ALM Gateway connector for MS-Office
 ===============================================
 
-This package showcases how to use the SCADE ALM Gateway with 
+This package showcases how to use the SCADE ALM Gateway with
 MS Office documents, eliminating the need for an external ALM tool:
 
 * It imports requirements from MS-Word documents

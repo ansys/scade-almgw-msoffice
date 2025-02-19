@@ -159,6 +159,7 @@ showcontent = true
 directory = "miscellaneous"
 name = "Miscellaneous"
 showcontent = true
+
 [[tool.towncrier.type]]
 directory = "documentation"
 name = "Documentation"

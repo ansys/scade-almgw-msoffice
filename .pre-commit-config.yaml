@@ -43,3 +43,8 @@ repos:
   - id: check-yaml
   - id: trailing-whitespace
     exclude: (?x)^(.*\.tot|.*\.swan.?)$
+
+- repo: https://github.com/numpy/numpydoc
+  rev: v1.8.0
+  hooks:
+    - id: numpydoc-validation

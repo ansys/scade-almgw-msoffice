@@ -46,6 +46,7 @@ class Parser:
     """Parser for MS Word documents (DOCX)."""
 
     def __init__(self):
+        """Initialize the parser."""
         self.current_req = None
         # stack of sections
         self.sections = []

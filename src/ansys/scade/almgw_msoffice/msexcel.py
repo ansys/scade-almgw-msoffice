@@ -118,6 +118,7 @@ def write_llr_name_and_type(formats: Formats, c: Cursor, llr: LlrElement, is_fir
     """Write a LLR, its kind, and insert its icon."""
 
     def llr_str(field: str, default: str = '') -> str:
+        """Return the value of a field in a LLR element."""
         r = llr.get(field, default)
         return r if isinstance(r, str) else default
 
@@ -164,9 +165,13 @@ def hlr_to_llr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
     write_headers(formats, c, headers)
 
     def hlr(r: Requirement, upper_section: SectionDesc, level: int) -> int:
-        # Writes HLR Requirement with Cursor c
-        # Returns the number of LLR covering this HLR, 0 if uncovered
+        """Write HLR Requirement with Cursor c.
+
+        Returns the number of LLR covering this HLR, 0 if uncovered.
+        """
+
         def write_hlr_line(is_first: bool, llr: Optional[LlrElement]):
+            """Write a High-Level Requirement (HLR) line to the Excel sheet."""
             write_section(c, formats, is_first, upper_section, nb_sections)
             dupe_fmt = formats.get('dupe')
             c.write(r.id, None if is_first else dupe_fmt).write_comment(r.description).right()
@@ -188,6 +193,7 @@ def hlr_to_llr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
         return len(llr_list)
 
     def hlr_section(s: Section, upper_section: SectionDesc) -> CovResult:
+        """Write a High-Level Requirement (HLR) section to the Excel sheet."""
         cov_res = (0, 0)
         if not s.is_empty():
             upper_section = upper_section + [(s.text, on_first())]
@@ -266,13 +272,15 @@ def llr_to_hlr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
     write_headers(formats, c, headers)
 
     def llr(r: Dict, upper_section: SectionDesc) -> int:
-        # Writes LLR Requirement with Cursor c
-        # Returns the number of HLR covering this LLR (0 if uncovered)
+        """Write LLR Requirement with Cursor c.
 
+        Return the number of HLR covering this LLR (0 if uncovered)
+        """
         llr_attributes = r.get('attributes', [])
         llr_attributes = {a.get('name'): a.get('value') for a in llr_attributes}
 
         def write_llr_line(is_first: bool, req: Optional[Requirement]) -> None:
+            """Write a Low-Level Requirement (LLR) line to the Excel sheet."""
             dupe_fmt = formats.get('dupe')
             write_section(c, formats, is_first, upper_section, nb_sections)
             write_llr_name_and_type(formats, c, r, is_first)
@@ -302,6 +310,7 @@ def llr_to_hlr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
         return len(hlr_list)
 
     def llr_section(s: LlrElement, upper_section: SectionDesc) -> CovResult:
+        """Write a Low-Level Requirement (LLR) section to the Excel sheet."""
         cov_res = 0, 0
         if any(iter_llr_section(s)):  # s is not empty
             children = [e for e in s.get('elements', [])]

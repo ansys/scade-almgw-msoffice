@@ -40,8 +40,10 @@ build = [
 ]
 tests = [
     # 8.0.2 at most: https://github.com/microsoft/PTVS/issues/7853
-    "pytest==8.3.4",
-    "pytest-cov==6.0.0",
+    "pytest >= 8.3.4; python_version >= '3.8'",
+    "pytest <= 7.4.4; python_version < '3.8'",
+    "pytest-cov >= 6.0.0; python_version >= '3.8'",
+    "pytest-cov <= 4.1.0; python_version < '3.8'",
     "ansys-scade-apitools",
     # required for SCADE Display API
     "pyparsing",

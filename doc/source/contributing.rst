@@ -103,8 +103,8 @@ The following ``tox`` commands are provided:
    * ``tox - tests-py37``: for running tests without coverage using the Python 3.7 interpreter delivered with SCADE.
    * ``tox -e tests-coverage-py310``: for running tests with coverage using the Python 3.10 interpreter delivered with SCADE.
 
-   This enables a workflow that allows easy switching between Python versions (e.g., for testing) and this behavior is agnostic
-   of the host python version in which tox itself is installed.
+   This enables a workflow that allows easy switching between Python versions (for example, during testing) and this
+   behavior is agnostic of the host python version in which tox itself is installed.
 
 Use raw testing
 ---------------

@@ -59,6 +59,11 @@ extensions = [
     'ansys_sphinx_theme.extension.autoapi',
 ]
 
+# Optionally exclude api generation.
+BUILD_API = True if os.environ.get('BUILD_API', 'true') == 'true' else False
+if not BUILD_API:
+    extensions.remove('ansys_sphinx_theme.extension.autoapi')
+
 # Configuration for Sphinx autoapi
 suppress_warnings = ['autoapi.python_import_resolution']
 

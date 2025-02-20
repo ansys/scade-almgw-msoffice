@@ -50,9 +50,6 @@ html_theme_options = {
 
 # Sphinx extensions
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx_autodoc_typehints',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
     'sphinx_design',

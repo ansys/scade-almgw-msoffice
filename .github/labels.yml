@@ -2,6 +2,10 @@
   description: Something isn't working
   color: d42a34
 
+- name: ci
+  description: Pipelines maintenance related
+  color: a9a9a9
+
 - name: dependencies
   description: Related with project dependencies
   color: ffc0cb

@@ -13,14 +13,14 @@ repos:
       - --start_year=2024
 
 - repo: https://github.com/charliermarsh/ruff-pre-commit
-  rev: v0.8.0
+  rev: v0.9.6
   hooks:
     - id: ruff
       args: [--fix]
     - id: ruff-format
 
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.3.0
+  rev: v2.4.1
   hooks:
   - id: codespell
     additional_dependencies:
@@ -48,3 +48,13 @@ repos:
   rev: v1.8.0
   hooks:
     - id: numpydoc-validation
+
+- repo: https://github.com/python-jsonschema/check-jsonschema
+  rev: 0.31.1
+  hooks:
+    - id: check-github-workflows
+
+- repo: https://github.com/pre-commit-ci/pre-commit-ci-config
+  rev: v1.6.1
+  hooks:
+  -   id: check-pre-commit-ci-config

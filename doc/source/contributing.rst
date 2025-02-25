@@ -100,7 +100,7 @@ The following ``tox`` commands are provided:
    creating virtual environments via ``py310`` and ``py37`` factors. Using this approach, ``tox``
    commands similar to the following formats can be used:
 
-   * ``tox - tests-py37``: for running tests without coverage using the Python 3.7 interpreter delivered with SCADE.
+   * ``tox -e tests-py37``: for running tests without coverage using the Python 3.7 interpreter delivered with SCADE.
    * ``tox -e tests-coverage-py310``: for running tests with coverage using the Python 3.10 interpreter delivered with SCADE.
 
    This enables a workflow that allows easy switching between Python versions (for example, during testing) and this

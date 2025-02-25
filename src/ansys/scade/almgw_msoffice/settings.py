@@ -126,11 +126,11 @@ class FileSelector(LabelEditBox):
         name = '' if '$' in name else name
         dir = '' if '$' in self.dir else self.dir
         if dir and self.reldir:
-            dir = Path(self.reldir) / dir
+            dir = str(Path(self.reldir) / dir)
         if self.mode == FSM.SAVE:
-            pathname = file_save(name, self.extension, str(dir), self.filter)
+            pathname = file_save(name, self.extension, dir, self.filter)
         else:
-            pathname = file_open(self.filter, str(dir))
+            pathname = file_open(self.filter, dir)
         if pathname:
             if self.reldir:
                 try:

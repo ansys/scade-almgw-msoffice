@@ -3,14 +3,14 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: monthly
+      interval: "monthly"
     labels:
       - "maintenance"
       - "dependencies"
     assignees:
       - "pyansys-ci-bot"
     commit-message:
-      prefix: "build"
+      prefix: "build(deps)"
     groups:
       dependencies:
           patterns:
@@ -20,9 +20,13 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: monthly
+      interval: "monthly"
     labels:
       - "maintenance"
+    assignees:
+      - "pyansys-ci-bot"
+    commit-message:
+      prefix: "ci"
     groups:
        actions:
           patterns:

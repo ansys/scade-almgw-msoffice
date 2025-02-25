@@ -1,5 +1,5 @@
 Getting started
-===============
+###############
 To use Ansys SCADE ALM Gateway connector for MS-Office, you must have a valid license for Ansys SCADE.
 
 For information on getting a licensed copy, see the
@@ -7,15 +7,17 @@ For information on getting a licensed copy, see the
 page on the Ansys website.
 
 Requirements
-------------
+============
 The ``ansys-scade-almgw-msoffice`` package supports only the versions of Python delivered with
 Ansys SCADE, starting from 2021 R2:
 
 * 2021 R2 to 2023 R1: Python 3.7
 * 2023 R2 and later: Python 3.10
 
+.. _install-user-mode:
+
 Install in user mode
---------------------
+====================
 The following steps are for installing Ansys SCADE ALM Gateway connector for MS-Office in user mode. If you want to
 contribute to Ansys SCADE ALM Gateway connector for MS-Office,
 see :ref:`contribute_scade_almgw_msoffice` for installing in developer mode.

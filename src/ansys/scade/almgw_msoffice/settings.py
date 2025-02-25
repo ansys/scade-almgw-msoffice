@@ -83,6 +83,7 @@ class LabelEditBox(EditBox):
     """Bundles an edit box with a label."""
 
     def __init__(self, owner, text: str, wl: int, x=10, y=10, w=50, h=14, **kwargs):
+        """Initialize the edit box."""
         self.label = Label(owner, text, x=x, y=y + 4, w=wl, h=H_LABEL)
         super().__init__(owner, x=x + wl, y=y, w=w - wl, h=H_EDIT, **kwargs)
         self.owner = owner
@@ -106,6 +107,7 @@ class FileSelector(LabelEditBox):
         h=14,
         **kwargs,
     ):
+        """Initialize the file selector."""
         super().__init__(owner, text, wl, x=x, y=y, w=w - W_DOTS - 5, h=h, **kwargs)
         self.btn_dots = Button(
             owner, '...', x=x + w - W_DOTS, y=y, w=W_DOTS, h=H_BUTTON, on_click=self.on_click
@@ -124,7 +126,7 @@ class FileSelector(LabelEditBox):
         name = '' if '$' in name else name
         dir = '' if '$' in self.dir else self.dir
         if dir and self.reldir:
-            dir = os.path.join(self.reldir, dir)
+            dir = str(Path(self.reldir) / dir)
         if self.mode == FSM.SAVE:
             pathname = file_save(name, self.extension, dir, self.filter)
         else:
@@ -142,6 +144,7 @@ class LabelComboBox(ObjectComboBox):
     """Bundles a combo box with a label."""
 
     def __init__(self, owner, text: str, wl: int, items, x=10, y=10, w=50, h=14, **kwargs):
+        """Initialize the combo box."""
         self.label = Label(owner, text, x=x, y=y + 4, w=wl, h=H_LABEL)
         super().__init__(owner, items, x=x + wl, y=y, w=w - wl, h=H_COMBO, **kwargs)
         self.owner = owner
@@ -165,6 +168,7 @@ class Settings(Dialog):
     project = None
 
     def __init__(self):
+        """Initialize the dialog."""
         super().__init__('MS-Office Settings', w_settings, h_settings)
 
         # controls
@@ -283,7 +287,7 @@ class Settings(Dialog):
         if path:
             assert self.lb_documents
             try:
-                document = os.path.relpath(path, os.path.dirname(self.project.pathname))
+                document = os.path.relpath(path, Path(self.project.pathname).parent)
             except ValueError:
                 document = path
             documents = self.lb_documents.get_items()
@@ -364,6 +368,7 @@ class CommandSettings(Command):
     """Defines a command to edit the settings."""
 
     def __init__(self):
+        """Initialize the command settings."""
         image = str(script_dir / 'res' / 'msword.bmp')
         super().__init__(
             name='MS-Office Settings...',

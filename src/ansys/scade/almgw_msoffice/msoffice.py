@@ -43,6 +43,7 @@ class MSOffice(Connector):
     """Specialization of the connector for MS Office."""
 
     def __init__(self):
+        """Initialize the MS Office connector."""
         super().__init__('msoffice')
         # all requirements
         self.map_requirements = {}

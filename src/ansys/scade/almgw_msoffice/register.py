@@ -23,7 +23,7 @@
 """
 Registers the ALM GAteway MS-Office connector registry files (SRG).
 
-Refer to the :ref:`installation <getting_started/index:install in user mode>`
+Refer to the :ref:`installation <install-user-mode>`
 steps for more information.
 
 It addresses SCADE 2024 R2 and prior releases.

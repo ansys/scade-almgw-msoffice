@@ -51,6 +51,7 @@ class TraceDocument:
     """
 
     def __init__(self, project: ReqProject, path: Path, requirements=None):
+        """Initialize the trace document."""
         self.project = project
         self.file = str(path)
         self.links = {}  # type: Dict[str, TraceabilityLink]

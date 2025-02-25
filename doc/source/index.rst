@@ -1,5 +1,5 @@
 Ansys SCADE ALM Gateway connector for MS-Office
-===============================================
+###############################################
 
 This package showcases how to use the SCADE ALM Gateway with
 MS Office documents, eliminating the need for an external ALM tool:
@@ -48,7 +48,7 @@ It is also a usage example of `Ansys SCADE ALM Gateway Python Toolbox`_.
    changelog
 
 Indices and tables
--------------------
+==================
 
 * :ref:`genindex`
 * :ref:`search`

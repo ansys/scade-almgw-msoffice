@@ -11,7 +11,7 @@ with this guide before attempting to contribute to Ansys SCADE ALM Gateway conne
 The following contribution information is specific to Ansys SCADE ALM Gateway connector for MS-Office.
 
 Install in developer mode
--------------------------
+=========================
 Installing Ansys SCADE ALM Gateway connector for MS-Office in developer mode allows you to modify the
 source and enhance it.
 
@@ -35,7 +35,7 @@ source and enhance it.
    .. code:: bash
 
       # Create a virtual environment
-      python -m venv .venv
+      <path/to/SCADE/python/interpreter> -m venv .venv
 
       # Activate it in a POSIX system
       source .venv/bin/activate
@@ -71,13 +71,13 @@ source and enhance it.
 
 
 Test
-----
+====
 Ansys SCADE ALM Gateway connector for MS-Office uses `tox`_ for testing. This tool allows you to
 automate common development tasks (similar to ``Makefile``), but it is oriented
 towards Python development.
 
 Use ``tox``
-^^^^^^^^^^^
+-----------
 
 While ``Makefile`` has rules, ``tox`` has environments. In fact, ``tox`` creates its
 own virtual environment so that anything being tested is isolated from the project
@@ -85,22 +85,39 @@ to guarantee the project's integrity.
 
 The following ``tox`` commands are provided:
 
-* ``tox -e style``: Checks for coding style quality.
-* ``tox -e tests``: Checks for unit tests.
-* ``tox -e tests-coverage``: Checks for unit testing and code coverage.
+* ``tox -e code-style``: Checks for coding style quality.
+* ``tox -e tests``: Checks for unit testing without code coverage.
+* ``tox -e tests-coverage``: Checks for unit testing with code coverage.
 * ``tox -e doc``: Checks for the documentation-building process.
    * ``tox -e doc-html``: Builds the HTML documentation.
    * ``tox -e doc-links``: Checks for broken links in the documentation.
 
+.. tip::
+
+   For convenience (and advanced usage), you can set a ``SCADE_INSTALLATION_DIR`` environment
+   variable pointing to SCADE's installation directory, for example ``C:\Program Files\ANSYS Inc\vXXX\SCADE``.
+   This will allow Tox automatically discover and use the Python interpreters that ship with SCADE in
+   creating virtual environments via ``py310`` and ``py37`` factors. Using this approach, ``tox``
+   commands similar to the following formats can be used:
+
+   * ``tox -e tests-py37``: for running tests without coverage using the Python 3.7 interpreter delivered with SCADE.
+   * ``tox -e tests-coverage-py310``: for running tests with coverage using the Python 3.10 interpreter delivered with SCADE.
+
+   The host python interpreter does not have to be the one delivered with SCADE when using this approach and this
+   behavior is agnostic of the host python version in which tox itself is installed. The important point to note
+   is that Python 3.7 is compatible with SCADE releases prior to 23R2 and Python 3.10 compatibility starts with 23R2. This means
+   that ``py37`` factor should be used when testing with releases prior to 23R2 and ``py310`` factor should be used when testing
+   with releases starting from 23R2.
+
 Use raw testing
-^^^^^^^^^^^^^^^
+---------------
 If required, from the command line, you can call style commands like
 `black`_, `isort`_, and `flake8`_. You can also call unit testing commands like `pytest`_.
 However, running these commands does not guarantee that your project is being tested in an
 isolated environment, which is the reason why tools like ``tox`` exist.
 
 Use ``pre-commit``
-^^^^^^^^^^^^^^^^^^
+------------------
 Ansys SCADE ALM Gateway connector for MS-Office follows the PEP8 standard as outlined in
 `PEP 8 <https://dev.docs.pyansys.com/coding-style/pep8.html>`_ in
 the *PyAnsys developer's guide* and implements style checking using
@@ -127,16 +144,19 @@ This way, it's not possible for you to push code that fails the style checks::
   debug statements (python)................................................Passed
   check yaml...............................................................Passed
   trim trailing whitespace.................................................Passed
+  numpydoc-validation......................................................Passed
+  Validate GitHub Workflows................................................Passed
+  check pre-commit.ci config...............................................Passed
 
 Build documentation
--------------------
+===================
 For building documentation, you can run the usual rules provided in the
 `Sphinx`_ ``make`` file. Here are some examples:
 
 .. code:: bash
 
     #  build and view the doc from the POSIX system
-    make -C doc/ html && your_browser_name doc/html/index.html
+    make -C doc/ html && your_browser_name doc/_build/html/index.html
 
     # build and view the doc from a Windows environment
     .\doc\make.bat clean
@@ -148,10 +168,10 @@ However, the recommended way of checking documentation integrity is to use
 
 .. code:: bash
 
-    tox -e doc-html && your_browser_name .tox/doc_out/index.html
+    tox -e doc-html && your_browser_name doc/_build/html/index.html
 
 Distribute
-----------
+==========
 If you would like to create either source or wheel files, start by installing
 the building requirements and then executing the build module:
 
@@ -162,7 +182,7 @@ the building requirements and then executing the build module:
     python -m twine check dist/*
 
 Post issues
------------
+===========
 
 Use the `Ansys SCADE ALM Gateway connector for MS-Office Issues <https://github.com/ansys/scade-almgw-msoffice/issues>`_
 page to submit questions, report bugs, and request new features. When possible, use

@@ -39,18 +39,30 @@ html_theme_options = {
     },
     'check_switcher': False,
     'logo': 'pyansys',
+    'ansys_sphinx_theme_autoapi': {
+        'project': project,
+        'own_page_level': 'function',
+        'class_content': 'both',  # documentation in https://sphinxdocs.ansys.com/version/stable/user-guide/autoapi.html
+        'member_order': 'alphabetical',
+        'ignore': [],
+    },
 }
 
 # Sphinx extensions
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx_autodoc_typehints',
-    'numpydoc',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
     'sphinx_design',
+    'ansys_sphinx_theme.extension.autoapi',
 ]
+
+# Optionally exclude api generation.
+BUILD_API = True if os.environ.get('BUILD_API', 'true') == 'true' else False
+if not BUILD_API:
+    extensions.remove('ansys_sphinx_theme.extension.autoapi')
+
+# Configuration for Sphinx autoapi
+suppress_warnings = ['autoapi.python_import_resolution']
 
 # Intersphinx mapping
 intersphinx_mapping = {
@@ -62,30 +74,6 @@ intersphinx_mapping = {
     # "pandas": ("https://pandas.pydata.org/pandas-docs/stable", None),
     # "pyvista": ("https://docs.pyvista.org/", None),
     # "grpc": ("https://grpc.github.io/grpc/python/", None),
-}
-
-# numpydoc configuration
-numpydoc_show_class_members = False
-numpydoc_xref_param_type = True
-
-# Consider enabling numpydoc validation. See:
-# https://numpydoc.readthedocs.io/en/latest/validation.html#
-numpydoc_validate = True
-numpydoc_validation_checks = {
-    'GL06',  # Found unknown section
-    'GL07',  # Sections are in the wrong order.
-    # Disabled the docstring validation as most of the methods doesn't have the docstring
-    # TODO: Add docstring and enable GL08 validation
-    # "GL08",  # The object does not have a docstring
-    'GL09',  # Deprecation warning should precede extended summary
-    'GL10',  # reST directives {directives} must be followed by two colons
-    'SS01',  # No summary found
-    'SS02',  # Summary does not start with a capital letter
-    'SS03',  # Summary does not end with a period
-    'SS04',  # Summary contains heading whitespaces
-    # "SS05", # Summary must start with infinitive verb, not third person
-    'RT02',  # The first line of the Returns section should contain only the
-    # type, unless multiple values are being returned"
 }
 
 # Favicon
@@ -103,7 +91,8 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
-# TODO: remove ignore links after public release
+# TODO(Jean Henry): remove ignore links after public release
+# https://github.com/ansys/scade-almgw-msoffice/issues/11
 linkcheck_ignore = [
     'https://github.com/ansys/scade-almgw-msoffice',
     'https://github.com/ansys/scade-almgw-msoffice/actions/workflows/ci_cd.yml',

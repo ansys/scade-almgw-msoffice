@@ -34,6 +34,7 @@ class Formats:
     """Cache for formats."""
 
     def __init__(self, wb: Workbook) -> None:
+        """Initialize the cache."""
         self.wb = wb
         self.formats = {}  # type: Dict[str, Format]
 
@@ -52,6 +53,7 @@ class Cursor:
     """Cursor management."""
 
     def __init__(self, ws, pos: Tuple[int, int] = (0, 0)) -> None:
+        """Initialize the cursor."""
         self.pos = pos
         self.ws = ws
 

@@ -1,8 +1,8 @@
 User Guide
-==========
+##########
 
 Declaration
------------
+===========
 
 Use the command ``Project/ALM Gateway/Settings...`` once
 to select the connector ``ALMGW Connector for MS-Office``.
@@ -16,10 +16,10 @@ Refer to the next section for details on settings management.
    by deleting the ALM Gateway project file (ALMGP) in the project’s directory.
 
 Settings
---------
+========
 
 Using the Graphical User Interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 This mode applies only to projects that can be loaded with SCADE Studio.
 SCADE Display projects must be setup using the command line interface,
@@ -38,7 +38,7 @@ Use the new command ``Project/ALM Gateway/MS Office Settings...`` to:
 .. image:: /_static/settings.png
 
 Using the Command Line Interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 The command line tool python ``setup_ansys_scade_almgw_msoffice.exe`` allows to setup
 the project. It is located in the ``Scripts`` folder of the Python installation directory.
@@ -69,7 +69,7 @@ For example:
    setup_ansys_scade_almgw_msoffice -p MyProject.etp -d ../docs/Requirements.docx
 
 Files
------
+=====
 
 Ansys SCADE ALM Gateway connector for MS-Office produces several files in the project's directory.
 
@@ -83,14 +83,14 @@ The other files are present for logging or debug purpose only:
 * ``<links.json>``: Copy of exchange file for exporting the traceability.
 
 Migration from 2.x versions
----------------------------
+===========================
 
 This connector is compatible with former releases 2.x.
 To migrate an existing SCADE ALM Gateway project using the 2.x version of the connector,
 edit the project file (ALMGP) and change its ``confFileName`` attribute from ``msoffice`` to ``almgw_msoffice``.
 
 Limitations
------------
+===========
 
 The connector supports only MS-Word files (DOCX) for input requirements.
 

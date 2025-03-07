@@ -30,7 +30,7 @@ from typing import Any, Dict, Iterator, List, Optional, Set, Tuple, TypeVar
 import xlsxwriter as xl
 
 from ansys.scade.almgw_msoffice.utils import Cursor, Formats
-from ansys.scade.pyalmgw.documents import ReqProject, Requirement, Section
+from ansys.scade.pyalmgw.documents import Container, ReqProject, Requirement, Section
 
 CovResult = Tuple[int, int]  # Coverage result (nb_covered, nb_total)
 SectionDesc = List[Tuple[str, Iterator[bool]]]  # Section description
@@ -192,7 +192,7 @@ def hlr_to_llr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
 
         return len(llr_list)
 
-    def hlr_section(s: Section, upper_section: SectionDesc) -> CovResult:
+    def hlr_section(s: Container, upper_section: SectionDesc) -> CovResult:
         """Write a High-Level Requirement (HLR) section to the Excel sheet."""
         cov_res = (0, 0)
         if not s.is_empty():
@@ -204,7 +204,8 @@ def hlr_to_llr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
             c.new_line()
 
             for r in s.requirements:
-                covered_by = hlr(r, upper_section, s.level + 1)
+                level = s.level + 1 if isinstance(s, Section) else 0
+                covered_by = hlr(r, upper_section, level)
                 cov = (1, 1) if covered_by > 0 else (0, 1)
                 cov_res = add_cov(cov_res, cov)
             for sub in s.sections:

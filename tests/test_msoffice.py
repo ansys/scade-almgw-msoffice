@@ -97,6 +97,7 @@ def test_import(local_tmpdir, name: str, expected: int):
     [
         ['Nominal', True],
         ['NoCache', False],
+        ['NoTitle', False],
         ['WrongSchema', False],
         ['UnknownProject', False],
     ],

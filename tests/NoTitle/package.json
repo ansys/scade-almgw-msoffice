@@ -1,0 +1,16 @@
+[
+    {
+	"class": "Model",
+	"isllr": false,
+	"structure": [
+	    {
+		"content": [
+		    {
+			"role": "package",
+			"kind": "package"
+		    }
+		]
+	    }
+	]
+    }
+]

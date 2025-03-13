@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name="ansys-scade-almgw-msoffice"
-version="3.0.dev0"
+version="3.1.0"
 description ="Ansys SCADE ALM Gateway connector for MS-Office"
 readme="README.rst"
 

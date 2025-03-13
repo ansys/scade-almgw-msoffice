@@ -9,6 +9,68 @@ This document contains the release notes for the project.
 
 .. towncrier release notes start
 
+`3.1.0 <https://github.com/ansys/scade-almgw-msoffice/releases/tag/v3.1.0>`_ - March 13, 2025
+=============================================================================================
+
+.. tab-set::
+
+
+  .. tab-item:: Added
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - feat: technical review
+          - `#12 <https://github.com/ansys/scade-almgw-msoffice/pull/12>`_
+
+
+  .. tab-item:: Fixed
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - fix: Export fails with requirements not within a section
+          - `#16 <https://github.com/ansys/scade-almgw-msoffice/pull/16>`_
+
+        * - fix: limit flit version
+          - `#17 <https://github.com/ansys/scade-almgw-msoffice/pull/17>`_
+
+
+  .. tab-item:: Dependencies
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - build(deps): Bump ansys-sphinx-theme[autoapi] from 1.3.1 to 1.3.2 in the dependencies group
+          - `#14 <https://github.com/ansys/scade-almgw-msoffice/pull/14>`_
+
+
+  .. tab-item:: Documentation
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - chore: update CHANGELOG for v3.0.0
+          - `#9 <https://github.com/ansys/scade-almgw-msoffice/pull/9>`_
+
+        * - docs: documentation only changes
+          - `#10 <https://github.com/ansys/scade-almgw-msoffice/pull/10>`_
+
+
+  .. tab-item:: Maintenance
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - ci: Add missing `token` input for Release to GitHub
+          - `#18 <https://github.com/ansys/scade-almgw-msoffice/pull/18>`_
+
+
 `3.0.0 <https://github.com/ansys/scade-almgw-msoffice/releases/tag/v3.0.0>`_ - 2025-02-11
 =========================================================================================
 

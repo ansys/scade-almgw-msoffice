@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.generate_matrix
+==================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.generate_matrix(project: ansys.scade.pyalmgw.documents.ReqProject, llr_dict: LlrElement) -> None
+
+   Generate downstream and upstream traceaibility matrices.
+

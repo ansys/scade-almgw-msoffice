@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.setup.setup
+======================================
+
+.. py:function:: ansys.scade.almgw_msoffice.setup.setup(project: scade.model.project.stdproject.Project, options: argparse.Namespace) -> int
+
+   Update the project with the settings.
+

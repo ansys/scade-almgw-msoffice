@@ -91,12 +91,7 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
-# TODO(Jean Henry): remove ignore links after public release
-# https://github.com/ansys/scade-almgw-msoffice/issues/11
 linkcheck_ignore = [
-    'https://github.com/ansys/scade-almgw-msoffice',
-    'https://github.com/ansys/scade-almgw-msoffice/actions/workflows/ci_cd.yml',
-    'https://pypi.org/project/ansys-scade-almgw-msoffice',
     # The link below takes a long time to check
     'https://www.ansys.com/products/embedded-software/ansys-scade-suite',
     'https://www.ansys.com/*',

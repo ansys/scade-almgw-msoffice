@@ -1,0 +1,78 @@
+
+
+
+
+
+
+The ``trace.py`` module
+=======================
+
+.. py:module:: ansys.scade.almgw_msoffice.trace
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+
+
+.. py:currentmodule:: trace
+.. tab-set::
+
+
+
+
+    .. tab-item:: Classes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.trace.TraceDocument`
+            - Tracability links file.
+
+
+
+
+
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-cod-symbol_class"></span> TraceDocument</api/ansys/scade/almgw_msoffice/trace/TraceDocument>
+
+
+
+
+
+
+
+
+
+Description
+-----------
+
+Persistence for Ansys SCADE ALM Gateway connector for MS-Office.
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+
+
+
+
+
+
+:class:`LabelEditBox`
+=====================
+
+.. py:class:: ansys.scade.almgw_msoffice.settings.LabelEditBox(owner, text: str, wl: int, x=10, y=10, w=50, h=14, **kwargs)
+
+   Bases: :py:obj:`scade.tool.suite.gui.widgets.EditBox`
+
+
+   Bundles an edit box with a label.
+
+   Initialize the edit box.
+
+
+
+.. py:currentmodule:: LabelEditBox
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~label`
+            - 
+          * - :py:attr:`~owner`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.settings import LabelEditBox
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: label
+
+.. py:attribute:: owner
+
+
+
+
+

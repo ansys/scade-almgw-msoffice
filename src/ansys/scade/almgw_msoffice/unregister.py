@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 """
-Registers the ALM GAteway MS-Office connector registry files (SRG).
+Unregisters the ALM GAteway MS-Office connector registry files (SRG).
 
 Refer to the :ref:`installation <install-user-mode>`
 steps for more information.
@@ -41,26 +41,22 @@ from ansys.scade.almgw_msoffice import get_srg_name
 _APPDATA = os.getenv('APPDATA')
 
 
-def _register_srg_file(srg: Path, install: Path):
-    """Copy the srg file to Customize and patch it with the installation directory."""
+def _unregister_srg_file(name: str):
+    # delete the srg file from Customize.
     assert _APPDATA
-    text = srg.open().read()
-    text = text.replace('%TARGETDIR%', install.as_posix())
-    dst = Path(_APPDATA, 'SCADE', 'Customize', srg.name)
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    dst.open('w').write(text)
+    dst = Path(_APPDATA, 'SCADE', 'Customize', name)
+    dst.unlink(missing_ok=True)
 
 
-def register() -> Tuple[int, str]:
-    """Implement the ``ansys.scade.registry/register`` entry point."""
-    script_dir = Path(__file__).parent
-    _register_srg_file(script_dir / get_srg_name(), script_dir)
+def unregister() -> Tuple[int, str]:
+    """Implement the ``ansys.scade.registry/unregister`` entry point."""
+    _unregister_srg_file(get_srg_name())
     return (0, '')
 
 
 def main():
-    """Implement the ``ansys.scade.almgw_msoffice.register`` packages's project script."""
-    code, message = register()
+    """Implement the ``ansys.scade.almgw_msoffice.unregister`` packages's project script."""
+    code, message = unregister()
     if message:
         print(message, file=sys.stderr if code else sys.stdout)
     return code

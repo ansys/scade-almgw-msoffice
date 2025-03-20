@@ -61,11 +61,15 @@ name = "ansys.scade.almgw_msoffice"
 
 [project.scripts]
 ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.msoffice:main"
-register_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.register:main"
 setup_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.setup:main"
+# backward compatibility
+register_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.register:main"
+unregister_ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.unregister:main"
 
 [project.entry-points."ansys.scade.registry"]
 srg = "ansys.scade.almgw_msoffice:srg"
+register = "ansys.scade.almgw_msoffice.register:register"
+unregister = "ansys.scade.almgw_msoffice.unregister:unregister"
 
 [project.entry-points."ansys.almgw.connector"]
 exe = "ansys.scade.almgw_msoffice:exe"
@@ -138,6 +142,7 @@ checks = [
     # type, unless multiple values are being returned"
 ]
 exclude = [
+    '\._',  # ignore private definitions
     'conftest.',
     'test.',
 ]

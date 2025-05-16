@@ -1,0 +1,292 @@
+
+
+
+
+
+
+The ``settings.py`` module
+==========================
+
+.. py:module:: ansys.scade.almgw_msoffice.settings
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. py:currentmodule:: settings
+.. tab-set::
+
+
+
+
+    .. tab-item:: Classes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings.CommandSettings`
+            - Defines a command to edit the settings.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings.FileSelector`
+            - Bundles a file selector widget with a label, edit and button.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings.LabelComboBox`
+            - Bundles a combo box with a label.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings.LabelEditBox`
+            - Bundles an edit box with a label.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings.Settings`
+            - Settings editor for the connector.
+
+
+
+    .. tab-item:: Enums
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings.FSM`
+            - Modes of the file selector bundle.
+
+
+
+
+
+    .. tab-item:: Attributes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~dy`
+            - 
+
+
+          * - :py:obj:`~h_settings`
+            - 
+
+
+          * - :py:obj:`~hm`
+            - 
+
+
+          * - :py:obj:`~script_dir`
+            - 
+
+
+          * - :py:obj:`~script_path`
+            - 
+
+
+          * - :py:obj:`~w_settings`
+            - 
+
+
+          * - :py:obj:`~wd`
+            - 
+
+
+          * - :py:obj:`~wf`
+            - 
+
+
+          * - :py:obj:`~wl`
+            - 
+
+
+          * - :py:obj:`~xf`
+            - 
+
+
+          * - :py:obj:`~xl`
+            - 
+
+
+          * - :py:obj:`~y`
+            - 
+
+
+
+    .. tab-item:: Constants
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~H_BUTTON`
+            - 
+
+
+          * - :py:obj:`~H_COMBO`
+            - 
+
+
+          * - :py:obj:`~H_EDIT`
+            - 
+
+
+          * - :py:obj:`~H_LABEL`
+            - 
+
+
+          * - :py:obj:`~H_LIST`
+            - 
+
+
+          * - :py:obj:`~H_TREE`
+            - 
+
+
+          * - :py:obj:`~W_DOTS`
+            - 
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-cod-symbol_class"></span> CommandSettings</api/ansys/scade/almgw_msoffice/settings/CommandSettings>
+    <span class="nf nf-cod-symbol_class"></span> FileSelector</api/ansys/scade/almgw_msoffice/settings/FileSelector>
+    <span class="nf nf-cod-symbol_class"></span> LabelComboBox</api/ansys/scade/almgw_msoffice/settings/LabelComboBox>
+    <span class="nf nf-cod-symbol_class"></span> LabelEditBox</api/ansys/scade/almgw_msoffice/settings/LabelEditBox>
+    <span class="nf nf-cod-symbol_class"></span> Settings</api/ansys/scade/almgw_msoffice/settings/Settings>
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-cod-symbol_enum"></span> FSM</api/ansys/scade/almgw_msoffice/settings/FSM>
+
+
+
+
+
+
+
+
+Description
+-----------
+
+Provides the ``MS Office Settings`` command.
+
+
+
+
+
+
+
+Module detail
+-------------
+
+.. py:data:: H_BUTTON
+   :value: 20
+
+
+.. py:data:: H_COMBO
+   :value: 130
+
+
+.. py:data:: H_EDIT
+   :value: 20
+
+
+.. py:data:: H_LABEL
+   :value: 20
+
+
+.. py:data:: H_LIST
+   :value: 130
+
+
+.. py:data:: H_TREE
+   :value: 30
+
+
+.. py:data:: W_DOTS
+   :value: 20
+
+
+.. py:data:: dy
+   :value: 30
+
+
+.. py:data:: h_settings
+   :value: 350
+
+
+.. py:data:: hm
+   :value: 15
+
+
+.. py:data:: script_dir
+
+.. py:data:: script_path
+
+.. py:data:: w_settings
+   :value: 425
+
+
+.. py:data:: wd
+   :value: 395
+
+
+.. py:data:: wf
+   :value: 250
+
+
+.. py:data:: wl
+   :value: 140
+
+
+.. py:data:: xf
+   :value: 160
+
+
+.. py:data:: xl
+   :value: 15
+
+
+.. py:data:: y
+   :value: 7
+
+
+
+

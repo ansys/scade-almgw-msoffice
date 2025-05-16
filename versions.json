@@ -1,0 +1,17 @@
+[
+  {
+    "name": "dev",
+    "version": "dev",
+    "url": "https://almgw-msoffice.scade.docs.pyansys.com/version/dev/"
+  },
+  {
+    "name": "3.1 (stable)",
+    "version": "3.1",
+    "url": "https://almgw-msoffice.scade.docs.pyansys.com/version/stable/"
+  },
+  {
+    "name": "3.0",
+    "version": "3.0",
+    "url": "https://almgw-msoffice.scade.docs.pyansys.com/version/3.0/"
+  }
+]

@@ -70,7 +70,7 @@ class Parser:
         if self.current_req is None:
             # error in the input document: create an anonymous requirement
             self.add_req_id('')
-            assert self.current_req
+            assert self.current_req is not None  # nosec B101  # addresses linter
         if self.current_req.description:
             self.current_req.description += '\n'
         self.current_req.description += text

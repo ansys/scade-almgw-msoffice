@@ -201,10 +201,9 @@ class Settings(Dialog):
         # alignment for the first line
         y = 7
 
-        projects = get_projects()
+        projects: List[Project] = get_projects()
         # reuse last selected project if any and still exists
         project = self.project if self.project in projects else projects[0]
-        assert isinstance(project, Project)
         # reset current project
         self.project = None
         style = ['dropdownlist', 'sort']
@@ -268,7 +267,7 @@ class Settings(Dialog):
     def on_project_selection(self, cb: ObjectComboBox, index: int):
         """Update current project."""
         project = cb.get_selection()
-        assert isinstance(project, Project)
+        assert isinstance(project, Project)  # nosec B101  # addresses linter
         self.on_set_project(project)
 
     def on_ok(self, *args):
@@ -282,11 +281,11 @@ class Settings(Dialog):
 
     def on_add(self, *args):
         """Prompt the user for a new document."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
 
         path = file_open('MS Word Documents (*.docx)|*.docx|All Files (*.*)|*.*||')
         if path:
-            assert self.lb_documents
+            assert self.lb_documents is not None  # nosec B101  # addresses linter
             try:
                 document = os.path.relpath(path, Path(self.project.pathname).parent)
             except ValueError:
@@ -299,7 +298,7 @@ class Settings(Dialog):
 
     def on_remove(self, *args):
         """Remove the selected documents."""
-        assert self.lb_documents
+        assert self.lb_documents is not None  # nosec B101  # addresses linter
         selected = self.lb_documents.get_selection()
         if selected:
             documents = [_ for _ in self.lb_documents.get_items() if _ not in selected]
@@ -307,27 +306,27 @@ class Settings(Dialog):
 
     def read_settings(self):
         """Update the dialog with the project's settings."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
 
-        assert self.lb_documents
+        assert self.lb_documents is not None  # nosec B101  # addresses linter
         documents = self.project.get_tool_prop_def(
             ms.TOOL, ms.DOCUMENTS, ms.DOCUMENTS_DEFAULT, None
         )
         self.lb_documents.set_items(documents)
 
-        assert self.ed_req_style
+        assert self.ed_req_style is not None  # nosec B101  # addresses linter
         style = self.project.get_scalar_tool_prop_def(
             ms.TOOL, ms.REQSTYLE, ms.REQSTYLE_DEFAULT, None
         )
         self.ed_req_style.set_name(style)
 
-        assert self.ed_text_style
+        assert self.ed_text_style is not None  # nosec B101  # addresses linter
         style = self.project.get_scalar_tool_prop_def(
             ms.TOOL, ms.TEXTSTYLE, ms.TEXTSTYLE_DEFAULT, None
         )
         self.ed_text_style.set_name(style)
 
-        assert self.ed_schema
+        assert self.ed_schema is not None  # nosec B101  # addresses linter
         schema = self.project.get_scalar_tool_prop_def(
             pyamlgw.TOOL, pyamlgw.LLRSCHEMA, pyamlgw.LLRSCHEMA_DEFAULT, None
         )
@@ -336,25 +335,25 @@ class Settings(Dialog):
 
     def write_settings(self):
         """Update the project's settings from the dialog."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
 
-        assert self.lb_documents
+        assert self.lb_documents is not None  # nosec B101  # addresses linter
         documents = self.lb_documents.get_items()
         self.project.set_tool_prop_def(ms.TOOL, ms.DOCUMENTS, documents, ms.DOCUMENTS_DEFAULT, None)
 
-        assert self.ed_req_style
+        assert self.ed_req_style is not None  # nosec B101  # addresses linter
         style = self.ed_req_style.get_name()
         self.project.set_scalar_tool_prop_def(
             ms.TOOL, ms.REQSTYLE, style, ms.REQSTYLE_DEFAULT, None
         )
 
-        assert self.ed_text_style
+        assert self.ed_text_style is not None  # nosec B101  # addresses linter
         style = self.ed_text_style.get_name()
         self.project.set_scalar_tool_prop_def(
             ms.TOOL, ms.TEXTSTYLE, style, ms.TEXTSTYLE_DEFAULT, None
         )
 
-        assert self.ed_schema
+        assert self.ed_schema is not None  # nosec B101  # addresses linter
         schema = self.ed_schema.get_name()
         self.project.set_scalar_tool_prop_def(
             pyamlgw.TOOL, pyamlgw.LLRSCHEMA, schema, pyamlgw.LLRSCHEMA_DEFAULT, None

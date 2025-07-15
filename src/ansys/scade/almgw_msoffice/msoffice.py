@@ -24,7 +24,7 @@
 
 from pathlib import Path
 import shutil
-import subprocess  # nosec  # used to run Word.Application from powershell
+import subprocess  # nosec B404  # used to run Word.Application from powershell
 from typing import List
 
 import ansys.scade.almgw_msoffice.msexcel as msexcel
@@ -254,7 +254,7 @@ class MSOffice(Connector):
                 )
                 cmd.extend(['-string', req, '-style', req_style])
             try:
-                subprocess.check_output(cmd)  # nosec  # inputs checked
+                subprocess.check_output(cmd)  # nosec B603  # inputs checked
                 return 0
             except subprocess.CalledProcessError:
                 return -1

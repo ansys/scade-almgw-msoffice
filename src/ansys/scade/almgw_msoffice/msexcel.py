@@ -25,12 +25,18 @@
 from collections import defaultdict
 from copy import copy
 from pathlib import Path
-from typing import Any, Dict, Iterator, List, Optional, Set, Tuple, TypeVar
+from typing import Any, DefaultDict, Dict, Iterator, List, Optional, Set, Tuple, TypeVar
 
 import xlsxwriter as xl
 
 from ansys.scade.almgw_msoffice.utils import Cursor, Formats
-from ansys.scade.pyalmgw.documents import Container, ReqProject, Requirement, Section
+from ansys.scade.pyalmgw.documents import (
+    Container,
+    ReqProject,
+    Requirement,
+    Section,
+    TraceabilityLink,
+)
 
 CovResult = Tuple[int, int]  # Coverage result (nb_covered, nb_total)
 SectionDesc = List[Tuple[str, Iterator[bool]]]  # Section description
@@ -147,13 +153,13 @@ def write_section_cov(c: Cursor, cov: CovResult, formats: Formats) -> None:
 ##############################################################################
 
 
-def hlr_to_llr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrElement):
+def hlr_to_llr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: Dict[str, LlrElement]):
     """Generate the downstream matrix."""
-    hlr_links = defaultdict(set)  # type: DefaultDict[str, Set[TraceabilityLink]]
+    hlr_links: DefaultDict[str, Set[TraceabilityLink]] = defaultdict(set)
     for link in project.traceability_links:
         hlr_links[link.target].add(link)
 
-    llr_dict = {llr.get('oid'): llr for llr in iter_llr_section(llr_dict)}
+    llr_dict = {llr.get('oid', ''): llr for llr in iter_llr_section(llr_dict)}
 
     c = Cursor(ws)
     nb_sections = project.depth - 1
@@ -299,7 +305,7 @@ def llr_to_hlr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
 
             c.new_line()
 
-        llr_oid = r.get('oid')
+        llr_oid = r.get('oid', '')
         hlr_list = [hlr_dict.get(link.target) for link in llr_links[llr_oid]]
         hlr_list = [_ for _ in hlr_list if _ is not None]
         if not hlr_list:
@@ -317,7 +323,7 @@ def llr_to_hlr_sheet(ws, formats: Formats, project: ReqProject, llr_dict: LlrEle
             children = [e for e in s.get('elements', [])]
             subsections = [e for e in children if is_section(e)]
             llrs = [e for e in children if is_req(e)]
-            upper_section = upper_section + [(s.get('name'), on_first())]
+            upper_section = upper_section + [(s.get('name', ''), on_first())]
             write_section(c, formats, True, upper_section, nb_sections)
             section_fmt = formats.get('section')
             c.write('…', section_fmt).right()

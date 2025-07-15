@@ -24,11 +24,11 @@
 
 from pathlib import Path
 from re import compile
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 from docx import Document
 
-from ansys.scade.pyalmgw.documents import ReqDocument, ReqProject, Requirement, Section
+from ansys.scade.pyalmgw.documents import Container, ReqDocument, ReqProject, Requirement, Section
 
 heading_regex = compile('Heading (\\d+)')
 
@@ -49,7 +49,7 @@ class Parser:
         """Initialize the parser."""
         self.current_req = None
         # stack of sections
-        self.sections = []
+        self.sections: List[Container] = []
         # dictionary of requirements
         self.requirements = {}
         # invalid requirements ids count
@@ -84,7 +84,11 @@ class Parser:
             self.sections.pop()
             top = self.sections[-1]
             current_level = len(self.sections) - 1
-        number = top.number if len(self.sections) > 1 else ''
+        if len(self.sections) > 1:
+            assert isinstance(top, Section)  # nosec B101  # addresses linter
+            number = top.number
+        else:
+            number = ''
         # add sections if needed
         while current_level + 1 < level:
             current_level += 1

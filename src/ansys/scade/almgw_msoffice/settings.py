@@ -25,6 +25,7 @@
 from enum import Enum
 import os
 from pathlib import Path
+from typing import List
 
 from scade.model.project.stdproject import Project, get_roots as get_projects
 from scade.tool.suite.gui.commands import Command, Menu
@@ -290,7 +291,8 @@ class Settings(Dialog):
                 document = os.path.relpath(path, Path(self.project.pathname).parent)
             except ValueError:
                 document = path
-            documents = self.lb_documents.get_items()
+            # ListBox.get_items() is not properly typed
+            documents: List[str] = self.lb_documents.get_items()  # type: ignore
             if document not in documents:
                 documents.append(document)
                 self.lb_documents.set_items(documents)

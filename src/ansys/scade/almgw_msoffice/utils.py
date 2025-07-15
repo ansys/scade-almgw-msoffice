@@ -102,7 +102,11 @@ class Cursor:
         return self
 
     def write_url(
-        self, url: str, cell_format: Optional[Format] = None, string: str = None, tip: str = None
+        self,
+        url: str,
+        cell_format: Optional[Format] = None,
+        string: Optional[str] = None,
+        tip: Optional[str] = None,
     ):
         """N/A."""
         row, col = self.pos
@@ -117,7 +121,7 @@ class Cursor:
 
     def set_row(
         self,
-        height: float = None,
+        height: Optional[float] = None,
         cell_format: Optional[Format] = None,
         options: Dict[str, Union[int, str]] = {},
     ):
@@ -127,7 +131,7 @@ class Cursor:
 
     def set_column(
         self,
-        width: float = None,
+        width: Optional[float] = None,
         cell_format: Optional[Format] = None,
         options: Dict[str, Union[int, str]] = {},
     ):

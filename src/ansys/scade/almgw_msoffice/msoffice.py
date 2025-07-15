@@ -24,7 +24,7 @@
 
 from pathlib import Path
 import shutil
-import subprocess
+import subprocess  # nosec B404  # used to run Word.Application from powershell
 from typing import List
 
 import ansys.scade.almgw_msoffice.msexcel as msexcel
@@ -50,12 +50,12 @@ class MSOffice(Connector):
 
     def get_reqs_file(self) -> Path:
         """Return the path of the temporary file containing the requirements and traceability."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
         return Path(self.project.pathname).with_suffix('.' + self.id + '.reqs')
 
     def get_trace_file(self) -> Path:
         """Return the path of the file containing the traceability."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
         return Path(self.project.pathname).with_suffix('.' + self.id + '.trace')
 
     def on_settings(self, pid: int) -> int:
@@ -182,7 +182,6 @@ class MSOffice(Connector):
 
         # generation of matrix with the cached imported data
         llrs = utils.read_json(model)
-        assert llrs
         msexcel.generate_matrix(project, llrs)
         print('requirements exported.')
         return 1
@@ -245,7 +244,7 @@ class MSOffice(Connector):
 
     def open_document(self, file: Path, req: str):
         """Open the document, and locate the requirement when not empty."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
         if file.suffix.lower() == '.docx':
             script = (Path(__file__).parent / 'res' / 'word-select.ps1').as_posix()
             cmd = ['powershell', '-file', script, '-file', str(file)]
@@ -255,7 +254,7 @@ class MSOffice(Connector):
                 )
                 cmd.extend(['-string', req, '-style', req_style])
             try:
-                subprocess.check_output(cmd)
+                subprocess.check_output(cmd)  # nosec B603  # inputs checked
                 return 0
             except subprocess.CalledProcessError:
                 return -1
@@ -263,7 +262,7 @@ class MSOffice(Connector):
 
     def get_documents(self) -> List[Path]:
         """Return the documents specified in the project."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
 
         files = self.project.get_tool_prop_def('MSOFFICE', 'DOCUMENTS', [], None)
         # resolve the relative names to the project's directory
@@ -279,7 +278,7 @@ class MSOffice(Connector):
 
     def read_requirements(self, project: ReqProject):
         """Read all the requirements from the documents."""
-        assert self.project
+        assert self.project is not None  # nosec B101  # addresses linter
 
         self.map_requirements = {}
         files = self.get_documents()

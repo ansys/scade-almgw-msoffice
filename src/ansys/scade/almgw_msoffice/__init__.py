@@ -30,7 +30,8 @@ import sys
 try:
     import importlib.metadata as importlib_metadata
 except ModuleNotFoundError:
-    import importlib_metadata
+    # Python 3.7 compatibility
+    import importlib_metadata  # type: ignore
 
 try:
     __version__ = importlib_metadata.version(__name__.replace('.', '-'))

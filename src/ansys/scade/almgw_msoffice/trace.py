@@ -92,7 +92,7 @@ class TraceDocument:
             if action == 'ADD':
                 self.add(oid, req, path)
             else:
-                assert action == 'REMOVE'
+                # assert action == 'REMOVE'
                 self.remove(oid, req)
 
     def add(self, oid: str, req: str, path: str):

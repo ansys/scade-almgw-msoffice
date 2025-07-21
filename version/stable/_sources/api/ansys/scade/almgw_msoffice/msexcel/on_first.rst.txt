@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.on_first
+===========================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.on_first() -> Iterator[bool]
+
+   Return Scade's flow ``true -> false``.
+

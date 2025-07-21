@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msword.add_document
+==============================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msword.add_document(project: ansys.scade.pyalmgw.documents.ReqProject, path: pathlib.Path, req_style: str, text_style: str) -> Dict[str, ansys.scade.pyalmgw.documents.Requirement]
+
+   Parse the input MS Word document and return the contained requirements hierarchy.
+

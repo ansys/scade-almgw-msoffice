@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.llr_attributes
+=================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.llr_attributes(llr_section: LlrElement) -> Set[str]
+
+   Return the overall attributes.
+

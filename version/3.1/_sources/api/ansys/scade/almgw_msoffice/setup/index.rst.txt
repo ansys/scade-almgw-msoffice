@@ -1,0 +1,100 @@
+
+
+
+
+
+
+The ``setup.py`` module
+=======================
+
+.. py:module:: ansys.scade.almgw_msoffice.setup
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+.. py:currentmodule:: setup
+.. tab-set::
+
+
+
+
+
+
+
+    .. tab-item:: Functions
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.setup.main`
+            - Implement the ``ansys.scade.almgw_msoffice.setup:main`` packages's project script.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.setup.setup`
+            - Update the project with the settings.
+
+
+
+
+
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-md-function_variant"></span> main</api/ansys/scade/almgw_msoffice/setup/main>
+    <span class="nf nf-md-function_variant"></span> setup</api/ansys/scade/almgw_msoffice/setup/setup>
+
+
+
+
+
+
+Description
+-----------
+
+Command line utility to setup a project for the connector.
+
+.. code:: text
+
+    usage: setup_ansys_scade_almgw_msoffice [-h] -p <project> [-r <req>]
+                                            [-t <text>] [-s <schema>]
+                                            [-d [<documents> ...]]
+
+    options:
+      -h, --help            show this help message and exit
+      -p <project>, --project <project>
+                            Ansys SCADE project (ETP)
+      -r <req>, --req_style <req>
+                            requirement identifier style
+      -t <text>, --text_style <text>
+                            requirement text style
+      -s <schema>, --schema <schema>
+                            json export schema
+      -d [<documents> ...], --documents [<documents> ...]
+                            documents
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+
+
+
+
+
+
+:class:`LabelComboBox`
+======================
+
+.. py:class:: ansys.scade.almgw_msoffice.settings.LabelComboBox(owner, text: str, wl: int, items, x=10, y=10, w=50, h=14, **kwargs)
+
+   Bases: :py:obj:`scade.tool.suite.gui.widgets.ObjectComboBox`
+
+
+   Bundles a combo box with a label.
+
+   Initialize the combo box.
+
+
+
+.. py:currentmodule:: LabelComboBox
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~label`
+            - 
+          * - :py:attr:`~owner`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.settings import LabelComboBox
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: label
+
+.. py:attribute:: owner
+
+
+
+
+

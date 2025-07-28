@@ -38,12 +38,12 @@ from typing import Tuple
 
 from ansys.scade.almgw_msoffice import get_srg_name
 
-_APPDATA = os.getenv('APPDATA')
+# APPDATA must be defined
+_APPDATA = os.environ['APPDATA']
 
 
 def _unregister_srg_file(name: str):
     # delete the srg file from Customize.
-    assert _APPDATA
     dst = Path(_APPDATA, 'SCADE', 'Customize', name)
     dst.unlink(missing_ok=True)
 

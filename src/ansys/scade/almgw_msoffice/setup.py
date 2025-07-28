@@ -97,7 +97,7 @@ def main() -> int:
 
     options = parser.parse_args()
 
-    assert declare_project
+    assert declare_project  # nosec B101  # declare_project must be defined on Windows
     declare_project(options.project)
     # must be one and only one project
     project = get_projects()[0]

@@ -1,0 +1,96 @@
+
+
+
+
+
+
+The ``msoffice.py`` module
+==========================
+
+.. py:module:: ansys.scade.almgw_msoffice.msoffice
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+
+
+.. py:currentmodule:: msoffice
+.. tab-set::
+
+
+
+
+    .. tab-item:: Classes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msoffice.MSOffice`
+            - Specialization of the connector for MS Office.
+
+
+
+
+
+    .. tab-item:: Functions
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msoffice.main`
+            - Implement the ``ansys.scade.almgw_msoffice:main`` packages's project script.
+
+
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-cod-symbol_class"></span> MSOffice</api/ansys/scade/almgw_msoffice/msoffice/MSOffice>
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-md-function_variant"></span> main</api/ansys/scade/almgw_msoffice/msoffice/main>
+
+
+
+
+
+
+Description
+-----------
+
+Ansys SCADE ALM Gateway connector for MS-Office.
+
+
+
+
+
+
+
+

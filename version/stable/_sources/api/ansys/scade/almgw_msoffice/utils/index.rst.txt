@@ -1,0 +1,102 @@
+
+
+
+
+
+
+The ``utils.py`` module
+=======================
+
+.. py:module:: ansys.scade.almgw_msoffice.utils
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+
+
+
+
+.. py:currentmodule:: utils
+.. tab-set::
+
+
+
+
+    .. tab-item:: Classes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.utils.Cursor`
+            - Cursor management.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.utils.Formats`
+            - Cache for formats.
+
+
+
+
+
+
+    .. tab-item:: Attributes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~FormatCtor`
+            - 
+
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-cod-symbol_class"></span> Cursor</api/ansys/scade/almgw_msoffice/utils/Cursor>
+    <span class="nf nf-cod-symbol_class"></span> Formats</api/ansys/scade/almgw_msoffice/utils/Formats>
+
+
+
+
+
+
+
+
+
+Description
+-----------
+
+Utilities for managing Excel documents.
+
+
+
+
+
+
+
+Module detail
+-------------
+
+.. py:data:: FormatCtor
+
+
+

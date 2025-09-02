@@ -1,0 +1,2193 @@
+[
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#release-notes",
+        "title": "Release notes",
+        "section": "Release notes",
+        "text": "This document contains the release notes for the project.\nRelease notes"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#311---march-20-2025",
+        "title": "Release notes > 3.1.1 - March 20, 2025",
+        "section": "3.1.1 - March 20, 2025",
+        "text": "feat: Add register and unregister entry points for Extensions Manager\n#21\nfix: Address pre-post release issues\n#22\nci: Specify the version of Python for updating the change log\n#20\n3.1.1 - March 20, 2025"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#310---march-13-2025",
+        "title": "Release notes > 3.1.0 - March 13, 2025",
+        "section": "3.1.0 - March 13, 2025",
+        "text": "feat: technical review\n#12\nfix: Export fails with requirements not within a section\n#16\nfix: limit flit version\n#17\nbuild(deps): Bump ansys-sphinx-theme[autoapi] from 1.3.1 to 1.3.2 in the dependencies group\n#14\nchore: update CHANGELOG for v3.0.0\n#9\ndocs: documentation only changes\n#10\nci: Add missing token input for Release to GitHub\n#18\n3.1.0 - March 13, 2025"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#300---2025-02-11",
+        "title": "Release notes > 3.0.0 - 2025-02-11",
+        "section": "3.0.0 - 2025-02-11",
+        "text": "3.0.0 - 2025-02-11"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#added",
+        "title": "Release notes > Added",
+        "section": "Added",
+        "text": "feat: Migration to GitHubFeat/migration #1\nAdded"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#dependencies",
+        "title": "Release notes > Dependencies",
+        "section": "Dependencies",
+        "text": "build: Bump the dependencies group with 5 updates #3\nbuild: Bump the dependencies group across 1 directory with 4 updates #6\nbuild: Bump the dependencies group with 3 updates #8\nDependencies"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#documentation",
+        "title": "Release notes > Documentation",
+        "section": "Documentation",
+        "text": "docs: Fix the references to getting-started #5\ndocs: Update links #7\nDocumentation"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#maintenance",
+        "title": "Release notes > Maintenance",
+        "section": "Maintenance",
+        "text": "build(deps): Bump codecov/codecov-action from 4 to 5 in the actions group #2\nMaintenance"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#user-guide",
+        "title": "User Guide",
+        "section": "User Guide",
+        "text": "User Guide"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#declaration",
+        "title": "User Guide > Declaration",
+        "section": "Declaration",
+        "text": "Use the command Project/ALM Gateway/Settings... once\nto select the connector ALMGW Connector for MS-Office.\nOnce the connector is selected, this command does not operate anymore.\nRefer to the next section for details on settings management.\nIf the project is already connected to an ALM tool, you have first to delete this connection\nby deleting the ALM Gateway project file (ALMGP) in the project’s directory.\nDeclaration\nProject/ALM Gateway/Settings...\nALMGW Connector for MS-Office"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#settings",
+        "title": "User Guide > Settings",
+        "section": "Settings",
+        "text": "Settings"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#using-the-graphical-user-interface",
+        "title": "User Guide > Using the Graphical User Interface",
+        "section": "Using the Graphical User Interface",
+        "text": "This mode applies only to projects that can be loaded with SCADE Studio.\nSCADE Display projects must be setup using the command line interface,\nas explained in the next section.\nUse the new command Project/ALM Gateway/MS Office Settings... to:\nSelect the requirements documents for each loaded project.\nSelect the names of the styles to consider for the requirements and their text.\nSpecify the LLR export schema to produce an MS Excel traceability matrix.\nRefer to Traceable Elements Export Schema for details.\nUsing the Graphical User Interface\nProject/ALM Gateway/MS Office Settings..."
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#using-the-command-line-interface",
+        "title": "User Guide > Using the Command Line Interface",
+        "section": "Using the Command Line Interface",
+        "text": "The command line tool python setup_ansys_scade_almgw_msoffice.exe allows to setup\nthe project. It is located in the Scripts folder of the Python installation directory.\nFor example:\nUsing the Command Line Interface\nsetup_ansys_scade_almgw_msoffice.exe\nScripts"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#files",
+        "title": "User Guide > Files",
+        "section": "Files",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office produces several files in the project’s directory.\nThe file <project.msoffice.trace> stores the traceability links\nand must be added to the configuration management system.\nThe other files are present for logging or debug purpose only:\n<project.msoffice.llrs>: Temporary file for producing the traceability matrices.\n<project.msoffice.reqs>: Copy of exchange file for importing the traceability.\n<links.json>: Copy of exchange file for exporting the traceability.\nFiles\n<project.msoffice.trace>\n<project.msoffice.llrs>\n<project.msoffice.reqs>\n<links.json>"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#migration-from-2x-versions",
+        "title": "User Guide > Migration from 2.x versions",
+        "section": "Migration from 2.x versions",
+        "text": "This connector is compatible with former releases 2.x.\nTo migrate an existing SCADE ALM Gateway project using the 2.x version of the connector,\nedit the project file (ALMGP) and change its confFileName attribute from msoffice to almgw_msoffice.\nMigration from 2.x versions\nconfFileName\nmsoffice\nalmgw_msoffice"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#limitations",
+        "title": "User Guide > Limitations",
+        "section": "Limitations",
+        "text": "The connector supports only MS-Word files (DOCX) for input requirements.\nLimitations"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#contribute",
+        "title": "Contribute",
+        "section": "Contribute",
+        "text": "Overall guidance on contributing to a PyAnsys library appears in\nContributing\nin the PyAnsys developer’s guide. Ensure that you are thoroughly familiar\nwith this guide before attempting to contribute to Ansys SCADE ALM Gateway connector for MS-Office.\nThe following contribution information is specific to Ansys SCADE ALM Gateway connector for MS-Office.\nContribute"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#install-in-developer-mode",
+        "title": "Contribute > Install in developer mode",
+        "section": "Install in developer mode",
+        "text": "Installing Ansys SCADE ALM Gateway connector for MS-Office in developer mode allows you to modify the\nsource and enhance it.\nClone the ansys-scade-almgw-msoffice repository:\nAccess the scade-almgw-msoffice directory where the repository has been cloned:\nCreate a clean Python 3.10 environment and activate it:\nYou should use the interpreter delivered with Ansys SCADE. For example,\nC:\\Program Files\\ANSYS Inc\\v241\\SCADE\\contrib\\Python310\\python.exe.\nMake sure that you have the latest required build system, documentation, testing,\nand CI tools:\nInstall the project in editable mode:\nUse tox to verify your development installation:\nInstall in developer mode\nansys-scade-almgw-msoffice\nscade-almgw-msoffice\nC:\\Program Files\\ANSYS Inc\\v241\\SCADE\\contrib\\Python310\\python.exe"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#test",
+        "title": "Contribute > Test",
+        "section": "Test",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office uses tox for testing. This tool allows you to\nautomate common development tasks (similar to Makefile), but it is oriented\ntowards Python development.\nTest\nMakefile"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#use-tox",
+        "title": "Contribute > Use tox",
+        "section": "Use tox",
+        "text": "While Makefile has rules, tox has environments. In fact, tox creates its\nown virtual environment so that anything being tested is isolated from the project\nto guarantee the project’s integrity.\nThe following tox commands are provided:\ntox -e code-style: Checks for coding style quality.\ntox -e tests: Checks for unit testing without code coverage.\ntox -e tests-coverage: Checks for unit testing with code coverage.\ntox -e doc-html: Builds the HTML documentation.\ntox -e doc-links: Checks for broken links in the documentation.\nFor convenience (and advanced usage), you can set a SCADE_INSTALLATION_DIR environment\nvariable pointing to SCADE’s installation directory, for example C:\\Program Files\\ANSYS Inc\\vXXX\\SCADE.\nThis will allow Tox automatically discover and use the Python interpreters that ship with SCADE in\ncreating virtual environments via py310 and py37 factors. Using this approach, tox\ncommands similar to the following formats can be used:\ntox -e tests-py37: for running tests without coverage using the Python 3.7 interpreter delivered with SCADE.\ntox -e tests-coverage-py310: for running tests with coverage using the Python 3.10 interpreter delivered with SCADE.\nThe host python interpreter does not have to be the one delivered with SCADE when using this approach and this\nbehavior is agnostic of the host python version in which tox itself is installed. The important point to note\nis that Python 3.7 is compatible with SCADE releases prior to 23R2 and Python 3.10 compatibility starts with 23R2. This means\nthat py37 factor should be used when testing with releases prior to 23R2 and py310 factor should be used when testing\nwith releases starting from 23R2.\nUse tox\ntox\nMakefile\ntox\ntox\ntox\ntox -e code-style\ntox -e tests\ntox -e tests-coverage\ntox -e doc\ntox -e doc-html\ntox -e doc-links\nSCADE_INSTALLATION_DIR\nC:\\Program Files\\ANSYS Inc\\vXXX\\SCADE\npy310\npy37\ntox\ntox -e tests-py37\ntox -e tests-coverage-py310\npy37\npy310"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#use-raw-testing",
+        "title": "Contribute > Use raw testing",
+        "section": "Use raw testing",
+        "text": "If required, from the command line, you can call style commands like\nblack, isort, and flake8. You can also call unit testing commands like pytest.\nHowever, running these commands does not guarantee that your project is being tested in an\nisolated environment, which is the reason why tools like tox exist.\nUse raw testing\ntox"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#use-pre-commit",
+        "title": "Contribute > Use pre-commit",
+        "section": "Use pre-commit",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office follows the PEP8 standard as outlined in\nPEP 8 in\nthe PyAnsys developer’s guide and implements style checking using\npre-commit.\nTo ensure your code meets minimum code styling standards, run these commands:\nYou can also install this as a pre-commit hook by running this command:\nThis way, it’s not possible for you to push code that fails the style checks:\nUse pre-commit\npre-commit"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#build-documentation",
+        "title": "Contribute > Build documentation",
+        "section": "Build documentation",
+        "text": "For building documentation, you can run the usual rules provided in the\nSphinx make file. Here are some examples:\nHowever, the recommended way of checking documentation integrity is to use\ntox:\nBuild documentation\nmake\ntox"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#distribute",
+        "title": "Contribute > Distribute",
+        "section": "Distribute",
+        "text": "If you would like to create either source or wheel files, start by installing\nthe building requirements and then executing the build module:\nDistribute"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#post-issues",
+        "title": "Contribute > Post issues",
+        "section": "Post issues",
+        "text": "Use the Ansys SCADE ALM Gateway connector for MS-Office Issues\npage to submit questions, report bugs, and request new features. When possible, use\nthese templates:\nBug, problem, error: For filing a bug report\nDocumentation error: For requesting modifications to the documentation\nAdding an example: For proposing a new example\nNew feature: For requesting enhancements to the code\nIf your issue does not fit into one of these template categories, click\nthe link for opening a blank issue.\nTo reach the project support team, email pyansys.core@ansys.com.\nPost issues"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/read_heading",
+        "href": "api/ansys/scade/almgw_msoffice/msword/read_heading.html#ansysscadealmgw_msofficemswordread_heading",
+        "title": "ansys.scade.almgw_msoffice.msword.read_heading",
+        "section": "ansys.scade.almgw_msoffice.msword.read_heading",
+        "text": "Return the heading level of a paragraph or 0.\nansys.scade.almgw_msoffice.msword.read_heading"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/read_heading",
+        "href": "api/ansys/scade/almgw_msoffice/msword/read_heading.html#ansys.scade.almgw_msoffice.msword.read_heading",
+        "title": "ansys.scade.almgw_msoffice.msword.read_heading > ansys.scade.almgw_msoffice.msword.read_heading > read_heading",
+        "section": "ansys.scade.almgw_msoffice.msword.read_heading > read_heading",
+        "text": "ansys.scade.almgw_msoffice.msword.read_heading(style: Any) -> int\n\nReturn the heading level of a paragraph or 0."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/iter_llr_section",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/iter_llr_section.html#ansysscadealmgw_msofficemsexceliter_llr_section",
+        "title": "ansys.scade.almgw_msoffice.msexcel.iter_llr_section",
+        "section": "ansys.scade.almgw_msoffice.msexcel.iter_llr_section",
+        "text": "Iterate the document hierarchy.\nansys.scade.almgw_msoffice.msexcel.iter_llr_section"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/iter_llr_section",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/iter_llr_section.html#ansys.scade.almgw_msoffice.msexcel.iter_llr_section",
+        "title": "ansys.scade.almgw_msoffice.msexcel.iter_llr_section > ansys.scade.almgw_msoffice.msexcel.iter_llr_section > iter_llr_section",
+        "section": "ansys.scade.almgw_msoffice.msexcel.iter_llr_section > iter_llr_section",
+        "text": "ansys.scade.almgw_msoffice.msexcel.iter_llr_section(s: LlrElement) -> Iterator[LlrElement]\n\nIterate the document hierarchy."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/add_document",
+        "href": "api/ansys/scade/almgw_msoffice/msword/add_document.html#ansysscadealmgw_msofficemswordadd_document",
+        "title": "ansys.scade.almgw_msoffice.msword.add_document",
+        "section": "ansys.scade.almgw_msoffice.msword.add_document",
+        "text": "Parse the input MS Word document and return the contained requirements hierarchy.\nansys.scade.almgw_msoffice.msword.add_document"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/add_document",
+        "href": "api/ansys/scade/almgw_msoffice/msword/add_document.html#ansys.scade.almgw_msoffice.msword.add_document",
+        "title": "ansys.scade.almgw_msoffice.msword.add_document > ansys.scade.almgw_msoffice.msword.add_document > add_document",
+        "section": "ansys.scade.almgw_msoffice.msword.add_document > add_document",
+        "text": "ansys.scade.almgw_msoffice.msword.add_document(project: ansys.scade.pyalmgw.documents.ReqProject, path: pathlib.Path, req_style: str, text_style: str) -> Dict[str, ansys.scade.pyalmgw.documents.Requirement]\n\nParse the input MS Word document and return the contained requirements hierarchy."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/main",
+        "href": "api/ansys/scade/almgw_msoffice/register/main.html#ansysscadealmgw_msofficeregistermain",
+        "title": "ansys.scade.almgw_msoffice.register.main",
+        "section": "ansys.scade.almgw_msoffice.register.main",
+        "text": "Implement the ansys.scade.almgw_msoffice.register packages’s project script.\nansys.scade.almgw_msoffice.register.main\nansys.scade.almgw_msoffice.register"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/main",
+        "href": "api/ansys/scade/almgw_msoffice/register/main.html#ansys.scade.almgw_msoffice.register.main",
+        "title": "ansys.scade.almgw_msoffice.register.main > ansys.scade.almgw_msoffice.register.main > main",
+        "section": "ansys.scade.almgw_msoffice.register.main > main",
+        "text": "ansys.scade.almgw_msoffice.register.main()\n\nImplement the ansys.scade.almgw_msoffice.register packages’s project script."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/generate_matrix",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/generate_matrix.html#ansysscadealmgw_msofficemsexcelgenerate_matrix",
+        "title": "ansys.scade.almgw_msoffice.msexcel.generate_matrix",
+        "section": "ansys.scade.almgw_msoffice.msexcel.generate_matrix",
+        "text": "Generate downstream and upstream traceaibility matrices.\nansys.scade.almgw_msoffice.msexcel.generate_matrix"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/generate_matrix",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/generate_matrix.html#ansys.scade.almgw_msoffice.msexcel.generate_matrix",
+        "title": "ansys.scade.almgw_msoffice.msexcel.generate_matrix > ansys.scade.almgw_msoffice.msexcel.generate_matrix > generate_matrix",
+        "section": "ansys.scade.almgw_msoffice.msexcel.generate_matrix > generate_matrix",
+        "text": "ansys.scade.almgw_msoffice.msexcel.generate_matrix(project: ansys.scade.pyalmgw.documents.ReqProject, llr_dict: LlrElement) -> None\n\nGenerate downstream and upstream traceaibility matrices."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#labelcombobox",
+        "title": "LabelComboBox",
+        "section": "LabelComboBox",
+        "text": "Bases: scade.tool.suite.gui.widgets.ObjectComboBox\nBundles a combo box with a label.\nInitialize the combo box.\nLabelComboBox\nLabelComboBox\nscade.tool.suite.gui.widgets.ObjectComboBox"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#ansys.scade.almgw_msoffice.settings.LabelComboBox",
+        "title": "LabelComboBox > LabelComboBox > LabelComboBox",
+        "section": "LabelComboBox > LabelComboBox",
+        "text": "class ansys.scade.almgw_msoffice.settings.LabelComboBox(owner, text: str, wl: int, items, x=10, y=10, w=50, h=14, **kwargs)\n\nBases: scade.tool.suite.gui.widgets.ObjectComboBox\n\nBundles a combo box with a label.\n\nInitialize the combo box."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#overview",
+        "title": "LabelComboBox > Overview",
+        "section": "Overview",
+        "text": "label\nowner\nOverview\nlabel\nowner"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#import-detail",
+        "title": "LabelComboBox > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#attribute-detail",
+        "title": "LabelComboBox > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#LabelComboBox.label",
+        "title": "LabelComboBox > Attribute detail > label",
+        "section": "Attribute detail > label",
+        "text": "LabelComboBox.label\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelComboBox.html#LabelComboBox.owner",
+        "title": "LabelComboBox > Attribute detail > owner",
+        "section": "Attribute detail > owner",
+        "text": "LabelComboBox.owner\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/is_req",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/is_req.html#ansysscadealmgw_msofficemsexcelis_req",
+        "title": "ansys.scade.almgw_msoffice.msexcel.is_req",
+        "section": "ansys.scade.almgw_msoffice.msexcel.is_req",
+        "text": "Return whether a LLR element is a requirement.\nansys.scade.almgw_msoffice.msexcel.is_req"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/is_req",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/is_req.html#ansys.scade.almgw_msoffice.msexcel.is_req",
+        "title": "ansys.scade.almgw_msoffice.msexcel.is_req > ansys.scade.almgw_msoffice.msexcel.is_req > is_req",
+        "section": "ansys.scade.almgw_msoffice.msexcel.is_req > is_req",
+        "text": "ansys.scade.almgw_msoffice.msexcel.is_req(llr_elt: LlrElement) -> bool\n\nReturn whether a LLR element is a requirement."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/main",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/main.html#ansysscadealmgw_msofficemsofficemain",
+        "title": "ansys.scade.almgw_msoffice.msoffice.main",
+        "section": "ansys.scade.almgw_msoffice.msoffice.main",
+        "text": "Implement the ansys.scade.almgw_msoffice:main packages’s project script.\nansys.scade.almgw_msoffice.msoffice.main\nansys.scade.almgw_msoffice:main"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/main",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/main.html#ansys.scade.almgw_msoffice.msoffice.main",
+        "title": "ansys.scade.almgw_msoffice.msoffice.main > ansys.scade.almgw_msoffice.msoffice.main > main",
+        "section": "ansys.scade.almgw_msoffice.msoffice.main > main",
+        "text": "ansys.scade.almgw_msoffice.msoffice.main()\n\nImplement the ansys.scade.almgw_msoffice:main packages’s project script."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/index",
+        "href": "api/ansys/scade/almgw_msoffice/trace/index.html#the-tracepy-module",
+        "title": "The trace.py module",
+        "section": "The trace.py module",
+        "text": "The trace.py module\ntrace.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/index",
+        "href": "api/ansys/scade/almgw_msoffice/trace/index.html#summary",
+        "title": "The trace.py module > Summary",
+        "section": "Summary",
+        "text": "TraceDocument\nTracability links file.\nSummary\nTraceDocument"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/index",
+        "href": "api/ansys/scade/almgw_msoffice/trace/index.html#description",
+        "title": "The trace.py module > Description",
+        "section": "Description",
+        "text": "Persistence for Ansys SCADE ALM Gateway connector for MS-Office.\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/hlr_to_llr_sheet",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/hlr_to_llr_sheet.html#ansysscadealmgw_msofficemsexcelhlr_to_llr_sheet",
+        "title": "ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet",
+        "section": "ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet",
+        "text": "Generate the downstream matrix.\nansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/hlr_to_llr_sheet",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/hlr_to_llr_sheet.html#ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet",
+        "title": "ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet > ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet > hlr_to_llr_sheet",
+        "section": "ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet > hlr_to_llr_sheet",
+        "text": "ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet(ws, formats: ansys.scade.almgw_msoffice.utils.Formats, project: ansys.scade.pyalmgw.documents.ReqProject, llr_dict: Dict[str, LlrElement])\n\nGenerate the downstream matrix."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/is_section",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/is_section.html#ansysscadealmgw_msofficemsexcelis_section",
+        "title": "ansys.scade.almgw_msoffice.msexcel.is_section",
+        "section": "ansys.scade.almgw_msoffice.msexcel.is_section",
+        "text": "Return whether a LLR element is a section.\nansys.scade.almgw_msoffice.msexcel.is_section"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/is_section",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/is_section.html#ansys.scade.almgw_msoffice.msexcel.is_section",
+        "title": "ansys.scade.almgw_msoffice.msexcel.is_section > ansys.scade.almgw_msoffice.msexcel.is_section > is_section",
+        "section": "ansys.scade.almgw_msoffice.msexcel.is_section > is_section",
+        "text": "ansys.scade.almgw_msoffice.msexcel.is_section(llr_elt: LlrElement) -> bool\n\nReturn whether a LLR element is a section."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/llr_to_hlr_sheet",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/llr_to_hlr_sheet.html#ansysscadealmgw_msofficemsexcelllr_to_hlr_sheet",
+        "title": "ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet",
+        "section": "ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet",
+        "text": "Generate the upstream matrix.\nansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/llr_to_hlr_sheet",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/llr_to_hlr_sheet.html#ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet",
+        "title": "ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet > ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet > llr_to_hlr_sheet",
+        "section": "ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet > llr_to_hlr_sheet",
+        "text": "ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet(ws, formats: ansys.scade.almgw_msoffice.utils.Formats, project: ansys.scade.pyalmgw.documents.ReqProject, llr_dict: LlrElement)\n\nGenerate the upstream matrix."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_section",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_section.html#ansysscadealmgw_msofficemsexcelwrite_section",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_section",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_section",
+        "text": "Write a section of a matrix.\nansys.scade.almgw_msoffice.msexcel.write_section"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_section",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_section.html#ansys.scade.almgw_msoffice.msexcel.write_section",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_section > ansys.scade.almgw_msoffice.msexcel.write_section > write_section",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_section > write_section",
+        "text": "ansys.scade.almgw_msoffice.msexcel.write_section(c: ansys.scade.almgw_msoffice.utils.Cursor, formats: ansys.scade.almgw_msoffice.utils.Formats, is_first: bool, upper_section: SectionDesc, nb_sections: int) -> None\n\nWrite a section of a matrix."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/index",
+        "href": "api/ansys/scade/almgw_msoffice/register/index.html#the-registerpy-module",
+        "title": "The register.py module",
+        "section": "The register.py module",
+        "text": "The register.py module\nregister.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/index",
+        "href": "api/ansys/scade/almgw_msoffice/register/index.html#summary",
+        "title": "The register.py module > Summary",
+        "section": "Summary",
+        "text": "main\nImplement the ansys.scade.almgw_msoffice.register packages’s project script.\nregister\nImplement the ansys.scade.registry/register entry point.\ncode\nSummary\nmain\nansys.scade.almgw_msoffice.register\nregister\nansys.scade.registry/register\ncode"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/index",
+        "href": "api/ansys/scade/almgw_msoffice/register/index.html#description",
+        "title": "The register.py module > Description",
+        "section": "Description",
+        "text": "Registers the ALM GAteway MS-Office connector registry files (SRG).\nRefer to the installation\nsteps for more information.\nIt addresses SCADE 2024 R2 and prior releases.\nSCADE 2025 R1 and greater use the package’s\nansys.scade.registry and ansys.almgw.connector entry points.\nDescription\nansys.scade.registry\nansys.almgw.connector"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/index",
+        "href": "api/ansys/scade/almgw_msoffice/register/index.html#module-detail",
+        "title": "The register.py module > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/index",
+        "href": "api/ansys/scade/almgw_msoffice/register/index.html#register.code",
+        "title": "The register.py module > Module detail > code",
+        "section": "Module detail > code",
+        "text": "register.code = 0\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_headers",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_headers.html#ansysscadealmgw_msofficemsexcelwrite_headers",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_headers",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_headers",
+        "text": "Write the header of a matrix.\nansys.scade.almgw_msoffice.msexcel.write_headers"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_headers",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_headers.html#ansys.scade.almgw_msoffice.msexcel.write_headers",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_headers > ansys.scade.almgw_msoffice.msexcel.write_headers > write_headers",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_headers > write_headers",
+        "text": "ansys.scade.almgw_msoffice.msexcel.write_headers(formats: ansys.scade.almgw_msoffice.utils.Formats, c: ansys.scade.almgw_msoffice.utils.Cursor, headers: Headers) -> None\n\nWrite the header of a matrix."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/add_cov",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/add_cov.html#ansysscadealmgw_msofficemsexceladd_cov",
+        "title": "ansys.scade.almgw_msoffice.msexcel.add_cov",
+        "section": "ansys.scade.almgw_msoffice.msexcel.add_cov",
+        "text": "Return the combination of two coverage statuses.\nansys.scade.almgw_msoffice.msexcel.add_cov"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/add_cov",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/add_cov.html#ansys.scade.almgw_msoffice.msexcel.add_cov",
+        "title": "ansys.scade.almgw_msoffice.msexcel.add_cov > ansys.scade.almgw_msoffice.msexcel.add_cov > add_cov",
+        "section": "ansys.scade.almgw_msoffice.msexcel.add_cov > add_cov",
+        "text": "ansys.scade.almgw_msoffice.msexcel.add_cov(x: CovResult, y: CovResult) -> CovResult\n\nReturn the combination of two coverage statuses."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#settings",
+        "title": "Settings",
+        "section": "Settings",
+        "text": "Bases: scade.tool.suite.gui.dialogs.Dialog\nSettings editor for the connector.\nInitialize the dialog.\nSettings\nSettings\nscade.tool.suite.gui.dialogs.Dialog"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#ansys.scade.almgw_msoffice.settings.Settings",
+        "title": "Settings > Settings > Settings",
+        "section": "Settings > Settings",
+        "text": "class ansys.scade.almgw_msoffice.settings.Settings\n\nBases: scade.tool.suite.gui.dialogs.Dialog\n\nSettings editor for the connector.\n\nInitialize the dialog."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#overview",
+        "title": "Settings > Overview",
+        "section": "Overview",
+        "text": "add_edit\nAdd an edit bundle with normalized positions.\nadd_file\nAdd a file selector bundle with normalized positions.\non_add\nPrompt the user for a new document.\non_build\nBuild the dialog.\non_cancel\nClose the dialog.\non_ok\nSave the changes and close the dialog.\non_project_selection\nUpdate current project.\non_remove\nRemove the selected documents.\non_set_project\nUpdate the settings and the dialog after a project is selected.\nread_settings\nUpdate the dialog with the project’s settings.\nwrite_settings\nUpdate the project’s settings from the dialog.\ncb_projects\ned_req_style\ned_schema\ned_text_style\nlb_documents\npb_cancel\npb_ok\nproject\nOverview\nadd_edit\nadd_file\non_add\non_build\non_cancel\non_ok\non_project_selection\non_remove\non_set_project\nread_settings\nwrite_settings\ncb_projects\ned_req_style\ned_schema\ned_text_style\nlb_documents\npb_cancel\npb_ok\nproject"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#import-detail",
+        "title": "Settings > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#attribute-detail",
+        "title": "Settings > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.cb_projects",
+        "title": "Settings > Attribute detail > cb_projects",
+        "section": "Attribute detail > cb_projects",
+        "text": "Settings.cb_projects = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.ed_req_style",
+        "title": "Settings > Attribute detail > ed_req_style",
+        "section": "Attribute detail > ed_req_style",
+        "text": "Settings.ed_req_style = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.ed_schema",
+        "title": "Settings > Attribute detail > ed_schema",
+        "section": "Attribute detail > ed_schema",
+        "text": "Settings.ed_schema = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.ed_text_style",
+        "title": "Settings > Attribute detail > ed_text_style",
+        "section": "Attribute detail > ed_text_style",
+        "text": "Settings.ed_text_style = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.lb_documents",
+        "title": "Settings > Attribute detail > lb_documents",
+        "section": "Attribute detail > lb_documents",
+        "text": "Settings.lb_documents = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.pb_cancel",
+        "title": "Settings > Attribute detail > pb_cancel",
+        "section": "Attribute detail > pb_cancel",
+        "text": "Settings.pb_cancel = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.pb_ok",
+        "title": "Settings > Attribute detail > pb_ok",
+        "section": "Attribute detail > pb_ok",
+        "text": "Settings.pb_ok = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.project",
+        "title": "Settings > Attribute detail > project",
+        "section": "Attribute detail > project",
+        "text": "Settings.project = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#method-detail",
+        "title": "Settings > Method detail",
+        "section": "Method detail",
+        "text": "Add an edit bundle with normalized positions.\nAdd a file selector bundle with normalized positions.\nPrompt the user for a new document.\nBuild the dialog.\nClose the dialog.\nSave the changes and close the dialog.\nUpdate current project.\nRemove the selected documents.\nUpdate the settings and the dialog after a project is selected.\nUpdate the dialog with the project’s settings.\nUpdate the project’s settings from the dialog.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.add_edit",
+        "title": "Settings > Method detail > add_edit",
+        "section": "Method detail > add_edit",
+        "text": "Settings.add_edit(y: int, text: str) -> scade.tool.suite.gui.widgets.EditBox\n\nAdd an edit bundle with normalized positions."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.add_file",
+        "title": "Settings > Method detail > add_file",
+        "section": "Method detail > add_file",
+        "text": "Settings.add_file(y: int, text: str, extension: str, dir: str, filter: str, mode: FSM) -> FileSelector\n\nAdd a file selector bundle with normalized positions."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_add",
+        "title": "Settings > Method detail > on_add",
+        "section": "Method detail > on_add",
+        "text": "Settings.on_add(*args)\n\nPrompt the user for a new document."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_build",
+        "title": "Settings > Method detail > on_build",
+        "section": "Method detail > on_build",
+        "text": "Settings.on_build()\n\nBuild the dialog."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_cancel",
+        "title": "Settings > Method detail > on_cancel",
+        "section": "Method detail > on_cancel",
+        "text": "Settings.on_cancel(*args)\n\nClose the dialog."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_ok",
+        "title": "Settings > Method detail > on_ok",
+        "section": "Method detail > on_ok",
+        "text": "Settings.on_ok(*args)\n\nSave the changes and close the dialog."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_project_selection",
+        "title": "Settings > Method detail > on_project_selection",
+        "section": "Method detail > on_project_selection",
+        "text": "Settings.on_project_selection(cb: scade.tool.suite.gui.widgets.ObjectComboBox, index: int)\n\nUpdate current project."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_remove",
+        "title": "Settings > Method detail > on_remove",
+        "section": "Method detail > on_remove",
+        "text": "Settings.on_remove(*args)\n\nRemove the selected documents."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.on_set_project",
+        "title": "Settings > Method detail > on_set_project",
+        "section": "Method detail > on_set_project",
+        "text": "Settings.on_set_project(project: scade.model.project.stdproject.Project)\n\nUpdate the settings and the dialog after a project is selected."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.read_settings",
+        "title": "Settings > Method detail > read_settings",
+        "section": "Method detail > read_settings",
+        "text": "Settings.read_settings()\n\nUpdate the dialog with the project’s settings."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/Settings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/Settings.html#Settings.write_settings",
+        "title": "Settings > Method detail > write_settings",
+        "section": "Method detail > write_settings",
+        "text": "Settings.write_settings()\n\nUpdate the project’s settings from the dialog."
+    },
+    {
+        "objectID": "getting-started/index",
+        "href": "getting-started/index.html#getting-started",
+        "title": "Getting started",
+        "section": "Getting started",
+        "text": "To use Ansys SCADE ALM Gateway connector for MS-Office, you must have a valid license for Ansys SCADE.\nFor information on getting a licensed copy, see the\nAnsys SCADE Suite\npage on the Ansys website.\nGetting started"
+    },
+    {
+        "objectID": "getting-started/index",
+        "href": "getting-started/index.html#requirements",
+        "title": "Getting started > Requirements",
+        "section": "Requirements",
+        "text": "The ansys-scade-almgw-msoffice package supports only the versions of Python delivered with\nAnsys SCADE, starting from 2021 R2:\n2021 R2 to 2023 R1: Python 3.7\n2023 R2 and later: Python 3.10\nRequirements\nansys-scade-almgw-msoffice"
+    },
+    {
+        "objectID": "getting-started/index",
+        "href": "getting-started/index.html#install-in-user-mode",
+        "title": "Getting started > Install in user mode",
+        "section": "Install in user mode",
+        "text": "The following steps are for installing Ansys SCADE ALM Gateway connector for MS-Office in user mode. If you want to\ncontribute to Ansys SCADE ALM Gateway connector for MS-Office,\nsee contribute_scade_almgw_msoffice for installing in developer mode.\nBefore installing Ansys SCADE ALM Gateway connector for MS-Office in user mode, run this command to ensure that\nyou have the latest version of pip:\nInstall Ansys SCADE ALM Gateway connector for MS-Office with this command:\nFor Ansys SCADE releases 2024 R1 and below, complete the installation with\nthis command:\nThis additional step is not required when installing the package with\nAnsys SCADE Extension Manager.\nFor Ansys SCADE 2024 R2 and below, complete the installation as follows:\nCopy ansys/scade/almgw_msoffice/almgw_msoffice.properties to the\nSCADE LifeCycle/ALM Gateway/external directory of the SCADE 2024 R2.\nFor example: C:\\Program Files\\ANSYS Inc\\v242\\SCADE\\SCADE LifeCycle\\ALM Gateway\\external.\nEdit the copy of almgw_msoffice.properties to replace %PYTHON_DIR% by the Python’s\ndirectory selected for the package’s installation, to access ansys_scade_almgw_msoffice.exe.\nInstall in user mode\nansys/scade/almgw_msoffice/almgw_msoffice.properties\nSCADE LifeCycle/ALM Gateway/external\nC:\\Program Files\\ANSYS Inc\\v242\\SCADE\\SCADE LifeCycle\\ALM Gateway\\external\nalmgw_msoffice.properties\n%PYTHON_DIR%\nansys_scade_almgw_msoffice.exe"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/index",
+        "href": "api/ansys/scade/almgw_msoffice/setup/index.html#the-setuppy-module",
+        "title": "The setup.py module",
+        "section": "The setup.py module",
+        "text": "The setup.py module\nsetup.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/index",
+        "href": "api/ansys/scade/almgw_msoffice/setup/index.html#summary",
+        "title": "The setup.py module > Summary",
+        "section": "Summary",
+        "text": "main\nImplement the ansys.scade.almgw_msoffice.setup:main packages’s project script.\nsetup\nUpdate the project with the settings.\nSummary\nmain\nansys.scade.almgw_msoffice.setup:main\nsetup"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/index",
+        "href": "api/ansys/scade/almgw_msoffice/setup/index.html#description",
+        "title": "The setup.py module > Description",
+        "section": "Description",
+        "text": "Command line utility to setup a project for the connector.\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#the-settingspy-module",
+        "title": "The settings.py module",
+        "section": "The settings.py module",
+        "text": "The settings.py module\nsettings.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#summary",
+        "title": "The settings.py module > Summary",
+        "section": "Summary",
+        "text": "CommandSettings\nDefines a command to edit the settings.\nFileSelector\nBundles a file selector widget with a label, edit and button.\nLabelComboBox\nBundles a combo box with a label.\nLabelEditBox\nBundles an edit box with a label.\nSettings\nSettings editor for the connector.\nFSM\nModes of the file selector bundle.\ndy\nh_settings\nhm\nscript_dir\nscript_path\nw_settings\nwd\nwf\nwl\nxf\nxl\ny\nH_BUTTON\nH_COMBO\nH_EDIT\nH_LABEL\nH_LIST\nH_TREE\nW_DOTS\nSummary\nCommandSettings\nFileSelector\nLabelComboBox\nLabelEditBox\nSettings\nFSM\ndy\nh_settings\nhm\nscript_dir\nscript_path\nw_settings\nwd\nwf\nwl\nxf\nxl\ny\nH_BUTTON\nH_COMBO\nH_EDIT\nH_LABEL\nH_LIST\nH_TREE\nW_DOTS"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#description",
+        "title": "The settings.py module > Description",
+        "section": "Description",
+        "text": "Provides the MS Office Settings command.\nDescription\nMS Office Settings"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#module-detail",
+        "title": "The settings.py module > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.H_BUTTON",
+        "title": "The settings.py module > Module detail > H_BUTTON",
+        "section": "Module detail > H_BUTTON",
+        "text": "settings.H_BUTTON = 20\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.H_COMBO",
+        "title": "The settings.py module > Module detail > H_COMBO",
+        "section": "Module detail > H_COMBO",
+        "text": "settings.H_COMBO = 130\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.H_EDIT",
+        "title": "The settings.py module > Module detail > H_EDIT",
+        "section": "Module detail > H_EDIT",
+        "text": "settings.H_EDIT = 20\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.H_LABEL",
+        "title": "The settings.py module > Module detail > H_LABEL",
+        "section": "Module detail > H_LABEL",
+        "text": "settings.H_LABEL = 20\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.H_LIST",
+        "title": "The settings.py module > Module detail > H_LIST",
+        "section": "Module detail > H_LIST",
+        "text": "settings.H_LIST = 130\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.H_TREE",
+        "title": "The settings.py module > Module detail > H_TREE",
+        "section": "Module detail > H_TREE",
+        "text": "settings.H_TREE = 30\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.W_DOTS",
+        "title": "The settings.py module > Module detail > W_DOTS",
+        "section": "Module detail > W_DOTS",
+        "text": "settings.W_DOTS = 20\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.dy",
+        "title": "The settings.py module > Module detail > dy",
+        "section": "Module detail > dy",
+        "text": "settings.dy = 30\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.h_settings",
+        "title": "The settings.py module > Module detail > h_settings",
+        "section": "Module detail > h_settings",
+        "text": "settings.h_settings = 350\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.hm",
+        "title": "The settings.py module > Module detail > hm",
+        "section": "Module detail > hm",
+        "text": "settings.hm = 15\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.script_dir",
+        "title": "The settings.py module > Module detail > script_dir",
+        "section": "Module detail > script_dir",
+        "text": "settings.script_dir\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.script_path",
+        "title": "The settings.py module > Module detail > script_path",
+        "section": "Module detail > script_path",
+        "text": "settings.script_path\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.w_settings",
+        "title": "The settings.py module > Module detail > w_settings",
+        "section": "Module detail > w_settings",
+        "text": "settings.w_settings = 425\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.wd",
+        "title": "The settings.py module > Module detail > wd",
+        "section": "Module detail > wd",
+        "text": "settings.wd = 395\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.wf",
+        "title": "The settings.py module > Module detail > wf",
+        "section": "Module detail > wf",
+        "text": "settings.wf = 250\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.wl",
+        "title": "The settings.py module > Module detail > wl",
+        "section": "Module detail > wl",
+        "text": "settings.wl = 140\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.xf",
+        "title": "The settings.py module > Module detail > xf",
+        "section": "Module detail > xf",
+        "text": "settings.xf = 160\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.xl",
+        "title": "The settings.py module > Module detail > xl",
+        "section": "Module detail > xl",
+        "text": "settings.xl = 15\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/index",
+        "href": "api/ansys/scade/almgw_msoffice/settings/index.html#settings.y",
+        "title": "The settings.py module > Module detail > y",
+        "section": "Module detail > y",
+        "text": "settings.y = 7\n\n"
+    },
+    {
+        "objectID": "api/index",
+        "href": "api/index.html#api-reference",
+        "title": "API reference",
+        "section": "API reference",
+        "text": "This section describes ansys-scade-almgw-msoffice endpoints, their capabilities, and how\nto interact with them programmatically.\nAPI reference"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#the-msexcelpy-module",
+        "title": "The msexcel.py module",
+        "section": "The msexcel.py module",
+        "text": "The msexcel.py module\nmsexcel.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#summary",
+        "title": "The msexcel.py module > Summary",
+        "section": "Summary",
+        "text": "add_cov\nReturn the combination of two coverage statuses.\nconstant\nReturn Scade’s constant flow v.\ngenerate_matrix\nGenerate downstream and upstream traceaibility matrices.\nhlr_to_llr_sheet\nGenerate the downstream matrix.\ninit\nReturn Scade’s flow init_value -> other_value.\nis_req\nReturn whether a LLR element is a requirement.\nis_section\nReturn whether a LLR element is a section.\niter_llr_section\nIterate the document hierarchy.\nllr_attributes\nReturn the overall attributes.\nllr_section_depth\nReturn the max depth of the document hierarchy.\nllr_to_hlr_sheet\nGenerate the upstream matrix.\non_first\nReturn Scade’s flow true -> false.\nwrite_headers\nWrite the header of a matrix.\nwrite_llr_name_and_type\nWrite a LLR, its kind, and insert its icon.\nwrite_section\nWrite a section of a matrix.\nwrite_section_cov\nWrite the section’s coverage.\nCovResult\nHeaders\nLlrElement\nSectionDesc\nT\nSummary\nadd_cov\nconstant\nv\ngenerate_matrix\nhlr_to_llr_sheet\ninit\ninit_value -> other_value\nis_req\nis_section\niter_llr_section\nllr_attributes\nllr_section_depth\nllr_to_hlr_sheet\non_first\ntrue -> false\nwrite_headers\nwrite_llr_name_and_type\nwrite_section\nwrite_section_cov\nCovResult\nHeaders\nLlrElement\nSectionDesc\nT"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#description",
+        "title": "The msexcel.py module > Description",
+        "section": "Description",
+        "text": "Generation of traceability matrices as an Excel document.\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#module-detail",
+        "title": "The msexcel.py module > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#msexcel.T",
+        "title": "The msexcel.py module > Module detail > T",
+        "section": "Module detail > T",
+        "text": "msexcel.T\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#msexcel.CovResult",
+        "title": "The msexcel.py module > Module detail > CovResult",
+        "section": "Module detail > CovResult",
+        "text": "msexcel.CovResult\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#msexcel.Headers",
+        "title": "The msexcel.py module > Module detail > Headers",
+        "section": "Module detail > Headers",
+        "text": "msexcel.Headers\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#msexcel.LlrElement",
+        "title": "The msexcel.py module > Module detail > LlrElement",
+        "section": "Module detail > LlrElement",
+        "text": "msexcel.LlrElement\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/index",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/index.html#msexcel.SectionDesc",
+        "title": "The msexcel.py module > Module detail > SectionDesc",
+        "section": "Module detail > SectionDesc",
+        "text": "msexcel.SectionDesc\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/on_first",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/on_first.html#ansysscadealmgw_msofficemsexcelon_first",
+        "title": "ansys.scade.almgw_msoffice.msexcel.on_first",
+        "section": "ansys.scade.almgw_msoffice.msexcel.on_first",
+        "text": "Return Scade’s flow true -> false.\nansys.scade.almgw_msoffice.msexcel.on_first\ntrue -> false"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/on_first",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/on_first.html#ansys.scade.almgw_msoffice.msexcel.on_first",
+        "title": "ansys.scade.almgw_msoffice.msexcel.on_first > ansys.scade.almgw_msoffice.msexcel.on_first > on_first",
+        "section": "ansys.scade.almgw_msoffice.msexcel.on_first > on_first",
+        "text": "ansys.scade.almgw_msoffice.msexcel.on_first() -> Iterator[bool]\n\nReturn Scade’s flow true -> false."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/register",
+        "href": "api/ansys/scade/almgw_msoffice/register/register.html#ansysscadealmgw_msofficeregisterregister",
+        "title": "ansys.scade.almgw_msoffice.register.register",
+        "section": "ansys.scade.almgw_msoffice.register.register",
+        "text": "Implement the ansys.scade.registry/register entry point.\nansys.scade.almgw_msoffice.register.register\nansys.scade.registry/register"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/register/register",
+        "href": "api/ansys/scade/almgw_msoffice/register/register.html#ansys.scade.almgw_msoffice.register.register",
+        "title": "ansys.scade.almgw_msoffice.register.register > ansys.scade.almgw_msoffice.register.register > register",
+        "section": "ansys.scade.almgw_msoffice.register.register > register",
+        "text": "ansys.scade.almgw_msoffice.register.register() -> Tuple[int, str]\n\nImplement the ansys.scade.registry/register entry point."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_llr_name_and_type",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_llr_name_and_type.html#ansysscadealmgw_msofficemsexcelwrite_llr_name_and_type",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type",
+        "text": "Write a LLR, its kind, and insert its icon.\nansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_llr_name_and_type",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_llr_name_and_type.html#ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type > ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type > write_llr_name_and_type",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type > write_llr_name_and_type",
+        "text": "ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type(formats: ansys.scade.almgw_msoffice.utils.Formats, c: ansys.scade.almgw_msoffice.utils.Cursor, llr: LlrElement, is_first: bool) -> None\n\nWrite a LLR, its kind, and insert its icon."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/llr_section_depth",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/llr_section_depth.html#ansysscadealmgw_msofficemsexcelllr_section_depth",
+        "title": "ansys.scade.almgw_msoffice.msexcel.llr_section_depth",
+        "section": "ansys.scade.almgw_msoffice.msexcel.llr_section_depth",
+        "text": "Return the max depth of the document hierarchy.\nansys.scade.almgw_msoffice.msexcel.llr_section_depth"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/llr_section_depth",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/llr_section_depth.html#ansys.scade.almgw_msoffice.msexcel.llr_section_depth",
+        "title": "ansys.scade.almgw_msoffice.msexcel.llr_section_depth > ansys.scade.almgw_msoffice.msexcel.llr_section_depth > llr_section_depth",
+        "section": "ansys.scade.almgw_msoffice.msexcel.llr_section_depth > llr_section_depth",
+        "text": "ansys.scade.almgw_msoffice.msexcel.llr_section_depth(section: LlrElement) -> int\n\nReturn the max depth of the document hierarchy."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/srg",
+        "href": "api/ansys/scade/almgw_msoffice/srg.html#ansysscadealmgw_msofficesrg",
+        "title": "ansys.scade.almgw_msoffice.srg",
+        "section": "ansys.scade.almgw_msoffice.srg",
+        "text": "Return the path of the SCADE Studio registry file.\nThis function implements the entry point “ansys.scade.registry/srg”\nintroduced in SCADE 2025 R1. It avoids creating an explicit srg file\nin %APPDATA%/Scade/Customize when the package is installed.\nansys.scade.almgw_msoffice.srg\n%APPDATA%/Scade/Customize"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/srg",
+        "href": "api/ansys/scade/almgw_msoffice/srg.html#ansys.scade.almgw_msoffice.srg",
+        "title": "ansys.scade.almgw_msoffice.srg > ansys.scade.almgw_msoffice.srg > srg",
+        "section": "ansys.scade.almgw_msoffice.srg > srg",
+        "text": "ansys.scade.almgw_msoffice.srg() -> str\n\nReturn the path of the SCADE Studio registry file.\n\nThis function implements the entry point “ansys.scade.registry/srg”\nintroduced in SCADE 2025 R1. It avoids creating an explicit srg file\nin %APPDATA%/Scade/Customize when the package is installed."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/constant",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/constant.html#ansysscadealmgw_msofficemsexcelconstant",
+        "title": "ansys.scade.almgw_msoffice.msexcel.constant",
+        "section": "ansys.scade.almgw_msoffice.msexcel.constant",
+        "text": "Return Scade’s constant flow v.\nansys.scade.almgw_msoffice.msexcel.constant\nv"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/constant",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/constant.html#ansys.scade.almgw_msoffice.msexcel.constant",
+        "title": "ansys.scade.almgw_msoffice.msexcel.constant > ansys.scade.almgw_msoffice.msexcel.constant > constant",
+        "section": "ansys.scade.almgw_msoffice.msexcel.constant > constant",
+        "text": "ansys.scade.almgw_msoffice.msexcel.constant(v: T) -> Iterator[T]\n\nReturn Scade’s constant flow v."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#msoffice",
+        "title": "MSOffice",
+        "section": "MSOffice",
+        "text": "Bases: ansys.scade.pyalmgw.connector.Connector\nSpecialization of the connector for MS Office.\nInitialize the MS Office connector.\nMSOffice\nMSOffice\nansys.scade.pyalmgw.connector.Connector"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#ansys.scade.almgw_msoffice.msoffice.MSOffice",
+        "title": "MSOffice > MSOffice > MSOffice",
+        "section": "MSOffice > MSOffice",
+        "text": "class ansys.scade.almgw_msoffice.msoffice.MSOffice\n\nBases: ansys.scade.pyalmgw.connector.Connector\n\nSpecialization of the connector for MS Office.\n\nInitialize the MS Office connector."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#overview",
+        "title": "MSOffice > Overview",
+        "section": "Overview",
+        "text": "get_documents\nReturn the documents specified in the project.\nget_reqs_file\nReturn the path of the temporary file containing the requirements and traceability.\nget_trace_file\nReturn the path of the file containing the traceability.\non_export\nUpdate the traceability data and produce a traceability matrix.\non_import\nImport requirements and traceability links to ALM Gateway.\non_locate\nRun Microsoft Word with the document containing the requirement and locate it.\non_manage\nRun Microsoft Word with the first referenced document.\non_settings\nStub the command settings.\nopen_document\nOpen the document, and locate the requirement when not empty.\nread_requirements\nRead all the requirements from the documents.\nmap_requirements\nOverview\nget_documents\nget_reqs_file\nget_trace_file\non_export\non_import\non_locate\non_manage\non_settings\nsettings\nopen_document\nread_requirements\nmap_requirements"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#import-detail",
+        "title": "MSOffice > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#attribute-detail",
+        "title": "MSOffice > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.map_requirements",
+        "title": "MSOffice > Attribute detail > map_requirements",
+        "section": "Attribute detail > map_requirements",
+        "text": "MSOffice.map_requirements\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#method-detail",
+        "title": "MSOffice > Method detail",
+        "section": "Method detail",
+        "text": "Return the documents specified in the project.\nReturn the path of the temporary file containing the requirements and traceability.\nReturn the path of the file containing the traceability.\nUpdate the traceability data and produce a traceability matrix.\nThis function updates the tracability data in a separate file.\nIt produces the traceability matrices when an export configuration\nfile is specified in the project.\nImport requirements and traceability links to ALM Gateway.\nThe function reads the requirements from the documents and\nadds the traceability data stored in a separate file.\nRun Microsoft Word with the document containing the requirement and locate it.\nRun Microsoft Word with the first referenced document.\nStub the command settings.\nNothing to do, the settings are managed by a dedicated plug-in.\nOpen the document, and locate the requirement when not empty.\nRead all the requirements from the documents.\nMethod detail\nsettings"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.get_documents",
+        "title": "MSOffice > Method detail > get_documents",
+        "section": "Method detail > get_documents",
+        "text": "MSOffice.get_documents() -> List[pathlib.Path]\n\nReturn the documents specified in the project."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.get_reqs_file",
+        "title": "MSOffice > Method detail > get_reqs_file",
+        "section": "Method detail > get_reqs_file",
+        "text": "MSOffice.get_reqs_file() -> pathlib.Path\n\nReturn the path of the temporary file containing the requirements and traceability."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.get_trace_file",
+        "title": "MSOffice > Method detail > get_trace_file",
+        "section": "Method detail > get_trace_file",
+        "text": "MSOffice.get_trace_file() -> pathlib.Path\n\nReturn the path of the file containing the traceability."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.on_export",
+        "title": "MSOffice > Method detail > on_export",
+        "section": "Method detail > on_export",
+        "text": "MSOffice.on_export(links: pathlib.Path, pid: int) -> int\n\nUpdate the traceability data and produce a traceability matrix.\n\nThis function updates the tracability data in a separate file.\n\nIt produces the traceability matrices when an export configuration\nfile is specified in the project."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.on_import",
+        "title": "MSOffice > Method detail > on_import",
+        "section": "Method detail > on_import",
+        "text": "MSOffice.on_import(file: pathlib.Path, pid: int) -> int\n\nImport requirements and traceability links to ALM Gateway.\n\nThe function reads the requirements from the documents and\nadds the traceability data stored in a separate file."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.on_locate",
+        "title": "MSOffice > Method detail > on_locate",
+        "section": "Method detail > on_locate",
+        "text": "MSOffice.on_locate(req: str, pid: int) -> int\n\nRun Microsoft Word with the document containing the requirement and locate it."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.on_manage",
+        "title": "MSOffice > Method detail > on_manage",
+        "section": "Method detail > on_manage",
+        "text": "MSOffice.on_manage(pid: int) -> int\n\nRun Microsoft Word with the first referenced document."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.on_settings",
+        "title": "MSOffice > Method detail > on_settings",
+        "section": "Method detail > on_settings",
+        "text": "MSOffice.on_settings(pid: int) -> int\n\nStub the command settings.\n\nNothing to do, the settings are managed by a dedicated plug-in."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.open_document",
+        "title": "MSOffice > Method detail > open_document",
+        "section": "Method detail > open_document",
+        "text": "MSOffice.open_document(file: pathlib.Path, req: str)\n\nOpen the document, and locate the requirement when not empty."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#MSOffice.read_requirements",
+        "title": "MSOffice > Method detail > read_requirements",
+        "section": "Method detail > read_requirements",
+        "text": "MSOffice.read_requirements(project: ansys.scade.pyalmgw.documents.ReqProject)\n\nRead all the requirements from the documents."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#parameters",
+        "title": "MSOffice > Parameters",
+        "section": "Parameters",
+        "text": "Path of a JSON file that contains the links to add and remove.\nSCADE product process ID.\nParameters"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#returns",
+        "title": "MSOffice > Returns",
+        "section": "Returns",
+        "text": "int\n-1: if an error occurs, therefore previous export status\nand requirement tree shall be kept\n0: requirements and traceability links shall not be exported\n1: requirements and traceability links shall be exported\n2: previous export status and requirement tree shall be kept\nReturns"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#parameters",
+        "title": "MSOffice > Parameters",
+        "section": "Parameters",
+        "text": "Absolute path where the XML requirements file is saved.\nSCADE product process ID.\nParameters"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#returns",
+        "title": "MSOffice > Returns",
+        "section": "Returns",
+        "text": "int\n-1: if an error occurs, therefore previous export status\nand requirement tree shall be kept\n0: requirements and traceability links shall be correctly imported\nReturns"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#parameters",
+        "title": "MSOffice > Parameters",
+        "section": "Parameters",
+        "text": "Identifier of a requirement defined in a document.\nSCADE product process ID.\nParameters"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#returns",
+        "title": "MSOffice > Returns",
+        "section": "Returns",
+        "text": "int\n-1: if an error occurs executing the command\n0: if the command is successfully executed\nReturns"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#parameters",
+        "title": "MSOffice > Parameters",
+        "section": "Parameters",
+        "text": "SCADE product process ID.\nParameters"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#returns",
+        "title": "MSOffice > Returns",
+        "section": "Returns",
+        "text": "int\n-1: if an error occurs launching the command\n0: if ‘Management Requirements’ UI of ALM tool is successfully launched\n1: to clean requirement list on the SCADE IDE ‘Requirements’ window\nReturns"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#parameters",
+        "title": "MSOffice > Parameters",
+        "section": "Parameters",
+        "text": "SCADE product process ID.\nParameters"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/MSOffice.html#returns",
+        "title": "MSOffice > Returns",
+        "section": "Returns",
+        "text": "int\n-1: if an error occurs, therefore previous settings information shall be kept\n0: set settings information shall be OK\n1: ALM Gateway project shall be removed, i.e., ALM connection shall be reset\nReturns"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/init",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/init.html#ansysscadealmgw_msofficemsexcelinit",
+        "title": "ansys.scade.almgw_msoffice.msexcel.init",
+        "section": "ansys.scade.almgw_msoffice.msexcel.init",
+        "text": "Return Scade’s flow init_value -> other_value.\nansys.scade.almgw_msoffice.msexcel.init\ninit_value -> other_value"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/init",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/init.html#ansys.scade.almgw_msoffice.msexcel.init",
+        "title": "ansys.scade.almgw_msoffice.msexcel.init > ansys.scade.almgw_msoffice.msexcel.init > init",
+        "section": "ansys.scade.almgw_msoffice.msexcel.init > init",
+        "text": "ansys.scade.almgw_msoffice.msexcel.init(init_value: T, other_value: T) -> Iterator[T]\n\nReturn Scade’s flow init_value -> other_value."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FSM",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FSM.html#fsm",
+        "title": "FSM",
+        "section": "FSM",
+        "text": "Bases: enum.Enum\nModes of the file selector bundle.\nFSM\nFSM\nenum.Enum"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FSM",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FSM.html#ansys.scade.almgw_msoffice.settings.FSM",
+        "title": "FSM > FSM > FSM",
+        "section": "FSM > FSM",
+        "text": "class ansys.scade.almgw_msoffice.settings.FSM\n\nBases: enum.Enum\n\nModes of the file selector bundle."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FSM",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FSM.html#import-detail",
+        "title": "FSM > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/main",
+        "href": "api/ansys/scade/almgw_msoffice/setup/main.html#ansysscadealmgw_msofficesetupmain",
+        "title": "ansys.scade.almgw_msoffice.setup.main",
+        "section": "ansys.scade.almgw_msoffice.setup.main",
+        "text": "Implement the ansys.scade.almgw_msoffice.setup:main packages’s project script.\nansys.scade.almgw_msoffice.setup.main\nansys.scade.almgw_msoffice.setup:main"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/main",
+        "href": "api/ansys/scade/almgw_msoffice/setup/main.html#ansys.scade.almgw_msoffice.setup.main",
+        "title": "ansys.scade.almgw_msoffice.setup.main > ansys.scade.almgw_msoffice.setup.main > main",
+        "section": "ansys.scade.almgw_msoffice.setup.main > main",
+        "text": "ansys.scade.almgw_msoffice.setup.main() -> int\n\nImplement the ansys.scade.almgw_msoffice.setup:main packages’s project script."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#fileselector",
+        "title": "FileSelector",
+        "section": "FileSelector",
+        "text": "Bases: LabelEditBox\nBundles a file selector widget with a label, edit and button.\nInitialize the file selector.\nFileSelector\nFileSelector\nLabelEditBox"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#ansys.scade.almgw_msoffice.settings.FileSelector",
+        "title": "FileSelector > FileSelector > FileSelector",
+        "section": "FileSelector > FileSelector",
+        "text": "class ansys.scade.almgw_msoffice.settings.FileSelector(owner, text: str, extension: str, dir: str, filter: str, mode: FSM, wl: int, x=10, y=10, w=50, h=14, **kwargs)\n\nBases: LabelEditBox\n\nBundles a file selector widget with a label, edit and button.\n\nInitialize the file selector."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#overview",
+        "title": "FileSelector > Overview",
+        "section": "Overview",
+        "text": "on_click\nPrompt the user for a configuration file.\nbtn_dots\ndir\nextension\nfilter\nmode\nowner\nreldir\nOverview\non_click\nbtn_dots\ndir\nextension\nfilter\nmode\nowner\nreldir"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#import-detail",
+        "title": "FileSelector > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#attribute-detail",
+        "title": "FileSelector > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.btn_dots",
+        "title": "FileSelector > Attribute detail > btn_dots",
+        "section": "Attribute detail > btn_dots",
+        "text": "FileSelector.btn_dots\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.dir",
+        "title": "FileSelector > Attribute detail > dir",
+        "section": "Attribute detail > dir",
+        "text": "FileSelector.dir\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.extension",
+        "title": "FileSelector > Attribute detail > extension",
+        "section": "Attribute detail > extension",
+        "text": "FileSelector.extension\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.filter",
+        "title": "FileSelector > Attribute detail > filter",
+        "section": "Attribute detail > filter",
+        "text": "FileSelector.filter\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.mode",
+        "title": "FileSelector > Attribute detail > mode",
+        "section": "Attribute detail > mode",
+        "text": "FileSelector.mode\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.owner",
+        "title": "FileSelector > Attribute detail > owner",
+        "section": "Attribute detail > owner",
+        "text": "FileSelector.owner\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.reldir",
+        "title": "FileSelector > Attribute detail > reldir",
+        "section": "Attribute detail > reldir",
+        "text": "FileSelector.reldir = ''\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#method-detail",
+        "title": "FileSelector > Method detail",
+        "section": "Method detail",
+        "text": "Prompt the user for a configuration file.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/FileSelector",
+        "href": "api/ansys/scade/almgw_msoffice/settings/FileSelector.html#FileSelector.on_click",
+        "title": "FileSelector > Method detail > on_click",
+        "section": "Method detail > on_click",
+        "text": "FileSelector.on_click(button: scade.tool.suite.gui.widgets.Button)\n\nPrompt the user for a configuration file."
+    },
+    {
+        "objectID": "index",
+        "href": "index.html#ansys-scade-alm-gateway-connector-for-ms-office",
+        "title": "Ansys SCADE ALM Gateway connector for MS-Office",
+        "section": "Ansys SCADE ALM Gateway connector for MS-Office",
+        "text": "This package showcases how to use the SCADE ALM Gateway with\nMS Office documents, eliminating the need for an external ALM tool:\nIt imports requirements from MS-Word documents\nIt produces traceability matrices as MS-Excel documents\nIt is also a usage example of Ansys SCADE ALM Gateway Python Toolbox.\nLearn how to install and use Ansys SCADE ALM Gateway connector for MS-Office.\nLearn how to use Ansys SCADE ALM Gateway connector for MS-Office.\nLearn how to contribute to Ansys SCADE ALM Gateway connector for MS-Office.\nView the changelog for Ansys SCADE ALM Gateway connector for MS-Office.\nAnsys SCADE ALM Gateway connector for MS-Office"
+    },
+    {
+        "objectID": "index",
+        "href": "index.html#indices-and-tables",
+        "title": "Ansys SCADE ALM Gateway connector for MS-Office > Indices and tables",
+        "section": "Indices and tables",
+        "text": "genindex\nsearch\nIndices and tables"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#cursor",
+        "title": "Cursor",
+        "section": "Cursor",
+        "text": "Cursor management.\nInitialize the cursor.\nCursor\nCursor"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#ansys.scade.almgw_msoffice.utils.Cursor",
+        "title": "Cursor > Cursor > Cursor",
+        "section": "Cursor > Cursor",
+        "text": "class ansys.scade.almgw_msoffice.utils.Cursor(ws, pos: Tuple[int, int] = (0, 0))\n\nCursor management.\n\nInitialize the cursor."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#overview",
+        "title": "Cursor > Overview",
+        "section": "Overview",
+        "text": "col\nN/A.\ndown\nN/A.\ninsert_image\nN/A.\nleft\nN/A.\nline\nN/A.\nmove\nN/A.\nnew_line\nN/A.\nright\nN/A.\nset_column\nN/A.\nset_column_width\nN/A.\nset_row\nN/A.\nset_row_lvl\nN/A.\nup\nN/A.\nwrite\nN/A.\nwrite_comment\nN/A.\nwrite_url\nN/A.\npos\nws\nOverview\ncol\ndown\ninsert_image\nleft\nline\nmove\nnew_line\nright\nset_column\nset_column_width\nset_row\nset_row_lvl\nup\nwrite\nwrite_comment\nwrite_url\npos\nws"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#import-detail",
+        "title": "Cursor > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#attribute-detail",
+        "title": "Cursor > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.pos",
+        "title": "Cursor > Attribute detail > pos",
+        "section": "Attribute detail > pos",
+        "text": "Cursor.pos = (0, 0)\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.ws",
+        "title": "Cursor > Attribute detail > ws",
+        "section": "Attribute detail > ws",
+        "text": "Cursor.ws\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#method-detail",
+        "title": "Cursor > Method detail",
+        "section": "Method detail",
+        "text": "N/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nN/A.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.col",
+        "title": "Cursor > Method detail > col",
+        "section": "Method detail > col",
+        "text": "Cursor.col() -> int\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.down",
+        "title": "Cursor > Method detail > down",
+        "section": "Method detail > down",
+        "text": "Cursor.down()\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.insert_image",
+        "title": "Cursor > Method detail > insert_image",
+        "section": "Method detail > insert_image",
+        "text": "Cursor.insert_image(image: str, options: Dict[str, int | str] = {})\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.left",
+        "title": "Cursor > Method detail > left",
+        "section": "Method detail > left",
+        "text": "Cursor.left()\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.line",
+        "title": "Cursor > Method detail > line",
+        "section": "Method detail > line",
+        "text": "Cursor.line() -> int\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.move",
+        "title": "Cursor > Method detail > move",
+        "section": "Method detail > move",
+        "text": "Cursor.move(v: Tuple[int, int])\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.new_line",
+        "title": "Cursor > Method detail > new_line",
+        "section": "Method detail > new_line",
+        "text": "Cursor.new_line(new_col=0)\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.right",
+        "title": "Cursor > Method detail > right",
+        "section": "Method detail > right",
+        "text": "Cursor.right()\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.set_column",
+        "title": "Cursor > Method detail > set_column",
+        "section": "Method detail > set_column",
+        "text": "Cursor.set_column(width: float | None = None, cell_format: xlsxwriter.format.Format | None = None, options: Dict[str, int | str] = {})\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.set_column_width",
+        "title": "Cursor > Method detail > set_column_width",
+        "section": "Method detail > set_column_width",
+        "text": "Cursor.set_column_width(width: float)\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.set_row",
+        "title": "Cursor > Method detail > set_row",
+        "section": "Method detail > set_row",
+        "text": "Cursor.set_row(height: float | None = None, cell_format: xlsxwriter.format.Format | None = None, options: Dict[str, int | str] = {})\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.set_row_lvl",
+        "title": "Cursor > Method detail > set_row_lvl",
+        "section": "Method detail > set_row_lvl",
+        "text": "Cursor.set_row_lvl(level: int, collapsed: bool = False)\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.up",
+        "title": "Cursor > Method detail > up",
+        "section": "Method detail > up",
+        "text": "Cursor.up()\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.write",
+        "title": "Cursor > Method detail > write",
+        "section": "Method detail > write",
+        "text": "Cursor.write(*args)\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.write_comment",
+        "title": "Cursor > Method detail > write_comment",
+        "section": "Method detail > write_comment",
+        "text": "Cursor.write_comment(comment: str)\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Cursor",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Cursor.html#Cursor.write_url",
+        "title": "Cursor > Method detail > write_url",
+        "section": "Method detail > write_url",
+        "text": "Cursor.write_url(url: str, cell_format: xlsxwriter.format.Format | None = None, string: str | None = None, tip: str | None = None)\n\nN/A."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/index",
+        "href": "api/ansys/scade/almgw_msoffice/msword/index.html#the-mswordpy-module",
+        "title": "The msword.py module",
+        "section": "The msword.py module",
+        "text": "The msword.py module\nmsword.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/index",
+        "href": "api/ansys/scade/almgw_msoffice/msword/index.html#summary",
+        "title": "The msword.py module > Summary",
+        "section": "Summary",
+        "text": "Parser\nParser for MS Word documents (DOCX).\nadd_document\nParse the input MS Word document and return the contained requirements hierarchy.\nread_heading\nReturn the heading level of a paragraph or 0.\nheading_regex\nSummary\nParser\nadd_document\nread_heading\nheading_regex"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/index",
+        "href": "api/ansys/scade/almgw_msoffice/msword/index.html#description",
+        "title": "The msword.py module > Description",
+        "section": "Description",
+        "text": "Extraction of the requirements of a MS Word document (DOCX).\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/index",
+        "href": "api/ansys/scade/almgw_msoffice/msword/index.html#module-detail",
+        "title": "The msword.py module > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/index",
+        "href": "api/ansys/scade/almgw_msoffice/msword/index.html#msword.heading_regex",
+        "title": "The msword.py module > Module detail > heading_regex",
+        "section": "Module detail > heading_regex",
+        "text": "msword.heading_regex\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#formats",
+        "title": "Formats",
+        "section": "Formats",
+        "text": "Cache for formats.\nInitialize the cache.\nFormats\nFormats"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#ansys.scade.almgw_msoffice.utils.Formats",
+        "title": "Formats > Formats > Formats",
+        "section": "Formats > Formats",
+        "text": "class ansys.scade.almgw_msoffice.utils.Formats(wb: xlsxwriter.Workbook)\n\nCache for formats.\n\nInitialize the cache."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#overview",
+        "title": "Formats > Overview",
+        "section": "Overview",
+        "text": "add_format\nAdd a new format.\nget\nReturn a format.\nformats\nwb\nOverview\nadd_format\nget\nformats\nwb"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#import-detail",
+        "title": "Formats > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#attribute-detail",
+        "title": "Formats > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#Formats.formats",
+        "title": "Formats > Attribute detail > formats",
+        "section": "Attribute detail > formats",
+        "text": "Formats.formats: Dict[str, xlsxwriter.format.Format]\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#Formats.wb",
+        "title": "Formats > Attribute detail > wb",
+        "section": "Attribute detail > wb",
+        "text": "Formats.wb\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#method-detail",
+        "title": "Formats > Method detail",
+        "section": "Method detail",
+        "text": "Add a new format.\nReturn a format.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#Formats.add_format",
+        "title": "Formats > Method detail > add_format",
+        "section": "Method detail > add_format",
+        "text": "Formats.add_format(fmt_name: str, fmt_dict: FormatCtor) -> xlsxwriter.format.Format\n\nAdd a new format."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/Formats",
+        "href": "api/ansys/scade/almgw_msoffice/utils/Formats.html#Formats.get",
+        "title": "Formats > Method detail > get",
+        "section": "Method detail > get",
+        "text": "Formats.get(name: str) -> xlsxwriter.format.Format | None\n\nReturn a format."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#labeleditbox",
+        "title": "LabelEditBox",
+        "section": "LabelEditBox",
+        "text": "Bases: scade.tool.suite.gui.widgets.EditBox\nBundles an edit box with a label.\nInitialize the edit box.\nLabelEditBox\nLabelEditBox\nscade.tool.suite.gui.widgets.EditBox"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#ansys.scade.almgw_msoffice.settings.LabelEditBox",
+        "title": "LabelEditBox > LabelEditBox > LabelEditBox",
+        "section": "LabelEditBox > LabelEditBox",
+        "text": "class ansys.scade.almgw_msoffice.settings.LabelEditBox(owner, text: str, wl: int, x=10, y=10, w=50, h=14, **kwargs)\n\nBases: scade.tool.suite.gui.widgets.EditBox\n\nBundles an edit box with a label.\n\nInitialize the edit box."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#overview",
+        "title": "LabelEditBox > Overview",
+        "section": "Overview",
+        "text": "label\nowner\nOverview\nlabel\nowner"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#import-detail",
+        "title": "LabelEditBox > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#attribute-detail",
+        "title": "LabelEditBox > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#LabelEditBox.label",
+        "title": "LabelEditBox > Attribute detail > label",
+        "section": "Attribute detail > label",
+        "text": "LabelEditBox.label\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox",
+        "href": "api/ansys/scade/almgw_msoffice/settings/LabelEditBox.html#LabelEditBox.owner",
+        "title": "LabelEditBox > Attribute detail > owner",
+        "section": "Attribute detail > owner",
+        "text": "LabelEditBox.owner\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#commandsettings",
+        "title": "CommandSettings",
+        "section": "CommandSettings",
+        "text": "Bases: scade.tool.suite.gui.commands.Command\nDefines a command to edit the settings.\nInitialize the command settings.\nCommandSettings\nCommandSettings\nscade.tool.suite.gui.commands.Command"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#ansys.scade.almgw_msoffice.settings.CommandSettings",
+        "title": "CommandSettings > CommandSettings > CommandSettings",
+        "section": "CommandSettings > CommandSettings",
+        "text": "class ansys.scade.almgw_msoffice.settings.CommandSettings\n\nBases: scade.tool.suite.gui.commands.Command\n\nDefines a command to edit the settings.\n\nInitialize the command settings."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#overview",
+        "title": "CommandSettings > Overview",
+        "section": "Overview",
+        "text": "on_activate\nOpen the dialog.\non_enable\nReturn whether the command is available.\nOverview\non_activate\non_enable"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#import-detail",
+        "title": "CommandSettings > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#method-detail",
+        "title": "CommandSettings > Method detail",
+        "section": "Method detail",
+        "text": "Open the dialog.\nReturn whether the command is available.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#CommandSettings.on_activate",
+        "title": "CommandSettings > Method detail > on_activate",
+        "section": "Method detail > on_activate",
+        "text": "CommandSettings.on_activate()\n\nOpen the dialog."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/settings/CommandSettings",
+        "href": "api/ansys/scade/almgw_msoffice/settings/CommandSettings.html#CommandSettings.on_enable",
+        "title": "CommandSettings > Method detail > on_enable",
+        "section": "Method detail > on_enable",
+        "text": "CommandSettings.on_enable()\n\nReturn whether the command is available."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/index.html#the-msofficepy-module",
+        "title": "The msoffice.py module",
+        "section": "The msoffice.py module",
+        "text": "The msoffice.py module\nmsoffice.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/index.html#summary",
+        "title": "The msoffice.py module > Summary",
+        "section": "Summary",
+        "text": "MSOffice\nSpecialization of the connector for MS Office.\nmain\nImplement the ansys.scade.almgw_msoffice:main packages’s project script.\nSummary\nMSOffice\nmain\nansys.scade.almgw_msoffice:main"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/msoffice/index.html#description",
+        "title": "The msoffice.py module > Description",
+        "section": "Description",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office.\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#parser",
+        "title": "Parser",
+        "section": "Parser",
+        "text": "Parser for MS Word documents (DOCX).\nInitialize the parser.\nParser\nParser"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#ansys.scade.almgw_msoffice.msword.Parser",
+        "title": "Parser > Parser > Parser",
+        "section": "Parser > Parser",
+        "text": "class ansys.scade.almgw_msoffice.msword.Parser\n\nParser for MS Word documents (DOCX).\n\nInitialize the parser."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#overview",
+        "title": "Parser > Overview",
+        "section": "Overview",
+        "text": "add_heading\nAdd a new section to the document.\nadd_req_id\nAdd a new requirement to the document.\nappend_req_text\nAppend text to the current requirement’s description.\nparse\nBuild the document model from a MS Word document.\nanonymous_req_count\ncurrent_req\nrequirements\nsections\nOverview\nadd_heading\nadd_req_id\nappend_req_text\nparse\nanonymous_req_count\ncurrent_req\nrequirements\nsections"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#import-detail",
+        "title": "Parser > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#attribute-detail",
+        "title": "Parser > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.anonymous_req_count",
+        "title": "Parser > Attribute detail > anonymous_req_count",
+        "section": "Attribute detail > anonymous_req_count",
+        "text": "Parser.anonymous_req_count = 0\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.current_req",
+        "title": "Parser > Attribute detail > current_req",
+        "section": "Attribute detail > current_req",
+        "text": "Parser.current_req = None\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.requirements",
+        "title": "Parser > Attribute detail > requirements",
+        "section": "Attribute detail > requirements",
+        "text": "Parser.requirements\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.sections",
+        "title": "Parser > Attribute detail > sections",
+        "section": "Attribute detail > sections",
+        "text": "Parser.sections: List[ansys.scade.pyalmgw.documents.Container] = []\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#method-detail",
+        "title": "Parser > Method detail",
+        "section": "Method detail",
+        "text": "Add a new section to the document.\nAdd a new requirement to the document.\nAppend text to the current requirement’s description.\nBuild the document model from a MS Word document.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.add_heading",
+        "title": "Parser > Method detail > add_heading",
+        "section": "Method detail > add_heading",
+        "text": "Parser.add_heading(level: int, text: str)\n\nAdd a new section to the document."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.add_req_id",
+        "title": "Parser > Method detail > add_req_id",
+        "section": "Method detail > add_req_id",
+        "text": "Parser.add_req_id(id: str)\n\nAdd a new requirement to the document."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.append_req_text",
+        "title": "Parser > Method detail > append_req_text",
+        "section": "Method detail > append_req_text",
+        "text": "Parser.append_req_text(text: str)\n\nAppend text to the current requirement’s description."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msword/Parser",
+        "href": "api/ansys/scade/almgw_msoffice/msword/Parser.html#Parser.parse",
+        "title": "Parser > Method detail > parse",
+        "section": "Method detail > parse",
+        "text": "Parser.parse(req_doc: ansys.scade.pyalmgw.documents.ReqDocument, req_style: str, text_style: str)\n\nBuild the document model from a MS Word document."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/index",
+        "href": "api/ansys/scade/almgw_msoffice/utils/index.html#the-utilspy-module",
+        "title": "The utils.py module",
+        "section": "The utils.py module",
+        "text": "The utils.py module\nutils.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/index",
+        "href": "api/ansys/scade/almgw_msoffice/utils/index.html#summary",
+        "title": "The utils.py module > Summary",
+        "section": "Summary",
+        "text": "Cursor\nCursor management.\nFormats\nCache for formats.\nFormatCtor\nSummary\nCursor\nFormats\nFormatCtor"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/index",
+        "href": "api/ansys/scade/almgw_msoffice/utils/index.html#description",
+        "title": "The utils.py module > Description",
+        "section": "Description",
+        "text": "Utilities for managing Excel documents.\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/index",
+        "href": "api/ansys/scade/almgw_msoffice/utils/index.html#module-detail",
+        "title": "The utils.py module > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/utils/index",
+        "href": "api/ansys/scade/almgw_msoffice/utils/index.html#utils.FormatCtor",
+        "title": "The utils.py module > Module detail > FormatCtor",
+        "section": "Module detail > FormatCtor",
+        "text": "utils.FormatCtor\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/unregister",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/unregister.html#ansysscadealmgw_msofficeunregisterunregister",
+        "title": "ansys.scade.almgw_msoffice.unregister.unregister",
+        "section": "ansys.scade.almgw_msoffice.unregister.unregister",
+        "text": "Implement the ansys.scade.registry/unregister entry point.\nansys.scade.almgw_msoffice.unregister.unregister\nansys.scade.registry/unregister"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/unregister",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/unregister.html#ansys.scade.almgw_msoffice.unregister.unregister",
+        "title": "ansys.scade.almgw_msoffice.unregister.unregister > ansys.scade.almgw_msoffice.unregister.unregister > unregister",
+        "section": "ansys.scade.almgw_msoffice.unregister.unregister > unregister",
+        "text": "ansys.scade.almgw_msoffice.unregister.unregister() -> Tuple[int, str]\n\nImplement the ansys.scade.registry/unregister entry point."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#tracedocument",
+        "title": "TraceDocument",
+        "section": "TraceDocument",
+        "text": "Tracability links file.\nUpdated on export\nRead on import\nThe cache document is also updated.\nInitialize the trace document.\nTraceDocument\nTraceDocument"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#ansys.scade.almgw_msoffice.trace.TraceDocument",
+        "title": "TraceDocument > TraceDocument > TraceDocument",
+        "section": "TraceDocument > TraceDocument",
+        "text": "class ansys.scade.almgw_msoffice.trace.TraceDocument(project: ansys.scade.pyalmgw.documents.ReqProject, path: pathlib.Path, requirements=None)\n\nTracability links file.\n\nUpdated on export\n\nRead on import\n\nThe cache document is also updated.\n\nInitialize the trace document."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#overview",
+        "title": "TraceDocument > Overview",
+        "section": "Overview",
+        "text": "add\nCreate a traceability link.\nmerge_links\nMerge the traceability updates.\nread\nRead the trace file.\nremove\nRemove a tracrability link.\nwrite\nWrite the trace file.\nfile\nlinks\nmap_requirements\nproject\nOverview\nadd\nmerge_links\nread\nremove\nwrite\nfile\nlinks\nmap_requirements\nproject"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#import-detail",
+        "title": "TraceDocument > Import detail",
+        "section": "Import detail",
+        "text": "Import detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#attribute-detail",
+        "title": "TraceDocument > Attribute detail",
+        "section": "Attribute detail",
+        "text": "Attribute detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.file",
+        "title": "TraceDocument > Attribute detail > file",
+        "section": "Attribute detail > file",
+        "text": "TraceDocument.file = ''\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.links",
+        "title": "TraceDocument > Attribute detail > links",
+        "section": "Attribute detail > links",
+        "text": "TraceDocument.links: Dict[str, ansys.scade.pyalmgw.documents.TraceabilityLink]\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.map_requirements",
+        "title": "TraceDocument > Attribute detail > map_requirements",
+        "section": "Attribute detail > map_requirements",
+        "text": "TraceDocument.map_requirements: Dict[str, ansys.scade.pyalmgw.documents.Requirement]\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.project",
+        "title": "TraceDocument > Attribute detail > project",
+        "section": "Attribute detail > project",
+        "text": "TraceDocument.project\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#method-detail",
+        "title": "TraceDocument > Method detail",
+        "section": "Method detail",
+        "text": "Create a traceability link.\nMerge the traceability updates.\nRead the trace file.\nRemove a tracrability link.\nWrite the trace file.\nMethod detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.add",
+        "title": "TraceDocument > Method detail > add",
+        "section": "Method detail > add",
+        "text": "TraceDocument.add(oid: str, req: str, path: str)\n\nCreate a traceability link."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.merge_links",
+        "title": "TraceDocument > Method detail > merge_links",
+        "section": "Method detail > merge_links",
+        "text": "TraceDocument.merge_links(file: pathlib.Path)\n\nMerge the traceability updates."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.read",
+        "title": "TraceDocument > Method detail > read",
+        "section": "Method detail > read",
+        "text": "TraceDocument.read()\n\nRead the trace file."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.remove",
+        "title": "TraceDocument > Method detail > remove",
+        "section": "Method detail > remove",
+        "text": "TraceDocument.remove(oid: str, req: str)\n\nRemove a tracrability link."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/trace/TraceDocument",
+        "href": "api/ansys/scade/almgw_msoffice/trace/TraceDocument.html#TraceDocument.write",
+        "title": "TraceDocument > Method detail > write",
+        "section": "Method detail > write",
+        "text": "TraceDocument.write()\n\nWrite the trace file."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/exe",
+        "href": "api/ansys/scade/almgw_msoffice/exe.html#ansysscadealmgw_msofficeexe",
+        "title": "ansys.scade.almgw_msoffice.exe",
+        "section": "ansys.scade.almgw_msoffice.exe",
+        "text": "Return the path of the connector’s executable.\nThis function implements the entry point “ansys.almgw.connector/exe”\nintroduced in SCADE 2025 R1. It avoids creating an explicit properties file\nin $(SCADE)/SCADE LifeCycle/ALM Gateway/external when the package is installed.\nansys.scade.almgw_msoffice.exe\n$(SCADE)/SCADE LifeCycle/ALM Gateway/external"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/exe",
+        "href": "api/ansys/scade/almgw_msoffice/exe.html#ansys.scade.almgw_msoffice.exe",
+        "title": "ansys.scade.almgw_msoffice.exe > ansys.scade.almgw_msoffice.exe > exe",
+        "section": "ansys.scade.almgw_msoffice.exe > exe",
+        "text": "ansys.scade.almgw_msoffice.exe() -> tuple[str, str]\n\nReturn the path of the connector’s executable.\n\nThis function implements the entry point “ansys.almgw.connector/exe”\nintroduced in SCADE 2025 R1. It avoids creating an explicit properties file\nin $(SCADE)/SCADE LifeCycle/ALM Gateway/external when the package is installed."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/get_srg_name",
+        "href": "api/ansys/scade/almgw_msoffice/get_srg_name.html#ansysscadealmgw_msofficeget_srg_name",
+        "title": "ansys.scade.almgw_msoffice.get_srg_name",
+        "section": "ansys.scade.almgw_msoffice.get_srg_name",
+        "text": "Return the name of the registration file for Ansys SCADE IDE.\nIt addresses SCADE 2024 R1 and prior releases.\nSCADE 2024 R2 and later use the package’s\nansys.scade.registry entry point.\nansys.scade.almgw_msoffice.get_srg_name\nansys.scade.registry"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/get_srg_name",
+        "href": "api/ansys/scade/almgw_msoffice/get_srg_name.html#ansys.scade.almgw_msoffice.get_srg_name",
+        "title": "ansys.scade.almgw_msoffice.get_srg_name > ansys.scade.almgw_msoffice.get_srg_name > get_srg_name",
+        "section": "ansys.scade.almgw_msoffice.get_srg_name > get_srg_name",
+        "text": "ansys.scade.almgw_msoffice.get_srg_name() -> str\n\nReturn the name of the registration file for Ansys SCADE IDE.\n\nIt addresses SCADE 2024 R1 and prior releases.\nSCADE 2024 R2 and later use the package’s\nansys.scade.registry entry point."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_section_cov",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_section_cov.html#ansysscadealmgw_msofficemsexcelwrite_section_cov",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_section_cov",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_section_cov",
+        "text": "Write the section’s coverage.\nansys.scade.almgw_msoffice.msexcel.write_section_cov"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/write_section_cov",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/write_section_cov.html#ansys.scade.almgw_msoffice.msexcel.write_section_cov",
+        "title": "ansys.scade.almgw_msoffice.msexcel.write_section_cov > ansys.scade.almgw_msoffice.msexcel.write_section_cov > write_section_cov",
+        "section": "ansys.scade.almgw_msoffice.msexcel.write_section_cov > write_section_cov",
+        "text": "ansys.scade.almgw_msoffice.msexcel.write_section_cov(c: ansys.scade.almgw_msoffice.utils.Cursor, cov: CovResult, formats: ansys.scade.almgw_msoffice.utils.Formats) -> None\n\nWrite the section’s coverage."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/setup",
+        "href": "api/ansys/scade/almgw_msoffice/setup/setup.html#ansysscadealmgw_msofficesetupsetup",
+        "title": "ansys.scade.almgw_msoffice.setup.setup",
+        "section": "ansys.scade.almgw_msoffice.setup.setup",
+        "text": "Update the project with the settings.\nansys.scade.almgw_msoffice.setup.setup"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/setup/setup",
+        "href": "api/ansys/scade/almgw_msoffice/setup/setup.html#ansys.scade.almgw_msoffice.setup.setup",
+        "title": "ansys.scade.almgw_msoffice.setup.setup > ansys.scade.almgw_msoffice.setup.setup > setup",
+        "section": "ansys.scade.almgw_msoffice.setup.setup > setup",
+        "text": "ansys.scade.almgw_msoffice.setup.setup(project: scade.model.project.stdproject.Project, options: argparse.Namespace) -> int\n\nUpdate the project with the settings."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/index",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/index.html#the-unregisterpy-module",
+        "title": "The unregister.py module",
+        "section": "The unregister.py module",
+        "text": "The unregister.py module\nunregister.py"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/index",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/index.html#summary",
+        "title": "The unregister.py module > Summary",
+        "section": "Summary",
+        "text": "main\nImplement the ansys.scade.almgw_msoffice.unregister packages’s project script.\nunregister\nImplement the ansys.scade.registry/unregister entry point.\ncode\nSummary\nmain\nansys.scade.almgw_msoffice.unregister\nunregister\nansys.scade.registry/unregister\ncode"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/index",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/index.html#description",
+        "title": "The unregister.py module > Description",
+        "section": "Description",
+        "text": "Unregisters the ALM GAteway MS-Office connector registry files (SRG).\nRefer to the installation\nsteps for more information.\nIt addresses SCADE 2024 R2 and prior releases.\nSCADE 2025 R1 and greater use the package’s\nansys.scade.registry and ansys.almgw.connector entry points.\nDescription\nansys.scade.registry\nansys.almgw.connector"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/index",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/index.html#module-detail",
+        "title": "The unregister.py module > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/index",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/index.html#unregister.code",
+        "title": "The unregister.py module > Module detail > code",
+        "section": "Module detail > code",
+        "text": "unregister.code = 0\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#the-ansysscadealmgw_msoffice-library",
+        "title": "The ansys.scade.almgw_msoffice library",
+        "section": "The ansys.scade.almgw_msoffice library",
+        "text": "The ansys.scade.almgw_msoffice library\nansys.scade.almgw_msoffice"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#summary",
+        "title": "The ansys.scade.almgw_msoffice library > Summary",
+        "section": "Summary",
+        "text": "msexcel\nGeneration of traceability matrices as an Excel document.\nmsoffice\nAnsys SCADE ALM Gateway connector for MS-Office.\nmsword\nExtraction of the requirements of a MS Word document (DOCX).\nregister\nRegisters the ALM GAteway MS-Office connector registry files (SRG).\nsettings\nProvides the MS Office Settings command.\nsetup\nCommand line utility to setup a project for the connector.\ntrace\nPersistence for Ansys SCADE ALM Gateway connector for MS-Office.\nunregister\nUnregisters the ALM GAteway MS-Office connector registry files (SRG).\nutils\nUtilities for managing Excel documents.\nexe\nReturn the path of the connector’s executable.\nget_srg_name\nReturn the name of the registration file for Ansys SCADE IDE.\nsrg\nReturn the path of the SCADE Studio registry file.\n__version__\nDOCUMENTS\nDOCUMENTS_DEFAULT\nREQSTYLE\nREQSTYLE_DEFAULT\nTEXTSTYLE\nTEXTSTYLE_DEFAULT\nTOOL\nSummary\nmsexcel\nmsoffice\nmsword\nregister\nsettings\nMS Office Settings\nsetup\ntrace\nunregister\nutils\nexe\nget_srg_name\nsrg\n__version__\nDOCUMENTS\nDOCUMENTS_DEFAULT\nREQSTYLE\nREQSTYLE_DEFAULT\nTEXTSTYLE\nTEXTSTYLE_DEFAULT\nTOOL"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#description",
+        "title": "The ansys.scade.almgw_msoffice library > Description",
+        "section": "Description",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office.\nDescription"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#module-detail",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail",
+        "section": "Module detail",
+        "text": "Module detail"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.DOCUMENTS",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > DOCUMENTS",
+        "section": "Module detail > DOCUMENTS",
+        "text": "almgw_msoffice.DOCUMENTS = 'DOCUMENTS'\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.DOCUMENTS_DEFAULT",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > DOCUMENTS_DEFAULT",
+        "section": "Module detail > DOCUMENTS_DEFAULT",
+        "text": "almgw_msoffice.DOCUMENTS_DEFAULT = []\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.REQSTYLE",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > REQSTYLE",
+        "section": "Module detail > REQSTYLE",
+        "text": "almgw_msoffice.REQSTYLE = 'REQSTYLE'\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.REQSTYLE_DEFAULT",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > REQSTYLE_DEFAULT",
+        "section": "Module detail > REQSTYLE_DEFAULT",
+        "text": "almgw_msoffice.REQSTYLE_DEFAULT = 'Requirement_ID'\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.TEXTSTYLE",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > TEXTSTYLE",
+        "section": "Module detail > TEXTSTYLE",
+        "text": "almgw_msoffice.TEXTSTYLE = 'TEXTSTYLE'\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.TEXTSTYLE_DEFAULT",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > TEXTSTYLE_DEFAULT",
+        "section": "Module detail > TEXTSTYLE_DEFAULT",
+        "text": "almgw_msoffice.TEXTSTYLE_DEFAULT = 'Requirement_Text'\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.TOOL",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > TOOL",
+        "section": "Module detail > TOOL",
+        "text": "almgw_msoffice.TOOL = 'MSOFFICE'\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/index",
+        "href": "api/ansys/scade/almgw_msoffice/index.html#almgw_msoffice.__version__",
+        "title": "The ansys.scade.almgw_msoffice library > Module detail > __version__",
+        "section": "Module detail > __version__",
+        "text": "almgw_msoffice.__version__\n\n"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/main",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/main.html#ansysscadealmgw_msofficeunregistermain",
+        "title": "ansys.scade.almgw_msoffice.unregister.main",
+        "section": "ansys.scade.almgw_msoffice.unregister.main",
+        "text": "Implement the ansys.scade.almgw_msoffice.unregister packages’s project script.\nansys.scade.almgw_msoffice.unregister.main\nansys.scade.almgw_msoffice.unregister"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/unregister/main",
+        "href": "api/ansys/scade/almgw_msoffice/unregister/main.html#ansys.scade.almgw_msoffice.unregister.main",
+        "title": "ansys.scade.almgw_msoffice.unregister.main > ansys.scade.almgw_msoffice.unregister.main > main",
+        "section": "ansys.scade.almgw_msoffice.unregister.main > main",
+        "text": "ansys.scade.almgw_msoffice.unregister.main()\n\nImplement the ansys.scade.almgw_msoffice.unregister packages’s project script."
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/llr_attributes",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/llr_attributes.html#ansysscadealmgw_msofficemsexcelllr_attributes",
+        "title": "ansys.scade.almgw_msoffice.msexcel.llr_attributes",
+        "section": "ansys.scade.almgw_msoffice.msexcel.llr_attributes",
+        "text": "Return the overall attributes.\nansys.scade.almgw_msoffice.msexcel.llr_attributes"
+    },
+    {
+        "objectID": "api/ansys/scade/almgw_msoffice/msexcel/llr_attributes",
+        "href": "api/ansys/scade/almgw_msoffice/msexcel/llr_attributes.html#ansys.scade.almgw_msoffice.msexcel.llr_attributes",
+        "title": "ansys.scade.almgw_msoffice.msexcel.llr_attributes > ansys.scade.almgw_msoffice.msexcel.llr_attributes > llr_attributes",
+        "section": "ansys.scade.almgw_msoffice.msexcel.llr_attributes > llr_attributes",
+        "text": "ansys.scade.almgw_msoffice.msexcel.llr_attributes(llr_section: LlrElement) -> Set[str]\n\nReturn the overall attributes."
+    }
+]

@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.is_section
+=============================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.is_section(llr_elt: LlrElement) -> bool
+
+   Return whether a LLR element is a section.
+

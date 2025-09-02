@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.iter_llr_section
+===================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.iter_llr_section(s: LlrElement) -> Iterator[LlrElement]
+
+   Iterate the document hierarchy.
+

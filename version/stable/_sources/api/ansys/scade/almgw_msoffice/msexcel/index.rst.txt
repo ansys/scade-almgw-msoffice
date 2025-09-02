@@ -1,0 +1,199 @@
+
+
+
+
+
+
+The ``msexcel.py`` module
+=========================
+
+.. py:module:: ansys.scade.almgw_msoffice.msexcel
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+.. py:currentmodule:: msexcel
+.. tab-set::
+
+
+
+
+
+
+
+    .. tab-item:: Functions
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.add_cov`
+            - Return the combination of two coverage statuses.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.constant`
+            - Return Scade's constant flow ``v``.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.generate_matrix`
+            - Generate downstream and upstream traceaibility matrices.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet`
+            - Generate the downstream matrix.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.init`
+            - Return Scade's flow ``init_value -> other_value``.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.is_req`
+            - Return whether a LLR element is a requirement.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.is_section`
+            - Return whether a LLR element is a section.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.iter_llr_section`
+            - Iterate the document hierarchy.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.llr_attributes`
+            - Return the overall attributes.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.llr_section_depth`
+            - Return the max depth of the document hierarchy.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.llr_to_hlr_sheet`
+            - Generate the upstream matrix.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.on_first`
+            - Return Scade's flow ``true -> false``.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.write_headers`
+            - Write the header of a matrix.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type`
+            - Write a LLR, its kind, and insert its icon.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.write_section`
+            - Write a section of a matrix.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel.write_section_cov`
+            - Write the section's coverage.
+
+
+
+    .. tab-item:: Attributes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~CovResult`
+            - 
+
+
+          * - :py:obj:`~Headers`
+            - 
+
+
+          * - :py:obj:`~LlrElement`
+            - 
+
+
+          * - :py:obj:`~SectionDesc`
+            - 
+
+
+
+    .. tab-item:: Constants
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~T`
+            - 
+
+
+
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-md-function_variant"></span> add_cov</api/ansys/scade/almgw_msoffice/msexcel/add_cov>
+    <span class="nf nf-md-function_variant"></span> constant</api/ansys/scade/almgw_msoffice/msexcel/constant>
+    <span class="nf nf-md-function_variant"></span> generate_matrix</api/ansys/scade/almgw_msoffice/msexcel/generate_matrix>
+    <span class="nf nf-md-function_variant"></span> hlr_to_llr_sheet</api/ansys/scade/almgw_msoffice/msexcel/hlr_to_llr_sheet>
+    <span class="nf nf-md-function_variant"></span> init</api/ansys/scade/almgw_msoffice/msexcel/init>
+    <span class="nf nf-md-function_variant"></span> is_req</api/ansys/scade/almgw_msoffice/msexcel/is_req>
+    <span class="nf nf-md-function_variant"></span> is_section</api/ansys/scade/almgw_msoffice/msexcel/is_section>
+    <span class="nf nf-md-function_variant"></span> iter_llr_section</api/ansys/scade/almgw_msoffice/msexcel/iter_llr_section>
+    <span class="nf nf-md-function_variant"></span> llr_attributes</api/ansys/scade/almgw_msoffice/msexcel/llr_attributes>
+    <span class="nf nf-md-function_variant"></span> llr_section_depth</api/ansys/scade/almgw_msoffice/msexcel/llr_section_depth>
+    <span class="nf nf-md-function_variant"></span> llr_to_hlr_sheet</api/ansys/scade/almgw_msoffice/msexcel/llr_to_hlr_sheet>
+    <span class="nf nf-md-function_variant"></span> on_first</api/ansys/scade/almgw_msoffice/msexcel/on_first>
+    <span class="nf nf-md-function_variant"></span> write_headers</api/ansys/scade/almgw_msoffice/msexcel/write_headers>
+    <span class="nf nf-md-function_variant"></span> write_llr_name_and_type</api/ansys/scade/almgw_msoffice/msexcel/write_llr_name_and_type>
+    <span class="nf nf-md-function_variant"></span> write_section</api/ansys/scade/almgw_msoffice/msexcel/write_section>
+    <span class="nf nf-md-function_variant"></span> write_section_cov</api/ansys/scade/almgw_msoffice/msexcel/write_section_cov>
+
+
+
+
+
+
+Description
+-----------
+
+Generation of traceability matrices as an Excel document.
+
+
+
+
+
+
+
+Module detail
+-------------
+
+.. py:data:: T
+
+.. py:data:: CovResult
+
+.. py:data:: Headers
+
+.. py:data:: LlrElement
+
+.. py:data:: SectionDesc
+
+
+

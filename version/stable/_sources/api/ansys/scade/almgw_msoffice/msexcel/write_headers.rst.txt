@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.write_headers
+================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.write_headers(formats: ansys.scade.almgw_msoffice.utils.Formats, c: ansys.scade.almgw_msoffice.utils.Cursor, headers: Headers) -> None
+
+   Write the header of a matrix.
+

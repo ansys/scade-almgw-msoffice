@@ -1,0 +1,30 @@
+
+
+
+
+
+
+:class:`FSM`
+============
+
+.. py:class:: ansys.scade.almgw_msoffice.settings.FSM
+
+   Bases: :py:obj:`enum.Enum`
+
+
+   Modes of the file selector bundle.
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.settings import FSM
+
+
+
+
+

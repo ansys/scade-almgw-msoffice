@@ -1,0 +1,194 @@
+
+
+
+
+
+
+:class:`Settings`
+=================
+
+.. py:class:: ansys.scade.almgw_msoffice.settings.Settings
+
+   Bases: :py:obj:`scade.tool.suite.gui.dialogs.Dialog`
+
+
+   Settings editor for the connector.
+
+   Initialize the dialog.
+
+
+
+.. py:currentmodule:: Settings
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~add_edit`
+            - Add an edit bundle with normalized positions.
+          * - :py:attr:`~add_file`
+            - Add a file selector bundle with normalized positions.
+          * - :py:attr:`~on_add`
+            - Prompt the user for a new document.
+          * - :py:attr:`~on_build`
+            - Build the dialog.
+          * - :py:attr:`~on_cancel`
+            - Close the dialog.
+          * - :py:attr:`~on_ok`
+            - Save the changes and close the dialog.
+          * - :py:attr:`~on_project_selection`
+            - Update current project.
+          * - :py:attr:`~on_remove`
+            - Remove the selected documents.
+          * - :py:attr:`~on_set_project`
+            - Update the settings and the dialog after a project is selected.
+          * - :py:attr:`~read_settings`
+            - Update the dialog with the project's settings.
+          * - :py:attr:`~write_settings`
+            - Update the project's settings from the dialog.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~cb_projects`
+            - 
+          * - :py:attr:`~ed_req_style`
+            - 
+          * - :py:attr:`~ed_schema`
+            - 
+          * - :py:attr:`~ed_text_style`
+            - 
+          * - :py:attr:`~lb_documents`
+            - 
+          * - :py:attr:`~pb_cancel`
+            - 
+          * - :py:attr:`~pb_ok`
+            - 
+          * - :py:attr:`~project`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.settings import Settings
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: cb_projects
+   :value: None
+
+
+.. py:attribute:: ed_req_style
+   :value: None
+
+
+.. py:attribute:: ed_schema
+   :value: None
+
+
+.. py:attribute:: ed_text_style
+   :value: None
+
+
+.. py:attribute:: lb_documents
+   :value: None
+
+
+.. py:attribute:: pb_cancel
+   :value: None
+
+
+.. py:attribute:: pb_ok
+   :value: None
+
+
+.. py:attribute:: project
+   :value: None
+
+
+
+
+Method detail
+-------------
+
+.. py:method:: add_edit(y: int, text: str) -> scade.tool.suite.gui.widgets.EditBox
+
+   Add an edit bundle with normalized positions.
+
+
+.. py:method:: add_file(y: int, text: str, extension: str, dir: str, filter: str, mode: FSM) -> FileSelector
+
+   Add a file selector bundle with normalized positions.
+
+
+.. py:method:: on_add(*args)
+
+   Prompt the user for a new document.
+
+
+.. py:method:: on_build()
+
+   Build the dialog.
+
+
+.. py:method:: on_cancel(*args)
+
+   Close the dialog.
+
+
+.. py:method:: on_ok(*args)
+
+   Save the changes and close the dialog.
+
+
+.. py:method:: on_project_selection(cb: scade.tool.suite.gui.widgets.ObjectComboBox, index: int)
+
+   Update current project.
+
+
+.. py:method:: on_remove(*args)
+
+   Remove the selected documents.
+
+
+.. py:method:: on_set_project(project: scade.model.project.stdproject.Project)
+
+   Update the settings and the dialog after a project is selected.
+
+
+.. py:method:: read_settings()
+
+   Update the dialog with the project's settings.
+
+
+.. py:method:: write_settings()
+
+   Update the project's settings from the dialog.
+
+
+
+
+

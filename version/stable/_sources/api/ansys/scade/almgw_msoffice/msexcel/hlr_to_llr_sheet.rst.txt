@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet
+===================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.hlr_to_llr_sheet(ws, formats: ansys.scade.almgw_msoffice.utils.Formats, project: ansys.scade.pyalmgw.documents.ReqProject, llr_dict: LlrElement)
+
+   Generate the downstream matrix.
+

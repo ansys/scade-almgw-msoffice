@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msoffice.main
+========================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msoffice.main()
+
+   Implement the ``ansys.scade.almgw_msoffice:main`` packages's project script.
+

@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msword.read_heading
+==============================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msword.read_heading(style: Any) -> int
+
+   Return the heading level of a paragraph or 0.
+

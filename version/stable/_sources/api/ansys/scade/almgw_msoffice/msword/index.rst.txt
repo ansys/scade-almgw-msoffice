@@ -1,0 +1,118 @@
+
+
+
+
+
+
+The ``msword.py`` module
+========================
+
+.. py:module:: ansys.scade.almgw_msoffice.msword
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+
+
+.. py:currentmodule:: msword
+.. tab-set::
+
+
+
+
+    .. tab-item:: Classes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msword.Parser`
+            - Parser for MS Word documents (DOCX).
+
+
+
+
+
+    .. tab-item:: Functions
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msword.add_document`
+            - Parse the input MS Word document and return the contained requirements hierarchy.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msword.read_heading`
+            - Return the heading level of a paragraph or 0.
+
+
+
+    .. tab-item:: Attributes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~heading_regex`
+            - 
+
+
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-cod-symbol_class"></span> Parser</api/ansys/scade/almgw_msoffice/msword/Parser>
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-md-function_variant"></span> add_document</api/ansys/scade/almgw_msoffice/msword/add_document>
+    <span class="nf nf-md-function_variant"></span> read_heading</api/ansys/scade/almgw_msoffice/msword/read_heading>
+
+
+
+
+
+
+Description
+-----------
+
+Extraction of the requirements of a MS Word document (DOCX).
+
+
+
+
+
+
+
+Module detail
+-------------
+
+.. py:data:: heading_regex
+
+
+

@@ -1,0 +1,11 @@
+ansys.scade.almgw_msoffice.srg
+==============================
+
+.. py:function:: ansys.scade.almgw_msoffice.srg() -> str
+
+   Return the path of the SCADE Studio registry file.
+
+   This function implements the entry point "ansys.scade.registry/srg"
+   introduced in SCADE 2025 R1. It avoids creating an explicit srg file
+   in ``%APPDATA%/Scade/Customize`` when the package is installed.
+

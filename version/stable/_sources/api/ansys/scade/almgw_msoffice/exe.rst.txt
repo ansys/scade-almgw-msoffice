@@ -1,0 +1,11 @@
+ansys.scade.almgw_msoffice.exe
+==============================
+
+.. py:function:: ansys.scade.almgw_msoffice.exe() -> tuple[str, str]
+
+   Return the path of the connector's executable.
+
+   This function implements the entry point "ansys.almgw.connector/exe"
+   introduced in SCADE 2025 R1. It avoids creating an explicit properties file
+   in ``$(SCADE)/SCADE LifeCycle/ALM Gateway/external`` when the package is installed.
+

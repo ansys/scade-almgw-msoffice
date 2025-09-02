@@ -1,0 +1,106 @@
+
+
+
+
+
+
+:class:`FileSelector`
+=====================
+
+.. py:class:: ansys.scade.almgw_msoffice.settings.FileSelector(owner, text: str, extension: str, dir: str, filter: str, mode: FSM, wl: int, x=10, y=10, w=50, h=14, **kwargs)
+
+   Bases: :py:obj:`LabelEditBox`
+
+
+   Bundles a file selector widget with a label, edit and button.
+
+   Initialize the file selector.
+
+
+
+.. py:currentmodule:: FileSelector
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~on_click`
+            - Prompt the user for a configuration file.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~btn_dots`
+            - 
+          * - :py:attr:`~dir`
+            - 
+          * - :py:attr:`~extension`
+            - 
+          * - :py:attr:`~filter`
+            - 
+          * - :py:attr:`~mode`
+            - 
+          * - :py:attr:`~owner`
+            - 
+          * - :py:attr:`~reldir`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.settings import FileSelector
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: btn_dots
+
+.. py:attribute:: dir
+
+.. py:attribute:: extension
+
+.. py:attribute:: filter
+
+.. py:attribute:: mode
+
+.. py:attribute:: owner
+
+.. py:attribute:: reldir
+   :value: ''
+
+
+
+
+Method detail
+-------------
+
+.. py:method:: on_click(button: scade.tool.suite.gui.widgets.Button)
+
+   Prompt the user for a configuration file.
+
+
+
+
+

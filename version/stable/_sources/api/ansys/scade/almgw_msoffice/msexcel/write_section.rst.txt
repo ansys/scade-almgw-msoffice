@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.write_section
+================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.write_section(c: ansys.scade.almgw_msoffice.utils.Cursor, formats: ansys.scade.almgw_msoffice.utils.Formats, is_first: bool, upper_section: SectionDesc, nb_sections: int) -> None
+
+   Write a section of a matrix.
+

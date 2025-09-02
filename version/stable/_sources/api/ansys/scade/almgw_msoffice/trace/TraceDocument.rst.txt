@@ -1,0 +1,128 @@
+
+
+
+
+
+
+:class:`TraceDocument`
+======================
+
+.. py:class:: ansys.scade.almgw_msoffice.trace.TraceDocument(project: ansys.scade.pyalmgw.documents.ReqProject, path: pathlib.Path, requirements=None)
+
+   Tracability links file.
+
+   * Updated on export
+   * Read on import
+
+   .. Note::
+
+      The cache document is also updated.
+
+   Initialize the trace document.
+
+
+
+.. py:currentmodule:: TraceDocument
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~add`
+            - Create a traceability link.
+          * - :py:attr:`~merge_links`
+            - Merge the traceability updates.
+          * - :py:attr:`~read`
+            - Read the trace file.
+          * - :py:attr:`~remove`
+            - Remove a tracrability link.
+          * - :py:attr:`~write`
+            - Write the trace file.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~file`
+            - 
+          * - :py:attr:`~links`
+            - 
+          * - :py:attr:`~map_requirements`
+            - 
+          * - :py:attr:`~project`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.trace import TraceDocument
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: file
+   :value: ''
+
+
+.. py:attribute:: links
+   :type:  Dict[str, ansys.scade.pyalmgw.documents.TraceabilityLink]
+
+.. py:attribute:: map_requirements
+   :type:  Dict[str, ansys.scade.pyalmgw.documents.Requirement]
+
+.. py:attribute:: project
+
+
+
+Method detail
+-------------
+
+.. py:method:: add(oid: str, req: str, path: str)
+
+   Create a traceability link.
+
+
+.. py:method:: merge_links(file: pathlib.Path)
+
+   Merge the traceability updates.
+
+
+.. py:method:: read()
+
+   Read the trace file.
+
+
+.. py:method:: remove(oid: str, req: str)
+
+   Remove a tracrability link.
+
+
+.. py:method:: write()
+
+   Write the trace file.
+
+
+
+
+

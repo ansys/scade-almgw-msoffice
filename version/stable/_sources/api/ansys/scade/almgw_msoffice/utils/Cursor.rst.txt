@@ -1,0 +1,188 @@
+
+
+
+
+
+
+:class:`Cursor`
+===============
+
+.. py:class:: ansys.scade.almgw_msoffice.utils.Cursor(ws, pos: Tuple[int, int] = (0, 0))
+
+   Cursor management.
+
+   Initialize the cursor.
+
+
+
+.. py:currentmodule:: Cursor
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~col`
+            - N/A.
+          * - :py:attr:`~down`
+            - N/A.
+          * - :py:attr:`~insert_image`
+            - N/A.
+          * - :py:attr:`~left`
+            - N/A.
+          * - :py:attr:`~line`
+            - N/A.
+          * - :py:attr:`~move`
+            - N/A.
+          * - :py:attr:`~new_line`
+            - N/A.
+          * - :py:attr:`~right`
+            - N/A.
+          * - :py:attr:`~set_column`
+            - N/A.
+          * - :py:attr:`~set_column_width`
+            - N/A.
+          * - :py:attr:`~set_row`
+            - N/A.
+          * - :py:attr:`~set_row_lvl`
+            - N/A.
+          * - :py:attr:`~up`
+            - N/A.
+          * - :py:attr:`~write`
+            - N/A.
+          * - :py:attr:`~write_comment`
+            - N/A.
+          * - :py:attr:`~write_url`
+            - N/A.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~pos`
+            - 
+          * - :py:attr:`~ws`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.utils import Cursor
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: pos
+   :value: (0, 0)
+
+
+.. py:attribute:: ws
+
+
+
+Method detail
+-------------
+
+.. py:method:: col() -> int
+
+   N/A.
+
+
+.. py:method:: down()
+
+   N/A.
+
+
+.. py:method:: insert_image(image: str, options: Dict[str, Union[int, str]] = {})
+
+   N/A.
+
+
+.. py:method:: left()
+
+   N/A.
+
+
+.. py:method:: line() -> int
+
+   N/A.
+
+
+.. py:method:: move(v: Tuple[int, int])
+
+   N/A.
+
+
+.. py:method:: new_line(new_col=0)
+
+   N/A.
+
+
+.. py:method:: right()
+
+   N/A.
+
+
+.. py:method:: set_column(width: float = None, cell_format: Optional[xlsxwriter.format.Format] = None, options: Dict[str, Union[int, str]] = {})
+
+   N/A.
+
+
+.. py:method:: set_column_width(width: float)
+
+   N/A.
+
+
+.. py:method:: set_row(height: float = None, cell_format: Optional[xlsxwriter.format.Format] = None, options: Dict[str, Union[int, str]] = {})
+
+   N/A.
+
+
+.. py:method:: set_row_lvl(level: int, collapsed: bool = False)
+
+   N/A.
+
+
+.. py:method:: up()
+
+   N/A.
+
+
+.. py:method:: write(*args)
+
+   N/A.
+
+
+.. py:method:: write_comment(comment: str)
+
+   N/A.
+
+
+.. py:method:: write_url(url: str, cell_format: Optional[xlsxwriter.format.Format] = None, string: str = None, tip: str = None)
+
+   N/A.
+
+
+
+
+

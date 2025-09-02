@@ -1,0 +1,89 @@
+
+
+
+
+
+
+:class:`Formats`
+================
+
+.. py:class:: ansys.scade.almgw_msoffice.utils.Formats(wb: xlsxwriter.Workbook)
+
+   Cache for formats.
+
+   Initialize the cache.
+
+
+
+.. py:currentmodule:: Formats
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~add_format`
+            - Add a new format.
+          * - :py:attr:`~get`
+            - Return a format.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~formats`
+            - 
+          * - :py:attr:`~wb`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.utils import Formats
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: formats
+   :type:  Dict[str, xlsxwriter.format.Format]
+
+.. py:attribute:: wb
+
+
+
+Method detail
+-------------
+
+.. py:method:: add_format(fmt_name: str, fmt_dict: FormatCtor) -> xlsxwriter.format.Format
+
+   Add a new format.
+
+
+.. py:method:: get(name: str) -> Optional[xlsxwriter.format.Format]
+
+   Return a format.
+
+
+
+
+

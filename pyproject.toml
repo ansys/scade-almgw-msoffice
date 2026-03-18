@@ -41,7 +41,6 @@ tests = [
     "pytest <= 7.4.4; python_version < '3.8'",
     "pytest-cov >= 6.0.0; python_version >= '3.8'",
     "pytest-cov <= 4.1.0; python_version < '3.8'",
-    "ansys-scade-apitools >= 0.5.0",
     # required for SCADE Display API
     "pyparsing",
 ]

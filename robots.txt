@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /version/3.1
+Disallow: /version/3.0
+Disallow: /pull/
+
+Sitemap: https://almgw-msoffice.scade.docs.pyansys.com/sitemap.xml

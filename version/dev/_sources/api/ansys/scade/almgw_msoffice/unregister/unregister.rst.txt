@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.unregister.unregister
+================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.unregister.unregister() -> Tuple[int, str]
+
+   Implement the ``ansys.scade.registry/unregister`` entry point.
+

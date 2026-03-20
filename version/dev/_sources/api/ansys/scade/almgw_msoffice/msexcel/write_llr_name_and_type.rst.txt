@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type
+==========================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.write_llr_name_and_type(formats: ansys.scade.almgw_msoffice.utils.Formats, c: ansys.scade.almgw_msoffice.utils.Cursor, llr: LlrElement, is_first: bool) -> None
+
+   Write a LLR, its kind, and insert its icon.
+

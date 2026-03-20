@@ -9,6 +9,98 @@ This document contains the release notes for the project.
 
 .. towncrier release notes start
 
+`3.2.0 <https://github.com/ansys/scade-almgw-msoffice/releases/tag/v3.2.0>`_ - March 20, 2026
+=============================================================================================
+
+.. tab-set::
+
+
+  .. tab-item:: Fixed
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Maintenance missing or outdated check-vulnerabilities and check-actions-security ansys actions
+          - `#42 <https://github.com/ansys/scade-almgw-msoffice/pull/42>`_
+
+        * - Suppress useless zizmor configuration file
+          - `#46 <https://github.com/ansys/scade-almgw-msoffice/pull/46>`_
+
+
+  .. tab-item:: Dependencies
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - build(deps): Bump the dependencies group with 2 updates
+          - `#24 <https://github.com/ansys/scade-almgw-msoffice/pull/24>`_
+
+        * - Bump the dependencies group across 1 directory with 4 updates
+          - `#44 <https://github.com/ansys/scade-almgw-msoffice/pull/44>`_
+
+
+  .. tab-item:: Miscellaneous
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - Ci: bump ansys/actions from 9 to 10 in the actions group
+          - `#26 <https://github.com/ansys/scade-almgw-msoffice/pull/26>`_
+
+        * - Fix: enhance robustness
+          - `#27 <https://github.com/ansys/scade-almgw-msoffice/pull/27>`_
+
+        * - Docs: update ``contributors.md`` with the latest contributors
+          - `#28 <https://github.com/ansys/scade-almgw-msoffice/pull/28>`_
+
+        * - Build(deps): bump build from 1.2.2.post1 to 1.3.0 in the dependencies group
+          - `#31 <https://github.com/ansys/scade-almgw-msoffice/pull/31>`_
+
+        * - Ci: bump the actions group with 2 updates
+          - `#32 <https://github.com/ansys/scade-almgw-msoffice/pull/32>`_
+
+        * - Chore: Update missing or outdated files
+          - `#37 <https://github.com/ansys/scade-almgw-msoffice/pull/37>`_
+
+        * - Ci: bump the actions group across 1 directory with 5 updates
+          - `#38 <https://github.com/ansys/scade-almgw-msoffice/pull/38>`_
+
+        * - Chore: Update license headers
+          - `#41 <https://github.com/ansys/scade-almgw-msoffice/pull/41>`_
+
+
+  .. tab-item:: Documentation
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - chore: update CHANGELOG for v3.1.0
+          - `#19 <https://github.com/ansys/scade-almgw-msoffice/pull/19>`_
+
+        * - chore: update CHANGELOG for v3.1.1
+          - `#23 <https://github.com/ansys/scade-almgw-msoffice/pull/23>`_
+
+
+  .. tab-item:: Maintenance
+
+    .. list-table::
+        :header-rows: 0
+        :widths: auto
+
+        * - ci: Bump ansys/actions from 8 to 9 in the actions group
+          - `#25 <https://github.com/ansys/scade-almgw-msoffice/pull/25>`_
+
+        * - Bump actions/download-artifact from 6.0.0 to 7.0.0 in the actions group
+          - `#43 <https://github.com/ansys/scade-almgw-msoffice/pull/43>`_
+
+        * - Bump Python and SCADE versions
+          - `#48 <https://github.com/ansys/scade-almgw-msoffice/pull/48>`_
+
+
 `3.1.1 <https://github.com/ansys/scade-almgw-msoffice/releases/tag/v3.1.1>`_ - March 20, 2025
 =============================================================================================
 

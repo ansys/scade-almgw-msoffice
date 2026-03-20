@@ -26,6 +26,7 @@
 
 from pathlib import Path
 import sys
+from typing import Tuple
 
 try:
     import importlib.metadata as importlib_metadata
@@ -78,7 +79,7 @@ def srg() -> str:
     return str(Path(__file__).parent / 'almgw_msoffice.srg')
 
 
-def exe() -> tuple[str, str]:
+def exe() -> Tuple[str, str]:
     """
     Return the path of the connector's executable.
 

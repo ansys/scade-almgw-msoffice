@@ -1,0 +1,198 @@
+[
+    {
+        "objectID": "index",
+        "href": "index.html#ansys-scade-alm-gateway-connector-for-ms-office",
+        "title": "Ansys SCADE ALM Gateway connector for MS-Office",
+        "section": "Ansys SCADE ALM Gateway connector for MS-Office",
+        "text": "This package demonstrates the usage of SCADE ALM Gateway based on\nMS Office documents, avoiding the availability of an external ALM tool:\nIt imports requirements from MS-Word documents\nIt produces traceability matrices as MS-Excel documents\nIt is also a usage example of Ansys SCADE ALM Gateway Python Toolbox.\nLearn how to install and use Ansys SCADE ALM Gateway connector for MS-Office.\nLearn how to use Ansys SCADE ALM Gateway connector for MS-Office.\nLearn how to contribute to Ansys SCADE ALM Gateway connector for MS-Office.\nView the changelog for Ansys SCADE ALM Gateway connector for MS-Office.\nAnsys SCADE ALM Gateway connector for MS-Office"
+    },
+    {
+        "objectID": "index",
+        "href": "index.html#indices-and-tables",
+        "title": "Ansys SCADE ALM Gateway connector for MS-Office > Indices and tables",
+        "section": "Indices and tables",
+        "text": "genindex\nsearch\nIndices and tables"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#contribute",
+        "title": "Contribute",
+        "section": "Contribute",
+        "text": "Overall guidance on contributing to a PyAnsys library appears in\nContributing\nin the PyAnsys developer’s guide. Ensure that you are thoroughly familiar\nwith this guide before attempting to contribute to Ansys SCADE ALM Gateway connector for MS-Office.\nThe following contribution information is specific to Ansys SCADE ALM Gateway connector for MS-Office.\nContribute"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#install-in-developer-mode",
+        "title": "Contribute > Install in developer mode",
+        "section": "Install in developer mode",
+        "text": "Installing Ansys SCADE ALM Gateway connector for MS-Office in developer mode allows you to modify the\nsource and enhance it.\nClone the ansys-scade-almgw-msoffice repository:\nAccess the scade-almgw-msoffice directory where the repository has been cloned:\nCreate a clean Python 3.10 environment and activate it:\nYou should use the interpreter delivered with Ansys SCADE. For example,\nC:\\Program Files\\ANSYS Inc\\v241\\SCADE\\contrib\\Python310\\python.exe.\nMake sure that you have the latest required build system, documentation, testing,\nand CI tools:\nInstall the project in editable mode:\nUse tox to verify your development installation:\nInstall in developer mode\nansys-scade-almgw-msoffice\nscade-almgw-msoffice\nC:\\Program Files\\ANSYS Inc\\v241\\SCADE\\contrib\\Python310\\python.exe"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#test",
+        "title": "Contribute > Test",
+        "section": "Test",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office uses tox for testing. This tool allows you to\nautomate common development tasks (similar to Makefile), but it is oriented\ntowards Python development.\nTest\nMakefile"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#use-tox",
+        "title": "Contribute > Use tox",
+        "section": "Use tox",
+        "text": "While Makefile has rules, tox has environments. In fact, tox creates its\nown virtual environment so that anything being tested is isolated from the project\nto guarantee the project’s integrity.\nThe following tox commands are provided:\ntox -e style: Checks for coding style quality.\ntox -e tests: Checks for unit tests.\ntox -e tests-coverage: Checks for unit testing and code coverage.\ntox -e doc-html: Builds the HTML documentation.\ntox -e doc-links: Checks for broken links in the documentation.\nUse tox\ntox\nMakefile\ntox\ntox\ntox\ntox -e style\ntox -e tests\ntox -e tests-coverage\ntox -e doc\ntox -e doc-html\ntox -e doc-links"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#use-raw-testing",
+        "title": "Contribute > Use raw testing",
+        "section": "Use raw testing",
+        "text": "If required, from the command line, you can call style commands like\nblack, isort, and flake8. You can also call unit testing commands like pytest.\nHowever, running these commands does not guarantee that your project is being tested in an\nisolated environment, which is the reason why tools like tox exist.\nUse raw testing\ntox"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#use-pre-commit",
+        "title": "Contribute > Use pre-commit",
+        "section": "Use pre-commit",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office follows the PEP8 standard as outlined in\nPEP 8 in\nthe PyAnsys developer’s guide and implements style checking using\npre-commit.\nTo ensure your code meets minimum code styling standards, run these commands:\nYou can also install this as a pre-commit hook by running this command:\nThis way, it’s not possible for you to push code that fails the style checks:\nUse pre-commit\npre-commit"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#build-documentation",
+        "title": "Contribute > Build documentation",
+        "section": "Build documentation",
+        "text": "For building documentation, you can run the usual rules provided in the\nSphinx make file. Here are some examples:\nHowever, the recommended way of checking documentation integrity is to use\ntox:\nBuild documentation\nmake\ntox"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#distribute",
+        "title": "Contribute > Distribute",
+        "section": "Distribute",
+        "text": "If you would like to create either source or wheel files, start by installing\nthe building requirements and then executing the build module:\nDistribute"
+    },
+    {
+        "objectID": "contributing",
+        "href": "contributing.html#post-issues",
+        "title": "Contribute > Post issues",
+        "section": "Post issues",
+        "text": "Use the Ansys SCADE ALM Gateway connector for MS-Office Issues\npage to submit questions, report bugs, and request new features. When possible, use\nthese templates:\nBug, problem, error: For filing a bug report\nDocumentation error: For requesting modifications to the documentation\nAdding an example: For proposing a new example\nNew feature: For requesting enhancements to the code\nIf your issue does not fit into one of these template categories, click\nthe link for opening a blank issue.\nTo reach the project support team, email pyansys.core@ansys.com.\nPost issues"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#user-guide",
+        "title": "User Guide",
+        "section": "User Guide",
+        "text": "User Guide"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#declaration",
+        "title": "User Guide > Declaration",
+        "section": "Declaration",
+        "text": "Use the command Project/ALM Gateway/Settings... once\nto select the connector ALMGW Connector for MS-Office.\nOnce the connector is selected, this command does not operate anymore.\nRefer to the next section for details on settings management.\nIf the project is already connected to an ALM tool, you have first to delete this connection\nby deleting the ALM Gateway project file (ALMGP) in the project’s directory.\nDeclaration\nProject/ALM Gateway/Settings...\nALMGW Connector for MS-Office"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#settings",
+        "title": "User Guide > Settings",
+        "section": "Settings",
+        "text": "Settings"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#using-the-graphical-user-interface",
+        "title": "User Guide > Using the Graphical User Interface",
+        "section": "Using the Graphical User Interface",
+        "text": "This mode applies only to projects that can be loaded with SCADE Studio.\nSCADE Display projects must be setup using the command line interface,\nas explained in the next section.\nUse the new command Project/ALM Gateway/MS Office Settings... to:\nSelect the requirements documents for each loaded project.\nSelect the names of the styles to consider for the requirements and their text.\nSpecify the LLR export schema to produce a MS Excel traceability matrix.\nRefer to Traceable Elements Export Schema for details.\nUsing the Graphical User Interface\nProject/ALM Gateway/MS Office Settings..."
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#using-the-command-line-interface",
+        "title": "User Guide > Using the Command Line Interface",
+        "section": "Using the Command Line Interface",
+        "text": "The command line tool python setup_ansys_scade_almgw_msoffice.exe allows to setup\nthe project. It is located in the Scripts folder of the Python installation directory.\nFor example:\nUsing the Command Line Interface\nsetup_ansys_scade_almgw_msoffice.exe\nScripts"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#files",
+        "title": "User Guide > Files",
+        "section": "Files",
+        "text": "Ansys SCADE ALM Gateway connector for MS-Office produces several files in the project’s directory.\nThe file <project.msoffice.trace> stores the traceability links\nand must be added to the configuration management system.\nThe other files are present for logging or debug purpose only:\n<project.msoffice.llrs>: Temporary file for producing the traceability matrices.\n<project.msoffice.reqs>: Copy of exchange file for importing the traceability.\n<links.json>: Copy of exchange file for exporting the traceability.\nFiles\n<project.msoffice.trace>\n<project.msoffice.llrs>\n<project.msoffice.reqs>\n<links.json>"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#migration-from-2x-versions",
+        "title": "User Guide > Migration from 2.x versions",
+        "section": "Migration from 2.x versions",
+        "text": "This connector is compatible with former releases 2.x.\nTo migrate an existing SCADE ALM Gateway project using the 2.x version of the connector,\nedit the project file (ALMGP) and change its confFileName attribute from msoffice to almgw_msoffice.\nMigration from 2.x versions\nconfFileName\nmsoffice\nalmgw_msoffice"
+    },
+    {
+        "objectID": "user-guide/index",
+        "href": "user-guide/index.html#limitations",
+        "title": "User Guide > Limitations",
+        "section": "Limitations",
+        "text": "The connector supports only MS-Word files (DOCX) for input requirements.\nLimitations"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#release-notes",
+        "title": "Release notes",
+        "section": "Release notes",
+        "text": "This document contains the release notes for the project.\nRelease notes"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#300---2025-02-11",
+        "title": "Release notes > 3.0.0 - 2025-02-11",
+        "section": "3.0.0 - 2025-02-11",
+        "text": "3.0.0 - 2025-02-11"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#added",
+        "title": "Release notes > Added",
+        "section": "Added",
+        "text": "feat: Migration to GitHubFeat/migration #1\nAdded"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#dependencies",
+        "title": "Release notes > Dependencies",
+        "section": "Dependencies",
+        "text": "build: Bump the dependencies group with 5 updates #3\nbuild: Bump the dependencies group across 1 directory with 4 updates #6\nbuild: Bump the dependencies group with 3 updates #8\nDependencies"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#documentation",
+        "title": "Release notes > Documentation",
+        "section": "Documentation",
+        "text": "docs: Fix the references to getting-started #5\ndocs: Update links #7\nDocumentation"
+    },
+    {
+        "objectID": "changelog",
+        "href": "changelog.html#maintenance",
+        "title": "Release notes > Maintenance",
+        "section": "Maintenance",
+        "text": "build(deps): Bump codecov/codecov-action from 4 to 5 in the actions group #2\nMaintenance"
+    },
+    {
+        "objectID": "getting-started/index",
+        "href": "getting-started/index.html#getting-started",
+        "title": "Getting started",
+        "section": "Getting started",
+        "text": "To use Ansys SCADE ALM Gateway connector for MS-Office, you must have a valid license for Ansys SCADE.\nFor information on getting a licensed copy, see the\nAnsys SCADE Suite\npage on the Ansys website.\nGetting started"
+    },
+    {
+        "objectID": "getting-started/index",
+        "href": "getting-started/index.html#requirements",
+        "title": "Getting started > Requirements",
+        "section": "Requirements",
+        "text": "The ansys-scade-almgw-msoffice package supports only the versions of Python delivered with\nAnsys SCADE, starting from 2021 R2:\n2021 R2 to 2023 R1: Python 3.7\n2023 R2 and later: Python 3.10\nRequirements\nansys-scade-almgw-msoffice"
+    },
+    {
+        "objectID": "getting-started/index",
+        "href": "getting-started/index.html#install-in-user-mode",
+        "title": "Getting started > Install in user mode",
+        "section": "Install in user mode",
+        "text": "The following steps are for installing Ansys SCADE ALM Gateway connector for MS-Office in user mode. If you want to\ncontribute to Ansys SCADE ALM Gateway connector for MS-Office,\nsee contribute_scade_almgw_msoffice for installing in developer mode.\nBefore installing Ansys SCADE ALM Gateway connector for MS-Office in user mode, run this command to ensure that\nyou have the latest version of pip:\nInstall Ansys SCADE ALM Gateway connector for MS-Office with this command:\nFor Ansys SCADE releases 2024 R1 and below, complete the installation with\nthis command:\nThis additional step is not required when installing the package with\nAnsys SCADE Extension Manager.\nFor Ansys SCADE 2024 R2 and below, complete the installation as follows:\nCopy ansys/scade/almgw_msoffice/almgw_msoffice.properties to the\nSCADE LifeCycle/ALM Gateway/external directory of the SCADE 2024 R2\nFor example: C:\\Program Files\\ANSYS Inc\\v242\\SCADE\\SCADE LifeCycle\\ALM Gateway\\external.\nEdit the copy of almgw_msoffice.properties to replace %PYTHON_DIR% by the Python’s\ndirectory selected for the package’s installation, to access ansys_scade_almgw_msoffice.exe.\nInstall in user mode\nansys/scade/almgw_msoffice/almgw_msoffice.properties\nSCADE LifeCycle/ALM Gateway/external\nC:\\Program Files\\ANSYS Inc\\v242\\SCADE\\SCADE LifeCycle\\ALM Gateway\\external\nalmgw_msoffice.properties\n%PYTHON_DIR%\nansys_scade_almgw_msoffice.exe"
+    }
+]

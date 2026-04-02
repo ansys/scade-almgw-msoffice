@@ -1,0 +1,225 @@
+
+
+
+
+
+
+:class:`MSOffice`
+=================
+
+.. py:class:: ansys.scade.almgw_msoffice.msoffice.MSOffice
+
+   Bases: :py:obj:`ansys.scade.pyalmgw.connector.Connector`
+
+
+   Specialization of the connector for MS Office.
+
+   Initialize the MS Office connector.
+
+
+
+.. py:currentmodule:: MSOffice
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~get_documents`
+            - Return the documents specified in the project.
+          * - :py:attr:`~get_reqs_file`
+            - Return the path of the temporary file containing the requirements and traceability.
+          * - :py:attr:`~get_trace_file`
+            - Return the path of the file containing the traceability.
+          * - :py:attr:`~on_export`
+            - Update the traceability data and produce a traceability matrix.
+          * - :py:attr:`~on_import`
+            - Import requirements and traceability links to ALM Gateway.
+          * - :py:attr:`~on_locate`
+            - Run Microsoft Word with the document containing the requirement and locate it.
+          * - :py:attr:`~on_manage`
+            - Run Microsoft Word with the first referenced document.
+          * - :py:attr:`~on_settings`
+            - Stub the command ``settings``.
+          * - :py:attr:`~open_document`
+            - Open the document, and locate the requirement when not empty.
+          * - :py:attr:`~read_requirements`
+            - Read all the requirements from the documents.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~map_requirements`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.msoffice import MSOffice
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: map_requirements
+
+
+
+Method detail
+-------------
+
+.. py:method:: get_documents() -> List[pathlib.Path]
+
+   Return the documents specified in the project.
+
+
+.. py:method:: get_reqs_file() -> pathlib.Path
+
+   Return the path of the temporary file containing the requirements and traceability.
+
+
+.. py:method:: get_trace_file() -> pathlib.Path
+
+   Return the path of the file containing the traceability.
+
+
+.. py:method:: on_export(links: pathlib.Path, pid: int) -> int
+
+   Update the traceability data and produce a traceability matrix.
+
+   This function updates the tracability data in a separate file.
+
+   It produces the traceability matrices when an export configuration
+   file is specified in the project.
+
+   Parameters
+   ----------
+   links : Path
+       Path of a JSON file that contains the links to add and remove.
+   pid : int
+       SCADE product process ID.
+
+   Returns
+   -------
+   int
+
+       * -1: if an error occurs, therefore previous export status
+         and requirement tree shall be kept
+       * 0: requirements and traceability links shall not be exported
+       * 1: requirements and traceability links shall be exported
+       * 2: previous export status and requirement tree shall be kept
+
+
+.. py:method:: on_import(file: pathlib.Path, pid: int) -> int
+
+   Import requirements and traceability links to ALM Gateway.
+
+   The function reads the requirements from the documents and
+   adds the traceability data stored in a separate file.
+
+   Parameters
+   ----------
+   path : Path
+       Absolute path where the XML requirements file is saved.
+   pid : int
+       SCADE product process ID.
+
+   Returns
+   -------
+   int
+
+       * -1: if an error occurs, therefore previous export status
+         and requirement tree shall be kept
+       * 0: requirements and traceability links shall be correctly imported
+
+
+.. py:method:: on_locate(req: str, pid: int) -> int
+
+   Run Microsoft Word with the document containing the requirement and locate it.
+
+   Parameters
+   ----------
+   req : str
+       Identifier of a requirement defined in a document.
+   pid : int
+       SCADE product process ID.
+
+   Returns
+   -------
+   int
+
+       * -1: if an error occurs executing the command
+       * 0: if the command is successfully executed
+
+
+.. py:method:: on_manage(pid: int) -> int
+
+   Run Microsoft Word with the first referenced document.
+
+   Parameters
+   ----------
+   pid : int
+       SCADE product process ID.
+
+   Returns
+   -------
+   int
+
+       * -1: if an error occurs launching the command
+       * 0: if ‘Management Requirements’ UI of ALM tool is successfully launched
+       * 1: to clean requirement list on the SCADE IDE ‘Requirements’ window
+
+
+.. py:method:: on_settings(pid: int) -> int
+
+   Stub the command ``settings``.
+
+   Nothing to do, the settings are managed by a dedicated plug-in.
+
+   Parameters
+   ----------
+   pid : int
+       SCADE product process ID.
+
+   Returns
+   -------
+   int
+
+       * -1: if an error occurs, therefore previous settings information shall be kept
+       * 0: set settings information shall be OK
+       * 1: ALM Gateway project shall be removed, i.e., ALM connection shall be reset
+
+
+.. py:method:: open_document(file: pathlib.Path, req: str)
+
+   Open the document, and locate the requirement when not empty.
+
+
+.. py:method:: read_requirements(project: ansys.scade.pyalmgw.documents.ReqProject)
+
+   Read all the requirements from the documents.
+
+
+
+
+

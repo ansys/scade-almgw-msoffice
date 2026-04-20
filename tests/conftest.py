@@ -39,7 +39,7 @@ import scade.model.project.stdproject as std
 import scade.model.suite as suite
 import scade.model.testenv as qte
 
-from ansys.scade.apitools.info import get_scade_home
+from ansys.scade.apitools.info import get_scade_home, get_scade_version
 
 
 @pytest.fixture(scope='session')
@@ -126,3 +126,18 @@ def diff_files(ref: Path, dst: Path) -> bool:
         print(d.rstrip('\r\n'))
         failure = True
     return failure
+
+
+def filter_stderr(stderr: str) -> str:
+    """Filter coverage warnings from ``pytest-cov``."""
+    if get_scade_version() <= 231:
+        text = '\n'.join(
+            [
+                _
+                for _ in stderr.split('\n')
+                if 'CoverageWarning' not in _ and 'real_section, unknown, filename' not in _
+            ]
+        )
+    else:
+        text = stderr
+    return text

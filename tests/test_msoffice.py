@@ -31,7 +31,7 @@ import pytest
 
 import ansys.scade.almgw_msoffice as ms
 from ansys.scade.almgw_msoffice.msoffice import MSOffice
-from tests.conftest import diff_files, load_project, std
+from tests.conftest import diff_files, filter_stderr, load_project, std
 
 _root_dir = Path(__file__).parent.parent
 _test_dir = _root_dir / 'tests'
@@ -61,8 +61,9 @@ def _run_msoffice(command: str, path: Path, *args: str) -> subprocess.CompletedP
     # hardcoded pid, useless for this connector
     cmd.append('0')
     status = subprocess.run(cmd, capture_output=True)
-    if status.stderr:
-        print(status.stderr.decode('utf-8').strip('\n'))
+    stderr = filter_stderr(status.stderr.decode('utf-8').strip('\n'))
+    if stderr:
+        print(stderr)
         assert False
     out = status.stdout.decode('utf-8').strip('\n')
     print(out)

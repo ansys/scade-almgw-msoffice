@@ -37,9 +37,9 @@ build = [
     "twine==6.2.0",
 ]
 tests = [
-    "pytest >= 9.0.1; python_version >= '3.8'",
+    "pytest >= 9.0.3; python_version >= '3.8'",
     "pytest <= 7.4.4; python_version < '3.8'",
-    "pytest-cov >= 6.0.0; python_version >= '3.8'",
+    "pytest-cov >= 7.0.0; python_version >= '3.8'",
     "pytest-cov <= 4.1.0; python_version < '3.8'",
     # required for SCADE Display API
     "pyparsing",

@@ -27,7 +27,7 @@ import subprocess
 import pytest
 
 import ansys.scade.almgw_msoffice as ms
-from tests.conftest import diff_files
+from tests.conftest import diff_files, filter_stderr
 
 _root_dir = Path(__file__).parent.parent
 _test_dir = _root_dir / 'tests'
@@ -44,8 +44,9 @@ def _run_setup(*args) -> subprocess.CompletedProcess:
     cmd.extend(args)
     print(cmd)
     status = subprocess.run(cmd, capture_output=True)
-    if status.stderr:
-        print(status.stderr.decode('utf-8').strip('\n'))
+    stderr = filter_stderr(status.stderr.decode('utf-8').strip('\n'))
+    if stderr:
+        print(stderr)
         assert False
     out = status.stdout.decode('utf-8').strip('\n')
     print(out)

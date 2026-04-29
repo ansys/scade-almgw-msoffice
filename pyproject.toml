@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
+requires = ["flit_core >=3.12,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
@@ -37,9 +37,9 @@ build = [
     "twine==6.2.0",
 ]
 tests = [
-    "pytest >= 9.0.1; python_version >= '3.8'",
+    "pytest >= 9.0.3; python_version >= '3.8'",
     "pytest <= 7.4.4; python_version < '3.8'",
-    "pytest-cov >= 6.0.0; python_version >= '3.8'",
+    "pytest-cov >= 7.0.0; python_version >= '3.8'",
     "pytest-cov <= 4.1.0; python_version < '3.8'",
     # required for SCADE Display API
     "pyparsing",
@@ -56,9 +56,6 @@ doc = [
     "sphinxcontrib-httpdomain==1.8.1",
     "sphinx-copybutton==0.5.2",
 ]
-
-[tool.flit.module]
-name = "ansys.scade.almgw_msoffice"
 
 [project.scripts]
 ansys_scade_almgw_msoffice = "ansys.scade.almgw_msoffice.msoffice:main"
@@ -83,9 +80,16 @@ documentation = "https://almgw-msoffice.scade.docs.pyansys.com"
 releases = "https://github.com/ansys/scade-almgw-msoffice/releases"
 homepage = "https://www.ansys.com/products/embedded-software/ansys-scade-suite"
 
+[tool.flit.module]
+name = "ansys.scade.almgw_msoffice"
+
 [tool.ruff]
 line-length = 100
 fix = true
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
 
 [tool.ruff.lint]
 select = [
@@ -94,17 +98,10 @@ select = [
     "F",    # pyflakes, see https://docs.astral.sh/ruff/rules/#pyflakes-f
     "I",    # isort, see https://docs.astral.sh/ruff/rules/#isort-i
     "N",    # pep8-naming, see https://docs.astral.sh/ruff/rules/#pep8-naming-n
-    "PTH",  # flake9-use-pathlib, https://beta.ruff.rs/docs/rules/#flake8-use-pathlib-pth
+    "PTH",  # flake8-use-pathlib, https://docs.astral.sh/ruff/rules/#flake8-use-pathlib-pth
     "TD",   # flake8-todos, https://docs.astral.sh/ruff/rules/#flake8-todos-td
 ]
-ignore = [
-    "E501",  # Line too long. Ignoring this so "ruff.formatter" manages line length.
-]
-
-# TODO: "preserve" leads to an error, although it is documented
-# and used in other repositories
-[tool.ruff.format]
-quote-style = "single"
+ignore = []
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
@@ -119,9 +116,13 @@ convention = "numpy"
 
 [tool.coverage.run]
 source = ["ansys.scade.almgw_msoffice"]
+patch = ["subprocess"]
 
 [tool.coverage.report]
 show_missing = true
+exclude_also = [
+    "@(abc\\.)?abstractmethod",
+]
 
 [tool.pytest.ini_options]
 testpaths = "tests"
@@ -158,13 +159,13 @@ title_format = "`{version} <https://github.com/ansys/scade-almgw-msoffice/releas
 issue_format = "`#{issue} <https://github.com/ansys/scade-almgw-msoffice/pull/{issue}>`_"
 
 [[tool.towncrier.type]]
-directory = "added"
-name = "Added"
+directory = "breaking"
+name = "Breaking"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "changed"
-name = "Changed"
+directory = "added"
+name = "Added"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -173,18 +174,13 @@ name = "Fixed"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "dependencies"
-name = "Dependencies"
-showcontent = true
-
-[[tool.towncrier.type]]
-directory = "miscellaneous"
-name = "Miscellaneous"
-showcontent = true
-
-[[tool.towncrier.type]]
 directory = "documentation"
 name = "Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "dependencies"
+name = "Dependencies"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -193,6 +189,20 @@ name = "Maintenance"
 showcontent = true
 
 [[tool.towncrier.type]]
+directory = "miscellaneous"
+name = "Miscellaneous"
+showcontent = true
+
+[[tool.towncrier.type]]
 directory = "test"
 name = "Test"
 showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[tool.codespell]
+ignore-words-list = ["synopsys"]
+

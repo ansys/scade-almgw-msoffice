@@ -9,13 +9,13 @@
         <Section identifier="1." text="Introduction." description=""/>
         <Section identifier="2." text="Software requirements" description="">
           <children>
-            <Requirement identifier="REQ_011" text="" description="First requirement."/>
-            <Requirement identifier="REQ_012" text="" description="Second requirement."/>
+            <Requirement identifier="REQ_011" text="REQ_011" description="First requirement."/>
+            <Requirement identifier="REQ_012" text="REQ_012" description="Second requirement."/>
           </children>
         </Section>
         <Section identifier="3." text="Other requirements" description="">
           <children>
-            <Requirement identifier="REQ_021" text="" description="Third requirement."/>
+            <Requirement identifier="REQ_021" text="REQ_021" description="Third requirement."/>
           </children>
         </Section>
       </children>

@@ -24,7 +24,7 @@ classifiers=[
 dependencies=[
     "importlib-metadata >= 1.0; python_version < '3.8'",
     "importlib-metadata >= 4.0; python_version >= '3.8'",
-    "ansys-scade-pyalmgw >= 1.2.0",
+    "ansys-scade-pyalmgw >= 1.2.1",
     "lxml",
     "python-docx",
     "xlsxwriter",

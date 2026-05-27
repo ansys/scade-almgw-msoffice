@@ -3,7 +3,7 @@
   <documents>
     <Document identifier="$(DIR)/MiscFiles.docx" text="MiscFiles.docx">
       <children>
-        <Requirement identifier="REQ" text="" description="Requirement."/>
+        <Requirement identifier="REQ" text="REQ" description="Requirement."/>
       </children>
     </Document>
   </documents>

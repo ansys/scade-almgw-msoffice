@@ -9,32 +9,32 @@
               <children>
                 <Section identifier="1.1.1." text="Level 111" description="">
                   <children>
-                    <Requirement identifier="TRA1_REQ_111" text="" description="Depth 3 with two paragraphs.&#10;Second line"/>
+                    <Requirement identifier="TRA1_REQ_111" text="TRA1_REQ_111" description="Depth 3 with two paragraphs.&#10;Second line"/>
                   </children>
                 </Section>
                 <Section identifier="1.1.2." text="Level 112" description=""/>
                 <Section identifier="1.1.3." text="Level 113" description="">
                   <children>
-                    <Requirement identifier="TRA1_REQ_113_1" text="" description="First req in a section with an empty trailing line.&#10;"/>
-                    <Requirement identifier="TRA1_REQ_113_2" text="" description="Second req in the same section with list.&#10;Item 1&#10;Item 2"/>
+                    <Requirement identifier="TRA1_REQ_113_1" text="TRA1_REQ_113_1" description="First req in a section with an empty trailing line.&#10;"/>
+                    <Requirement identifier="TRA1_REQ_113_2" text="TRA1_REQ_113_2" description="Second req in the same section with list.&#10;Item 1&#10;Item 2"/>
                   </children>
                 </Section>
-                <Requirement identifier="TRA1_REQ_011" text="" description="Depth two after some introduction."/>
+                <Requirement identifier="TRA1_REQ_011" text="TRA1_REQ_011" description="Depth two after some introduction."/>
               </children>
             </Section>
-            <Requirement identifier="TRA1_REQ_001" text="" description="Depth 1 req."/>
+            <Requirement identifier="TRA1_REQ_001" text="TRA1_REQ_001" description="Depth 1 req."/>
           </children>
         </Section>
         <Section identifier="2." text="Level 2" description="">
           <children>
             <Section identifier="2.1." text="Level 21" description="">
               <children>
-                <Requirement identifier="&lt;Missing Requirement ID&gt;_2" text="" description="Req text without req id."/>
+                <Requirement identifier="&lt;Missing Requirement ID&gt;_2" text="&lt;Missing Requirement ID&gt;_2" description="Req text without req id."/>
               </children>
             </Section>
-            <Requirement identifier="TRA1_REQ_002_1" text="" description="Jump from level 3 to level 1.&#10;&#10;With an image of the ToC inside the text."/>
-            <Requirement identifier="&lt;Missing Requirement ID&gt;_1" text="" description=""/>
-            <Requirement identifier="TRA1_REQ_002_2" text="" description="Before empty line&#10;After empty line."/>
+            <Requirement identifier="TRA1_REQ_002_1" text="TRA1_REQ_002_1" description="Jump from level 3 to level 1.&#10;&#10;With an image of the ToC inside the text."/>
+            <Requirement identifier="&lt;Missing Requirement ID&gt;_1" text="&lt;Missing Requirement ID&gt;_1" description=""/>
+            <Requirement identifier="TRA1_REQ_002_2" text="TRA1_REQ_002_2" description="Before empty line&#10;After empty line."/>
           </children>
         </Section>
         <Section identifier="3." text="Level 3" description="">
@@ -43,14 +43,14 @@
               <children>
                 <Section identifier="3.1.1." text="Level 311" description="">
                   <children>
-                    <Requirement identifier="TRA1_REQ_311" text="" description="No intermediate section between 1 and 3."/>
+                    <Requirement identifier="TRA1_REQ_311" text="TRA1_REQ_311" description="No intermediate section between 1 and 3."/>
                   </children>
                 </Section>
               </children>
             </Section>
           </children>
         </Section>
-        <Requirement identifier="TRA1_REQ_000" text="" description="Depth 0 req."/>
+        <Requirement identifier="TRA1_REQ_000" text="TRA1_REQ_000" description="Depth 0 req."/>
       </children>
     </Document>
   </documents>

@@ -1,0 +1,72 @@
+
+
+
+
+
+
+:class:`CommandSettings`
+========================
+
+.. py:class:: ansys.scade.almgw_msoffice.settings.CommandSettings
+
+   Bases: :py:obj:`scade.tool.suite.gui.commands.Command`
+
+
+   Defines a command to edit the settings.
+
+   Initialize the command settings.
+
+
+
+.. py:currentmodule:: CommandSettings
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~on_activate`
+            - Open the dialog.
+          * - :py:attr:`~on_enable`
+            - Return whether the command is available.
+
+
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.settings import CommandSettings
+
+
+
+Method detail
+-------------
+
+.. py:method:: on_activate()
+
+   Open the dialog.
+
+
+.. py:method:: on_enable()
+
+   Return whether the command is available.
+
+
+
+
+

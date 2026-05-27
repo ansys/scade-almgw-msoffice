@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.write_section_cov
+====================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.write_section_cov(c: ansys.scade.almgw_msoffice.utils.Cursor, cov: CovResult, formats: ansys.scade.almgw_msoffice.utils.Formats) -> None
+
+   Write the section's coverage.
+

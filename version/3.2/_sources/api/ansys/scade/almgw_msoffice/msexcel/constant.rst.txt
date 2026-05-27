@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.constant
+===========================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.constant(v: T) -> Iterator[T]
+
+   Return Scade's constant flow ``v``.
+

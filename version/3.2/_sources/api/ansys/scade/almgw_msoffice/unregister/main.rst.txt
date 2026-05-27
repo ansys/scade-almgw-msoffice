@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.unregister.main
+==========================================
+
+.. py:function:: ansys.scade.almgw_msoffice.unregister.main()
+
+   Implement the ``ansys.scade.almgw_msoffice.unregister`` packages's project script.
+

@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.llr_section_depth
+====================================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.llr_section_depth(section: LlrElement) -> int
+
+   Return the max depth of the document hierarchy.
+

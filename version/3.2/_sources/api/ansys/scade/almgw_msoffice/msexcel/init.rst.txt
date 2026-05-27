@@ -1,0 +1,7 @@
+ansys.scade.almgw_msoffice.msexcel.init
+=======================================
+
+.. py:function:: ansys.scade.almgw_msoffice.msexcel.init(init_value: T, other_value: T) -> Iterator[T]
+
+   Return Scade's flow ``init_value -> other_value``.
+

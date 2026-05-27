@@ -1,0 +1,224 @@
+
+
+
+
+
+
+The ``ansys.scade.almgw_msoffice`` library
+==========================================
+
+.. py:module:: ansys.scade.almgw_msoffice
+
+
+Summary
+-------
+
+
+
+
+
+
+
+
+.. py:currentmodule:: almgw_msoffice
+.. tab-set::
+
+
+    .. tab-item:: Submodules
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msexcel`
+            - Generation of traceability matrices as an Excel document.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msoffice`
+            - Ansys SCADE ALM Gateway connector for MS-Office.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.msword`
+            - Extraction of the requirements of a MS Word document (DOCX).
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.register`
+            - Registers the ALM GAteway MS-Office connector registry files (SRG).
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.settings`
+            - Provides the ``MS Office Settings`` command.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.setup`
+            - Command line utility to setup a project for the connector.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.trace`
+            - Persistence for Ansys SCADE ALM Gateway connector for MS-Office.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.unregister`
+            - Unregisters the ALM GAteway MS-Office connector registry files (SRG).
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.utils`
+            - Utilities for managing Excel documents.
+
+
+
+
+
+
+
+    .. tab-item:: Functions
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.exe`
+            - Return the path of the connector's executable.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.get_srg_name`
+            - Return the name of the registration file for Ansys SCADE IDE.
+
+
+          * - :py:obj:`~ansys.scade.almgw_msoffice.srg`
+            - Return the path of the SCADE Studio registry file.
+
+
+
+    .. tab-item:: Attributes
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~__version__`
+            - 
+
+
+
+    .. tab-item:: Constants
+
+        .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+
+          * - :py:obj:`~DOCUMENTS`
+            - 
+
+
+          * - :py:obj:`~DOCUMENTS_DEFAULT`
+            - 
+
+
+          * - :py:obj:`~REQSTYLE`
+            - 
+
+
+          * - :py:obj:`~REQSTYLE_DEFAULT`
+            - 
+
+
+          * - :py:obj:`~TEXTSTYLE`
+            - 
+
+
+          * - :py:obj:`~TEXTSTYLE_DEFAULT`
+            - 
+
+
+          * - :py:obj:`~TOOL`
+            - 
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-fa-file"></span> msexcel</api/ansys/scade/almgw_msoffice/msexcel/index>
+    <span class="nf nf-fa-file"></span> msoffice</api/ansys/scade/almgw_msoffice/msoffice/index>
+    <span class="nf nf-fa-file"></span> msword</api/ansys/scade/almgw_msoffice/msword/index>
+    <span class="nf nf-fa-file"></span> register</api/ansys/scade/almgw_msoffice/register/index>
+    <span class="nf nf-fa-file"></span> settings</api/ansys/scade/almgw_msoffice/settings/index>
+    <span class="nf nf-fa-file"></span> setup</api/ansys/scade/almgw_msoffice/setup/index>
+    <span class="nf nf-fa-file"></span> trace</api/ansys/scade/almgw_msoffice/trace/index>
+    <span class="nf nf-fa-file"></span> unregister</api/ansys/scade/almgw_msoffice/unregister/index>
+    <span class="nf nf-fa-file"></span> utils</api/ansys/scade/almgw_msoffice/utils/index>
+
+
+
+
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+    <span class="nf nf-md-function_variant"></span> exe</api/ansys/scade/almgw_msoffice/exe>
+    <span class="nf nf-md-function_variant"></span> get_srg_name</api/ansys/scade/almgw_msoffice/get_srg_name>
+    <span class="nf nf-md-function_variant"></span> srg</api/ansys/scade/almgw_msoffice/srg>
+
+
+
+
+
+
+Description
+-----------
+
+Ansys SCADE ALM Gateway connector for MS-Office.
+
+
+
+
+
+
+
+Module detail
+-------------
+
+.. py:data:: DOCUMENTS
+   :value: 'DOCUMENTS'
+
+
+.. py:data:: DOCUMENTS_DEFAULT
+   :value: []
+
+
+.. py:data:: REQSTYLE
+   :value: 'REQSTYLE'
+
+
+.. py:data:: REQSTYLE_DEFAULT
+   :value: 'Requirement_ID'
+
+
+.. py:data:: TEXTSTYLE
+   :value: 'TEXTSTYLE'
+
+
+.. py:data:: TEXTSTYLE_DEFAULT
+   :value: 'Requirement_Text'
+
+
+.. py:data:: TOOL
+   :value: 'MSOFFICE'
+
+
+.. py:data:: __version__
+
+
+

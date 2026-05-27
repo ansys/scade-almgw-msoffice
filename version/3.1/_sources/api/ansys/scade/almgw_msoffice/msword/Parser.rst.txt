@@ -1,0 +1,116 @@
+
+
+
+
+
+
+:class:`Parser`
+===============
+
+.. py:class:: ansys.scade.almgw_msoffice.msword.Parser
+
+   Parser for MS Word documents (DOCX).
+
+   Initialize the parser.
+
+
+
+.. py:currentmodule:: Parser
+
+Overview
+--------
+
+.. tab-set::
+
+
+
+   .. tab-item:: Methods
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~add_heading`
+            - Add a new section to the document.
+          * - :py:attr:`~add_req_id`
+            - Add a new requirement to the document.
+          * - :py:attr:`~append_req_text`
+            - Append text to the current requirement's description.
+          * - :py:attr:`~parse`
+            - Build the document model from a MS Word document.
+
+
+
+   .. tab-item:: Attributes
+
+      .. list-table::
+          :header-rows: 0
+          :widths: auto
+
+          * - :py:attr:`~anonymous_req_count`
+            - 
+          * - :py:attr:`~current_req`
+            - 
+          * - :py:attr:`~requirements`
+            - 
+          * - :py:attr:`~sections`
+            - 
+
+
+
+
+
+
+Import detail
+-------------
+
+.. code-block:: python
+
+    from ansys.scade.almgw_msoffice.msword import Parser
+
+
+Attribute detail
+----------------
+
+.. py:attribute:: anonymous_req_count
+   :value: 0
+
+
+.. py:attribute:: current_req
+   :value: None
+
+
+.. py:attribute:: requirements
+
+.. py:attribute:: sections
+   :value: []
+
+
+
+
+Method detail
+-------------
+
+.. py:method:: add_heading(level: int, text: str)
+
+   Add a new section to the document.
+
+
+.. py:method:: add_req_id(id: str)
+
+   Add a new requirement to the document.
+
+
+.. py:method:: append_req_text(text: str)
+
+   Append text to the current requirement's description.
+
+
+.. py:method:: parse(req_doc: ansys.scade.pyalmgw.documents.ReqDocument, req_style: str, text_style: str)
+
+   Build the document model from a MS Word document.
+
+
+
+
+
